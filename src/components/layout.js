@@ -2,10 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-
+import Header from "./header"
+import Footer from "./footer"
 import './all.scss'
-import Header from './header'
-import Footer from './footer'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -26,15 +25,19 @@ const Layout = ({ children }) => (
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
-          bodyAttributes={{ class: 'has-navbar-fixed-top' }}
         >
           <html lang="en" />
         </Helmet>
-
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="site-content">{children}</div>
-        <Footer />
-      </>
+        <section className="hero is-fullheight">
+          <Header siteTitle={data.site.siteMetadata.title}/>
+            <div className="hero-body">
+              <div className="container has-text-centered">
+                <div className="site-content">{children}</div>
+              </div>
+            </div>
+            <Footer />
+        </section>
+            </>
     )}
   />
 )

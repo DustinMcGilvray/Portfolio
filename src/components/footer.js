@@ -1,13 +1,13 @@
 import React from 'react'
-
+import Navigation from "./navigation"
 const Footer = () => (
-  <footer className="footer  has-background-grey-dark">
-    <div className="hero is-small">
-      <div className="hero-body has-text-centered has-text-white">
-        Made with ❤ using Bulma and Gatsby
-      </div>
-    </div>
-  </footer>
+  <div className="hero-foot">
+      <nav className="tabs is-fullwidth">
+        <div className="container">
+          <Navigation />
+        </div>
+      </nav>
+  </div>
 )
 
 export default Footer
