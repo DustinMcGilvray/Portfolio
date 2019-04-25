@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Dustin McGilvray',
-    initials: 'D|M',
+    symbol: 'D|M',
+    template: 'https://github.com/xydac/xylo-gatsby-bulma-starter/blob/master/src/components/header.js'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

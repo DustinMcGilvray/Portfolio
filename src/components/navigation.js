@@ -5,23 +5,29 @@ import Tippy, { TippyGroup } from '@tippy.js/react'
 
 const Nav = () => (
   <ul>
-    <TippyGroup delay={1000} arrow="true">
+    <TippyGroup delay={1000}>
       <li>
         <Link to="/dashboard">
           <Tippy
             content="Dashboard"
             className="Dashboard"
             placement="right-end"
+            arrow="true"
           >
             <span className="icon">
-              <FontAwesomeIcon icon="th-large" size="lg" />
+              <FontAwesomeIcon icon="th-large" size="lg" color="blue" />
             </span>
           </Tippy>
         </Link>
       </li>
       <li>
         <Link to="/news">
-          <Tippy content="News" className="News" placement="right-end">
+          <Tippy
+            content="News"
+            className="News"
+            placement="right-end"
+            arrow="true"
+          >
             <span className="icon">
               <FontAwesomeIcon icon="newspaper" size="lg" />
             </span>
@@ -30,7 +36,12 @@ const Nav = () => (
       </li>
       <li>
         <Link to="/projects">
-          <Tippy content="Projects" className="Projects" placement="right-end">
+          <Tippy
+            content="Projects"
+            className="Projects"
+            placement="right-end"
+            arrow="true"
+          >
             <span className="icon">
               <FontAwesomeIcon icon="briefcase" size="lg" />
             </span>
@@ -39,7 +50,12 @@ const Nav = () => (
       </li>
       <li>
         <Link to="/about">
-          <Tippy content="About" className="About" placement="right-end">
+          <Tippy
+            content="About"
+            className="About"
+            placement="right-end"
+            arrow="true"
+          >
             <span className="icon">
               <FontAwesomeIcon icon="brain" size="lg" />
             </span>
@@ -48,7 +64,12 @@ const Nav = () => (
       </li>
       <li>
         <Link to="/contact">
-          <Tippy content="Contact" className="Contact" placement="right-end">
+          <Tippy
+            content="Contact"
+            className="Contact"
+            placement="right-end"
+            arrow="true"
+          >
             <span className="icon">
               <FontAwesomeIcon icon="address-card" size="lg" />
             </span>

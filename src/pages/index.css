@@ -1,0 +1,23 @@
+.index-page-bg{
+    background-image: url(../images/pottery_hands.jpg), url(../images/computer-keyboard.jpg);
+    background-position: left, right;
+    background-size: 50% 100%, 50% 100%; 
+    background-repeat: no-repeat, no-repeat;
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+}
+
+.card {
+    height: 75vh;
+}
+
+.title {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

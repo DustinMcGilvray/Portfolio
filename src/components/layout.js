@@ -9,10 +9,10 @@ import './all.scss'
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+      query SiteSymbolQuery {
         site {
           siteMetadata {
-            title
+            symbol
           }
         }
       }
@@ -20,7 +20,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Helmet
-          title={data.site.siteMetadata.title}
+          siteSymbol={data.site.siteMetadata.symbol}
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <section className="hero is-fullheight">
-          <Header siteTitle={data.site.siteMetadata.title}/>
+          <Header siteSymbol={data.site.siteMetadata.symbol}/>
             <div className="hero-body">
               <div className="container has-text-centered">
                 <div className="site-content">{children}</div>
