@@ -1,17 +1,23 @@
-.index-page-bg{
+/* .index-page-bg{
     background-image: url(../images/pottery_hands.jpg), url(../images/computer-keyboard.jpg);
     background-position: left, right;
     background-size: 50% 100%, 50% 100%; 
     background-repeat: no-repeat, no-repeat;
-    /* position: absolute;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0; */
-}
+    left: 0;
+} */
 
 .card {
+    background-image: url(../images/pottery_hands.jpg), url(../images/computer-keyboard.jpg);
+    background-position: left, right;
+    background-size: 50% 100%, 50% 100%; 
+    background-repeat: no-repeat, no-repeat;
     height: 75vh;
+    border: solid 5px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
 }
 
 .title {
@@ -20,4 +26,77 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: solid 0.5px white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Playfair Display';
+    font-size: 3vw;
+}
+
+.left-craft{
+    background-color: rgba(255, 255, 255, 0.39);
+    width: 50%;
+    height: 100%;
+    font-size: 11vw; /* Responsive font size */
+    font-weight: bold;
+    float: left;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+#word-craft {
+    position: absolute;
+    right: 0;
+}
+
+.right-code{
+    background-color: rgba(255, 255, 255, 0.39);
+    width: 50%;
+    height: 100%;
+    font-size: 13vw; /* Responsive font size */
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+#word-code {
+    position: absolute;
+    right: 0;
+}
+
+.craft-code-text-1 {
+    background-color: rgba(255, 255, 255, 0.425);
+    color: black;
+    font-size: 11vw; /* Responsive font size */
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    margin: 0 auto; /* Center the text container */
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    text-align: center; /* Center text */
+    position: inherit; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+.craft-code-text-2 {
+    background-color: rgba(255, 255, 255, 0.507);
+    color: black;
+    font-size: 11vw; /* Responsive font size */
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 0%; /* Position text in the middle */
+    transform: translate(-50%, 0%) rotate(180deg); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
 }
