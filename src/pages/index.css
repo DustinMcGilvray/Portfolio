@@ -39,7 +39,7 @@
     background-color: rgba(255, 255, 255, 0.39);
     width: 50%;
     height: 100%;
-    font-size: 11vw; /* Responsive font size */
+    font-size: 23vh; /* Responsive font size */
     font-weight: bold;
     float: left;
     writing-mode: vertical-lr;
@@ -50,13 +50,14 @@
 #word-craft {
     position: absolute;
     right: 0;
+    color: rgba(0, 255, 255, 0.363);
 }
 
 .right-code{
     background-color: rgba(255, 255, 255, 0.39);
     width: 50%;
     height: 100%;
-    font-size: 13vw; /* Responsive font size */
+    font-size: 27vh; /* Responsive font size */
     font-weight: bold;
     writing-mode: vertical-lr;
     mix-blend-mode: screen; /* This makes the cutout text possible */
@@ -65,38 +66,6 @@
 #word-code {
     position: absolute;
     right: 0;
+    color: rgb(7, 7, 7);
 }
 
-.craft-code-text-1 {
-    background-color: rgba(255, 255, 255, 0.425);
-    color: black;
-    font-size: 11vw; /* Responsive font size */
-    font-weight: bold;
-    writing-mode: vertical-rl;
-    margin: 0 auto; /* Center the text container */
-    padding: 10px;
-    width: 50%;
-    height: 100%;
-    text-align: center; /* Center text */
-    position: inherit; /* Position text */
-    top: 50%; /* Position text in the middle */
-    left: 50%; /* Position text in the middle */
-    transform: translate(-50%, -50%); /* Position text in the middle */
-    mix-blend-mode: screen; /* This makes the cutout text possible */
-}
-
-.craft-code-text-2 {
-    background-color: rgba(255, 255, 255, 0.507);
-    color: black;
-    font-size: 11vw; /* Responsive font size */
-    font-weight: bold;
-    writing-mode: vertical-rl;
-    padding: 10px;
-    width: 50%;
-    height: 100%;
-    text-align: center; /* Center text */
-    position: absolute; /* Position text */
-    top: 0%; /* Position text in the middle */
-    transform: translate(-50%, 0%) rotate(180deg); /* Position text in the middle */
-    mix-blend-mode: screen; /* This makes the cutout text possible */
-}
