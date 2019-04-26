@@ -3,22 +3,19 @@ import Layout from '../components/layout'
 import './index.css'
 
 const IndexPage = () => (
-  <div>
-    <Layout>
-      <div className="card">
-        <div className="left-craft">
-          <div id='word-craft'>CRAFT</div>
-        </div>
-        <div className="title has-text-white has-text-white-bold is-uppercase">
-          Dustin McGilvray
-        </div>
-        <div className="right-code">
-          <div id="word-code">CODE</div>
-        </div>
-        <div />
+  <Layout>
+    <div className="card bg-left bg-right">
+      <div id="word-craft">CRAFT</div>
+      <div
+        id="name-title"
+        className="has-text-white has-text-white-bold is-uppercase"
+      >
+        Dustin McGilvray
       </div>
-    </Layout>
-  </div>
+      <div id="word-code">CODE</div>
+      <div />
+    </div>
+  </Layout>
 )
 
 export default IndexPage

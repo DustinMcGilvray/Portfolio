@@ -11,16 +11,16 @@
 } */
 
 .card {
-    background-image: url(../images/pottery_hands.jpg), url(../images/computer-keyboard.jpg);
-    background-position: left, right;
-    background-size: 50% 100%, 50% 100%; 
+    background-image: linear-gradient(rgba(255, 255, 255, 0.39), rgba(255, 255, 255, 0.39)), url(../images/pottery_hands.jpg), url(../images/computer-keyboard.jpg);
+    background-position: right, left;
+    background-size: cover, 50% 100%, 50% 100%;
     background-repeat: no-repeat, no-repeat;
     height: 75vh;
     border: solid 5px black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
 }
 
-.title {
+#name-title {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -35,37 +35,25 @@
     font-size: 3vw;
 }
 
-.left-craft{
-    background-color: rgba(255, 255, 255, 0.39);
-    width: 50%;
-    height: 100%;
-    font-size: 23vh; /* Responsive font size */
+#word-craft {
+    position: absolute;
+    left: 0;
+    color: rgba(0, 255, 255, 0.363);
+    font-size: 23vh; 
     font-weight: bold;
     float: left;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    mix-blend-mode: screen; /* This makes the cutout text possible */
-}
-
-#word-craft {
-    position: absolute;
-    right: 0;
-    color: rgba(0, 255, 255, 0.363);
-}
-
-.right-code{
-    background-color: rgba(255, 255, 255, 0.39);
-    width: 50%;
-    height: 100%;
-    font-size: 27vh; /* Responsive font size */
-    font-weight: bold;
-    writing-mode: vertical-lr;
-    mix-blend-mode: screen; /* This makes the cutout text possible */
+    mix-blend-mode: screen; 
 }
 
 #word-code {
     position: absolute;
     right: 0;
-    color: rgb(7, 7, 7);
+    color: rgb(90, 88, 88);
+    font-size: 27vh; 
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    mix-blend-mode: screen; 
 }
 
