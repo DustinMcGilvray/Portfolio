@@ -10,7 +10,7 @@
     left: 0;
 } */
 
-.card {
+#landing-card {
     background-image: linear-gradient(rgba(255, 255, 255, 0.39), rgba(255, 255, 255, 0.39)), url(../images/pottery_hands.jpg), url(../images/computer-keyboard.jpg);
     background-position: right, left;
     background-size: cover, 50% 100%, 50% 100%;

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Tippy from '@tippy.js/react'
+import './header.css'
 
 const Header = ({ siteSymbol }) => (
   <div className="hero-head">
@@ -9,7 +10,7 @@ const Header = ({ siteSymbol }) => (
         <div className="navbar-brand">
           <Tippy content="Home" className="Home" placement="right" arrow="true">
             <Link to="/" className="navbar-item ">
-              <h1 style={{ color: 'black' }}>{siteSymbol}</h1>
+              <div className="initials">{siteSymbol}</div>
             </Link>
           </Tippy>
         </div>

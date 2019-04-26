@@ -1,12 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
+import ContactCard from "../components/contact-card"
 
 const Contact = () => (
   <Layout>
-      <div className="container has-text-centered">
-        <h1 className="title">Contact Me</h1>
-        <h2 className="subtitle">Reach Out and lets chat!</h2>
-      </div>
+      <ContactCard />
   </Layout>
 )
 

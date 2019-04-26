@@ -4,7 +4,7 @@ import './index.css'
 
 const IndexPage = () => (
   <Layout>
-    <div className="card bg-left bg-right">
+    <div id="landing-card" className="card bg-left bg-right">
       <div id="word-craft">CRAFT</div>
       <div
         id="name-title"

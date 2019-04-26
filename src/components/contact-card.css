@@ -1,0 +1,23 @@
+#contact-card {
+    background-color: rgba(61, 216, 216, 0.363);
+    width: 25vw;
+    height: 50vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377); 
+}
+
+.card-header {
+    box-shadow: none;
+}
+
+.card-header-title {
+    font-family: "Playfair Display";
+    font-size: 1.5em;
+}
+
+.card-footer {
+    border-top: none;
+}
+
+.card-footer-item:not(:last-child) {
+    border-right: none;
+}
