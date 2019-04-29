@@ -1,10 +1,17 @@
 import React from 'react'
 import Layout from '../components/layout'
-import ContactCard from "../components/contact-card"
+import ContactCard from '../components/contact-card'
+import ContactForm from '../components/contact-form'
+import './contact.css'
 
 const Contact = () => (
   <Layout>
-      <ContactCard />
+    <div id="contact-all" className="card">
+    <div id="word-contact">Contact Me
+    </div>
+        <ContactCard />
+        <ContactForm />
+      </div>
   </Layout>
 )
 

@@ -1,0 +1,20 @@
+#contact-all {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.39), rgba(255, 255, 255, 0.39)), url(../images/mail-bw.jpg), url(../images/cell-phone-bw.jpg);
+    background-position: right, left;
+    background-size: cover, 50% 100%, 50% 100%;
+    background-repeat: no-repeat, no-repeat;
+    height: 75vh;
+    border: solid 5px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+}
+
+#word-contact {
+    position: absolute;
+    left: 0;
+    color: rgb(90, 88, 88);
+    font-size: 14vh; 
+    font-weight: bold;
+    float: left;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
