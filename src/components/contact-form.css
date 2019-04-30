@@ -12,3 +12,7 @@
     border: none;
     box-shadow: none;
 }
+
+#submit-form {
+    cursor: default;
+}
