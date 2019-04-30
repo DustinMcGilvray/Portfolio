@@ -6,7 +6,7 @@ import './contact-radial.css'
 
 export default ({ x, y }) => (
   <PieMenu 
-    radius='125px' 
+    radius='200px' 
     centerRadius='30px'
     centerX={x}
     centerY={y}
