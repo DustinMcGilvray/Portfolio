@@ -1,74 +1,78 @@
 import React from 'react'
 import Layout from '../components/layout'
+import './projects.css'
 
 const Portfolio = () => (
   <Layout>
-    <div className="container has-text-centered">
-      <h1 className="title">Projects</h1>
+    <div id="portfolio-card" className="card">
+      <section>
+        <div class="columns is-gapless">
+          <div class="column">
+            <div id="giphy-api" className="card project-card" />
+          </div>
+          <div class="column">
+            <div id="word-guess" className="card project-card" />
+          </div>
+          <div class="column">
+            <div id="bamazon-cli" className="card project-card" />
+          </div>
+          <div class="column">
+            <div id="web-scraper" className="card project-card" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="columns is-gapless">
+          <div class="column">
+            <div id="code-burger" className="card project-card" />
+          </div>
+          <div class="column">
+            <div id="goonie-friend" className="card project-card" />
+          </div>
+          <div class="column">
+            <div id="gpk-trivia" className="card project-card" />
+          </div>
+          <div class="column">
+            <div id="athena-project" className="card project-card" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="columns is-gapless">
+          <div class="column">
+            <div id="trading-grounds" className="card project-card" />
+          </div>
+          <div class="column">
+            <div id="react-nyt" className="card project-card" />
+          </div>
+          <div class="column">
+            <div id="rpsls-multiplayer" className="card project-card" />
+          </div>
+          <div class="column">
+            <div id="react-memory" className="card project-card" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="columns is-gapless">
+          <div class="column">
+            <div id="reeldex-project" className="card project-card" />
+          </div>
+          <div class="column">
+            <div id="train-scheduler" className="card project-card" />
+          </div>
+          <div class="column">
+            <div id="voltron-trivia" className="card project-card" />
+          </div>
+          <div class="column">
+            <div id="liri-node" className="card project-card" />
+          </div>
+        </div>
+      </section>
     </div>
-    <section className="section">
-      <div className="container">
-        <div className="tile is-ancestor">
-          <div className="tile is-4 is-vertical is-parent">
-            <div className="tile is-child box">
-              <p className="title">One</p>
-            </div>
-            <div className="tile is-child box">
-              <p className="title">Two</p>
-            </div>
-          </div>
-          <div className="tile is-parent">
-            <div className="tile is-child box">
-              <p className="title">Three</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <div className="tile is-ancestor">
-          <div className="tile is-8 is-vertical">
-            {/*This is Column 1 */}
-
-            <div className="tile">
-              {' '}
-              {/*This is a Subtile */}
-              <div className="tile is-vertical is-parent">
-                <div className="tile is-child box">
-                  <p className="title">Vertical...</p>
-                </div>
-                <div className="tile is-child box">
-                  <p className="title">tiles...</p>
-                </div>
-              </div>
-              <div className='tile is-parent'>
-                <div className="tile is-child box">
-                  <p className="title">Middle...</p>
-                </div>             
-              </div>
-
-            </div>
-
-            <div className='tile is-parent'>
-              <div className="tile is-child box">
-                {/*This is Bottom Column 1 */}
-                <p className="title">Wide</p>
-              </div>
-            </div>
-          </div>
-
-          {/*This is Column 2 */}
-          <div className='tile is-parent'>
-            <div className="tile is-child box">
-              <p className="title">Tall...</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
   </Layout>
 )
 

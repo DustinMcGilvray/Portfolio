@@ -1,0 +1,122 @@
+#portfolio-card {
+    height: 77vh;
+    border: solid 5px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+}
+
+.project-card {
+    height: 19vh;
+    background-color: black;
+}
+
+#giphy-api {
+    background-image: url(../images/giftastic_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#word-guess {
+    background-image: url(../images/movie_theater_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#bamazon-cli {
+    background-image: url(../images/bamazon_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#web-scraper {
+    background-image: url(../images/web-scraper-screenshot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#code-burger {
+    background-image: url(../images/code_burger_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#goonie-friend {
+    background-image: url(../images/goonies_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#gpk-trivia {
+    background-image: url(../images/gpk_collage_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#athena-project {
+    background-image: url(../images/athena.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#trading-grounds {
+    background-image: url(../images/trading_grounds.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#react-nyt {
+    background-image: url(../images/nyt_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#rpsls-multiplayer {
+    background-image: url(../images/rpsls_game_logo_sized.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#react-memory {
+    background-image: url(../images/memory_game_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#reeldex-project {
+    background-image: url(../images/reeldex_logo_collaged.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#train-scheduler {
+    background-image: url(../images/background_train_station_collaged.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#voltron-trivia {
+    background-image: url(../images/voltron_background_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#liri-node {
+    background-image:  url(../images/liri_node_app_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

@@ -7,11 +7,12 @@ import './contact.css'
 const Contact = () => (
   <Layout>
     <div id="contact-all" className="card">
-    <div id="word-contact">Contact Me
-    </div>
+      <div id="word-contact">
+        Contact Me
+       </div>
         <ContactForm />
         <ContactRadial />
-      </div>
+    </div>
   </Layout>
 )
 
