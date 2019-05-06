@@ -1,0 +1,96 @@
+#about-card {
+    background-image: url(../images/headshot_casual_bw.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 77vh;
+    border: solid 5px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+}
+
+#word-about {
+    position: absolute;
+    color: rgba(0, 255, 255, 0.363);
+    font-size:10vh; 
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    mix-blend-mode: screen; 
+}
+
+.about-card {
+    height: 19vh;
+    width: 50%;
+    float: right;
+}
+
+.about-card-title-bio {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(244, 243, 250, 0.966);
+    font-size: 15vh; 
+    font-weight: bold;
+}
+
+.about-card-title-craft {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vh; 
+    font-weight: bold;
+    mix-blend-mode: screen; 
+}
+
+.about-card-title-code {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vh; 
+    font-weight: bold;
+    mix-blend-mode: screen; 
+}
+
+.about-card-title-docs {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vh; 
+    font-weight: bold;
+    mix-blend-mode: screen; 
+}
+
+#about-bio {
+    background-image: url(../images/writing_story.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#about-craft {
+    background-image: url(../images/kiln_fire.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#about-tech {
+    background-image: url(../images/eat_sleep_code.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#about-docs {
+    background-image: url(../images/records_file.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

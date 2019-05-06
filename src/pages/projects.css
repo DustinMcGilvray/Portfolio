@@ -7,116 +7,80 @@
 .project-card {
     height: 19vh;
     background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.project-card:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 #giphy-api {
     background-image: url(../images/giftastic_logo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #word-guess {
     background-image: url(../images/movie_theater_logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #bamazon-cli {
     background-image: url(../images/bamazon_logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #web-scraper {
-    background-image: url(../images/web-scraper-screenshot.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/lego-minifigs-on-beam.jpg);
 }
 
 #code-burger {
     background-image: url(../images/code_burger_logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #goonie-friend {
-    background-image: url(../images/goonies_logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/goonies_friend.jpg);
 }
 
 #gpk-trivia {
-    background-image: url(../images/gpk_collage_logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/gpk_card.jpg);
 }
 
 #athena-project {
-    background-image: url(../images/athena.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/clouds_pink_hue.jpg);
 }
 
 #trading-grounds {
     background-image: url(../images/trading_grounds.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #react-nyt {
-    background-image: url(../images/nyt_logo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/nyt_search.jpg);
 }
 
 #rpsls-multiplayer {
     background-image: url(../images/rpsls_game_logo_sized.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
 #react-memory {
-    background-image: url(../images/memory_game_logo.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-image: url(../images/80s_soundtrack.png);
 }
 
 #reeldex-project {
-    background-image: url(../images/reeldex_logo_collaged.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-image: url(../images/background-film.jpg);
 }
 
 #train-scheduler {
-    background-image: url(../images/background_train_station_collaged.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/background_train_station.jpg);
 }
 
 #voltron-trivia {
-    background-image: url(../images/voltron_background_logo.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-image: url(../images/background_voltron_stars.jpg);
 }
 
 #liri-node {
     background-image:  url(../images/liri_node_app_logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }

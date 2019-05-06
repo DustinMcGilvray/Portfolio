@@ -8,7 +8,8 @@ const Portfolio = () => (
       <section>
         <div class="columns is-gapless">
           <div class="column">
-            <div id="giphy-api" className="card project-card" />
+            <div id="giphy-api" className="card project-card">
+            </div>
           </div>
           <div class="column">
             <div id="word-guess" className="card project-card" />
