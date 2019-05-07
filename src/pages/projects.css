@@ -4,83 +4,173 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
 }
 
-.project-card {
-    height: 19vh;
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+/*Hover Effect Terry Start https://github.com/codrops/HoverEffectIdeas*/
+figure {
+    overflow: hidden;
+    height: 19vh;	
 }
 
-.project-card:hover {
-    -webkit-filter: grayscale(0);
-	filter: grayscale(0);
+figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
 }
 
-#giphy-api {
-    background-image: url(../images/giftastic_logo.png);
+figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
-#word-guess {
-    background-image: url(../images/movie_theater_logo.jpg);
+figure figcaption::before,
+figure figcaption::after {
+	pointer-events: none;
 }
 
-#bamazon-cli {
-    background-image: url(../images/bamazon_logo.jpg);
+figure figcaption,
+figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
-#web-scraper {
-    background-image: url(../images/lego-minifigs-on-beam.jpg);
+figure.effect-terry figcaption {
+	padding: 0.1em;
 }
 
-#code-burger {
-    background-image: url(../images/code_burger_logo.jpg);
+figure.effect-terry figcaption::before,
+figure.effect-terry figcaption::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-color: rgb(2, 2, 2);
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
 }
 
-#goonie-friend {
-    background-image: url(../images/goonies_friend.jpg);
+figure.effect-terry figcaption::before {
+	right: 0;
+	bottom: 0;
+	border-width: 0 30px 30px 0;
+	-webkit-transform: translate3d(70px,60px,0);
+	transform: translate3d(70px,60px,0);
 }
 
-#gpk-trivia {
-    background-image: url(../images/gpk_card.jpg);
+figure.effect-terry figcaption::after {
+	top: 0;
+	left: 0;
+	border-width: 5px 0 0 5px;
+	-webkit-transform: translate3d(-15px,-15px,0);
+	transform: translate3d(-15px,-15px,0);
 }
 
-#athena-project {
-    background-image: url(../images/clouds_pink_hue.jpg);
+figure.effect-terry img,
+figure.effect-terry p a {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
 }
 
-#trading-grounds {
-    background-image: url(../images/trading_grounds.jpg);
+figure.effect-terry h2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0.1em 10px;
+    width: 50%;
+    color: white;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
 }
 
-#react-nyt {
-    background-image: url(../images/nyt_search.jpg);
+figure h2 {
+	word-spacing: -0.10em;
+	font-weight: 300;
 }
 
-#rpsls-multiplayer {
-    background-image: url(../images/rpsls_game_logo_sized.jpg);
+figure h2 span {
+	font-weight: 800;
 }
 
-#react-memory {
-    background-image: url(../images/80s_soundtrack.png);
+figure h2,
+figure p {
+	margin: 0;
 }
 
-#reeldex-project {
-    background-image: url(../images/background-film.jpg);
+figure p {
+	letter-spacing: 1px;
 }
 
-#train-scheduler {
-    background-image: url(../images/background_train_station.jpg);
+
+@media screen and (max-width: 920px) {
+	figure.effect-terry h2 {
+		padding: 0.75em 10px;
+		font-size: 120%;
+	}
 }
 
-#voltron-trivia {
-    background-image: url(../images/background_voltron_stars.jpg);
+figure.effect-terry p {
+	float: right;
+	clear: both;
 }
 
-#liri-node {
-    background-image:  url(../images/liri_node_app_logo.jpg);
+figure.effect-terry p a {
+	display: block;
+    margin-bottom: 1em;
+    color: rgba(255, 255, 255, 0.5);
+	opacity: 0;
+	-webkit-transform: translate3d(90px,0,0);
+	transform: translate3d(90px,0,0);
 }
+
+figure.effect-terry p a:hover,
+figure.effect-terry p a:focus {
+	color: #f3cf3f;
+}
+
+figure.effect-terry:hover figcaption::before,
+figure.effect-terry:hover figcaption::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-terry:hover img {
+	opacity: 0.6;
+}
+
+figure.effect-terry:hover h2,
+figure.effect-terry:hover p a {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-terry:hover p a {
+	opacity: 1;
+}
+
+figure.effect-terry:hover p a:first-child {
+	-webkit-transition-delay: 0.025s;
+	transition-delay: 0.025s;
+}
+
+figure.effect-terry:hover p a:nth-child(2) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+figure.effect-terry:hover p a:nth-child(3) {
+	-webkit-transition-delay: 0.075s;
+	transition-delay: 0.075s;
+}
+
+/*Hover Effect Terry End*/
+

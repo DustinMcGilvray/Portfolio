@@ -17,10 +17,18 @@
     mix-blend-mode: screen; 
 }
 
+Link {
+   cursor: pointer;
+}
+
 .about-card {
     height: 19vh;
     width: 50%;
     float: right;
+}
+
+.about-card:hover {
+
 }
 
 .about-card-title-bio {
@@ -29,7 +37,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgba(244, 243, 250, 0.966);
+    color: rgba(0, 0, 255, 0.486);
     font-size: 15vh; 
     font-weight: bold;
 }
@@ -40,9 +48,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: rgba(255, 68, 0, 0.534);
+
     font-size: 15vh; 
     font-weight: bold;
-    mix-blend-mode: screen; 
 }
 
 .about-card-title-code {
@@ -51,9 +60,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: rgba(0, 255, 64, 0.548);
     font-size: 15vh; 
     font-weight: bold;
-    mix-blend-mode: screen; 
 }
 
 .about-card-title-docs {
@@ -62,34 +71,35 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: rgba(175, 4, 18, 0.966);
+
     font-size: 15vh; 
     font-weight: bold;
-    mix-blend-mode: screen; 
 }
 
 #about-bio {
-    background-image: url(../images/writing_story.jpg);
+    background-image: url(../images/writing_story_bw.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 #about-craft {
-    background-image: url(../images/kiln_fire.jpg);
+    background-image: url(../images/kiln_fire_bw.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
-#about-tech {
-    background-image: url(../images/eat_sleep_code.jpg);
+#about-code {
+    background-image: url(../images/eat_sleep_code_bw.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 #about-docs {
-    background-image: url(../images/records_file.jpg);
+    background-image: url(../images/records_file_bw.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
