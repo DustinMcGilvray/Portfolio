@@ -13,7 +13,9 @@ const Portfolio = () => (
             <figure className="card project-card effect-terry">
               <img src={require('../images/giphy_api.gif')} alt="giftastic" />
               <figcaption>
-                <h2>Gif<span>tastic</span></h2>
+                <h2>
+                  Gif<span>tastic</span>
+                </h2>
                 <p>
                   <Tippy
                     content="GitHub"
@@ -31,8 +33,8 @@ const Portfolio = () => (
                       </a>
                     </span>
                   </Tippy>
-                  </p>
-                  <p>
+                </p>
+                <p>
                   <Tippy
                     content="Play"
                     className="Play"
@@ -49,8 +51,8 @@ const Portfolio = () => (
                       </a>
                     </span>
                   </Tippy>
-                  </p>
-                  <p>
+                </p>
+                <p>
                   <Tippy
                     content="Info"
                     className="Info"
@@ -78,72 +80,9 @@ const Portfolio = () => (
                 alt="giftastic"
               />
               <figcaption>
-                <h2>Word<span>Guess</span></h2>
-                <p>
-                <Tippy
-                  content="GitHub"
-                  className="GitHub"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon={['fab', 'github']}
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-                </p>
-                <p>
-                <Tippy
-                  content="Play"
-                  className="Play"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="play-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-                </p>
-                <p>
-                <Tippy
-                  content="Info"
-                  className="Info"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="info-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-              </p>
-              </figcaption>
-            </figure>
-          </div>
-          <div className="column">
-            <figure className="card project-card effect-terry">
-              <img
-                src={require('../images/bamazon_logo.jpg')}
-                alt="giftastic"
-              />
-              <figcaption>
-                <h2>Bamazon<span>CLI</span></h2>
+                <h2>
+                  Word<span>Guess</span>
+                </h2>
                 <p>
                   <Tippy
                     content="GitHub"
@@ -161,8 +100,8 @@ const Portfolio = () => (
                       </a>
                     </span>
                   </Tippy>
-                  </p>
-                  <p>
+                </p>
+                <p>
                   <Tippy
                     content="Play"
                     className="Play"
@@ -179,8 +118,75 @@ const Portfolio = () => (
                       </a>
                     </span>
                   </Tippy>
-                  </p>
-                  <p>
+                </p>
+                <p>
+                  <Tippy
+                    content="Info"
+                    className="Info"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="info-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="column">
+            <figure className="card project-card effect-terry">
+              <img
+                src={require('../images/bamazon_cli.png')}
+                alt="giftastic"
+              />
+              <figcaption>
+                <h2>
+                  Bamazon<span>CLI</span>
+                </h2>
+                <p>
+                  <Tippy
+                    content="GitHub"
+                    className="GitHub"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon={['fab', 'github']}
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
+                <p>
+                  <Tippy
+                    content="Play"
+                    className="Play"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="play-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
+                <p>
                   <Tippy
                     content="Info"
                     className="Info"
@@ -208,74 +214,9 @@ const Portfolio = () => (
                 alt="giftastic"
               />
               <figcaption>
-                <h2>Web<span>scraper</span></h2>
-                <p>
-                <Tippy
-                  content="GitHub"
-                  className="GitHub"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon={['fab', 'github']}
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-                </p>
-                <p>
-                <Tippy
-                  content="Play"
-                  className="Play"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="play-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-                </p>
-                <p>
-                <Tippy
-                  content="Info"
-                  className="Info"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="info-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-              </p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="columns is-gapless">
-          <div className="column">
-            <figure className="card project-card effect-terry">
-              <img src={require('../images/burger.jpg')} alt="giftastic" />
-              <figcaption>
-                <h2>Code<span>Burger</span></h2>
+                <h2>
+                  Web<span>scraper</span>
+                </h2>
                 <p>
                   <Tippy
                     content="GitHub"
@@ -293,8 +234,8 @@ const Portfolio = () => (
                       </a>
                     </span>
                   </Tippy>
-                  </p>
-                  <p>
+                </p>
+                <p>
                   <Tippy
                     content="Play"
                     className="Play"
@@ -311,8 +252,77 @@ const Portfolio = () => (
                       </a>
                     </span>
                   </Tippy>
-                  </p>
-                  <p>
+                </p>
+                <p>
+                  <Tippy
+                    content="Info"
+                    className="Info"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="info-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="columns is-gapless">
+          <div className="column">
+            <figure className="card project-card effect-terry">
+              <img src={require('../images/burger.jpg')} alt="giftastic" />
+              <figcaption>
+                <h2>
+                  Code<span>Burger</span>
+                </h2>
+                <p>
+                  <Tippy
+                    content="GitHub"
+                    className="GitHub"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon={['fab', 'github']}
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
+                <p>
+                  <Tippy
+                    content="Play"
+                    className="Play"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="play-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
+                <p>
                   <Tippy
                     content="Info"
                     className="Info"
@@ -340,134 +350,9 @@ const Portfolio = () => (
                 alt="giftastic"
               />
               <figcaption>
-                <h2>Friend<span>Finder</span></h2>
-                <p>
-                <Tippy
-                  content="GitHub"
-                  className="GitHub"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon={['fab', 'github']}
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-                </p>
-                <p>
-                <Tippy
-                  content="Play"
-                  className="Play"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="play-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-                </p>
-                <p>
-                <Tippy
-                  content="Info"
-                  className="Info"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="info-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-              </p>
-              </figcaption>
-            </figure>
-          </div>
-          <div className="column">
-            <figure className="card project-card effect-terry">
-              <img src={require('../images/gpk_collage.jpg')} alt="giftastic" />
-              <figcaption>
-                <h2>Card<span>Collector</span></h2>
-                <p>
-                <Tippy
-                  content="GitHub"
-                  className="GitHub"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon={['fab', 'github']}
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-                </p>
-                <p>
-                <Tippy
-                  content="Play"
-                  className="Play"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="play-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-                </p>
-                <p>
-                <Tippy
-                  content="Info"
-                  className="Info"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="info-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-              </p>
-              </figcaption>
-            </figure>
-          </div>
-          <div className="column">
-            <figure className="card project-card effect-terry">
-              <img
-                src={require('../images/clouds_pink_hue.jpg')}
-                alt="giftastic"
-              />
-              <figcaption>
-                <h2>Athena</h2>
+                <h2>
+                  Friend<span>Finder</span>
+                </h2>
                 <p>
                   <Tippy
                     content="GitHub"
@@ -485,8 +370,8 @@ const Portfolio = () => (
                       </a>
                     </span>
                   </Tippy>
-                  </p>
-                  <p>
+                </p>
+                <p>
                   <Tippy
                     content="Play"
                     className="Play"
@@ -503,8 +388,137 @@ const Portfolio = () => (
                       </a>
                     </span>
                   </Tippy>
-                  </p>
-                  <p>
+                </p>
+                <p>
+                  <Tippy
+                    content="Info"
+                    className="Info"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="info-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="column">
+            <figure className="card project-card effect-terry">
+              <img src={require('../images/gpk_collage.jpg')} alt="giftastic" />
+              <figcaption>
+                <h2>
+                  Card<span>Collector</span>
+                </h2>
+                <p>
+                  <Tippy
+                    content="GitHub"
+                    className="GitHub"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon={['fab', 'github']}
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
+                <p>
+                  <Tippy
+                    content="Play"
+                    className="Play"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="play-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
+                <p>
+                  <Tippy
+                    content="Info"
+                    className="Info"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="info-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="column">
+            <figure className="card project-card effect-terry">
+              <img
+                src={require('../images/clouds_pink_hue.jpg')}
+                alt="giftastic"
+              />
+              <figcaption>
+                <h2>Athena<span>App</span></h2>
+                <p>
+                  <Tippy
+                    content="GitHub"
+                    className="GitHub"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon={['fab', 'github']}
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
+                <p>
+                  <Tippy
+                    content="Play"
+                    className="Play"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="play-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
+                <p>
                   <Tippy
                     content="Info"
                     className="Info"
@@ -537,7 +551,9 @@ const Portfolio = () => (
                 alt="giftastic"
               />
               <figcaption>
-                <h2>Trading<span>Grounds</span></h2>
+                <h2>
+                  Trading<span>Grounds</span>
+                </h2>
                 <p>
                   <Tippy
                     content="GitHub"
@@ -555,8 +571,8 @@ const Portfolio = () => (
                       </a>
                     </span>
                   </Tippy>
-                  </p>
-                  <p>
+                </p>
+                <p>
                   <Tippy
                     content="Play"
                     className="Play"
@@ -573,8 +589,8 @@ const Portfolio = () => (
                       </a>
                     </span>
                   </Tippy>
-                  </p>
-                  <p>
+                </p>
+                <p>
                   <Tippy
                     content="Info"
                     className="Info"
@@ -599,61 +615,63 @@ const Portfolio = () => (
             <figure className="card project-card effect-terry">
               <img src={require('../images/nyt_search.jpg')} alt="giftastic" />
               <figcaption>
-                <h2>NYT <span>SEARCH</span></h2>
+                <h2>
+                  NYT <span>SEARCH</span>
+                </h2>
                 <p>
-                <Tippy
-                  content="GitHub"
-                  className="GitHub"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon={['fab', 'github']}
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
+                  <Tippy
+                    content="GitHub"
+                    className="GitHub"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon={['fab', 'github']}
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
                 </p>
                 <p>
-                <Tippy
-                  content="Play"
-                  className="Play"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="play-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
+                  <Tippy
+                    content="Play"
+                    className="Play"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="play-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
                 </p>
                 <p>
-                <Tippy
-                  content="Info"
-                  className="Info"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="info-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-              </p>
+                  <Tippy
+                    content="Info"
+                    className="Info"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="info-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
               </figcaption>
             </figure>
           </div>
@@ -664,126 +682,130 @@ const Portfolio = () => (
                 alt="giftastic"
               />
               <figcaption>
-                <h2>RPSLS</h2>
+                <h2>
+                  Multiplayer<span>Game</span>
+                </h2>
                 <p>
-                <Tippy
-                  content="GitHub"
-                  className="GitHub"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon={['fab', 'github']}
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
+                  <Tippy
+                    content="GitHub"
+                    className="GitHub"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon={['fab', 'github']}
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
                 </p>
                 <p>
-                <Tippy
-                  content="Play"
-                  className="Play"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="play-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
+                  <Tippy
+                    content="Play"
+                    className="Play"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="play-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
                 </p>
                 <p>
-                <Tippy
-                  content="Info"
-                  className="Info"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="info-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-              </p>
+                  <Tippy
+                    content="Info"
+                    className="Info"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="info-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
               </figcaption>
             </figure>
           </div>
           <div className="column">
             <figure className="card project-card effect-terry">
               <img
-                src={require('../images/memory_game_logo.jpg')}
+                src={require('../images/cds.jpg')}
                 alt="giftastic"
               />
               <figcaption>
-                <h2>Memory Game</h2>
+                <h2>
+                  Memory<span>Game</span>
+                </h2>
                 <p>
-                <Tippy
-                  content="GitHub"
-                  className="GitHub"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon={['fab', 'github']}
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
+                  <Tippy
+                    content="GitHub"
+                    className="GitHub"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon={['fab', 'github']}
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
                 </p>
                 <p>
-                <Tippy
-                  content="Play"
-                  className="Play"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="play-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
+                  <Tippy
+                    content="Play"
+                    className="Play"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="play-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
                 </p>
                 <p>
-                <Tippy
-                  content="Info"
-                  className="Info"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="info-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-              </p>
+                  <Tippy
+                    content="Info"
+                    className="Info"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="info-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
               </figcaption>
             </figure>
           </div>
@@ -799,61 +821,63 @@ const Portfolio = () => (
                 alt="giftastic"
               />
               <figcaption>
-                <h2>Reeldex</h2>
+                <h2>
+                  Reel<span>dex</span>
+                </h2>
                 <p>
-                <Tippy
-                  content="GitHub"
-                  className="GitHub"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon={['fab', 'github']}
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
+                  <Tippy
+                    content="GitHub"
+                    className="GitHub"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon={['fab', 'github']}
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
                 </p>
                 <p>
-                <Tippy
-                  content="Play"
-                  className="Play"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="play-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
+                  <Tippy
+                    content="Play"
+                    className="Play"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="play-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
                 </p>
                 <p>
-                <Tippy
-                  content="Info"
-                  className="Info"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="info-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-              </p>
+                  <Tippy
+                    content="Info"
+                    className="Info"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="info-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
               </figcaption>
             </figure>
           </div>
@@ -864,61 +888,63 @@ const Portfolio = () => (
                 alt="giftastic"
               />
               <figcaption>
-                <h2>Train Scheduler</h2>
+                <h2>
+                  Train<span>Scheduler</span>
+                </h2>
                 <p>
-                <Tippy
-                  content="GitHub"
-                  className="GitHub"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon={['fab', 'github']}
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
+                  <Tippy
+                    content="GitHub"
+                    className="GitHub"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon={['fab', 'github']}
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
                 </p>
                 <p>
-                <Tippy
-                  content="Play"
-                  className="Play"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="play-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
+                  <Tippy
+                    content="Play"
+                    className="Play"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="play-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
                 </p>
                 <p>
-                <Tippy
-                  content="Info"
-                  className="Info"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="info-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-              </p>
+                  <Tippy
+                    content="Info"
+                    className="Info"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="info-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
               </figcaption>
             </figure>
           </div>
@@ -926,126 +952,130 @@ const Portfolio = () => (
             <figure className="card project-card effect-terry">
               <img src={require('../images/voltron.jpg')} alt="voltron" />
               <figcaption>
-                <h2>Voltron</h2>
+                <h2>
+                  Trivia<span>Game</span>
+                </h2>
                 <p>
-                <Tippy
-                  content="GitHub"
-                  className="GitHub"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon={['fab', 'github']}
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
+                  <Tippy
+                    content="GitHub"
+                    className="GitHub"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon={['fab', 'github']}
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
                 </p>
                 <p>
-                <Tippy
-                  content="Play"
-                  className="Play"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="play-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
+                  <Tippy
+                    content="Play"
+                    className="Play"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="play-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
                 </p>
                 <p>
-                <Tippy
-                  content="Info"
-                  className="Info"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="info-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-              </p>
+                  <Tippy
+                    content="Info"
+                    className="Info"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="info-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
               </figcaption>
             </figure>
           </div>
           <div className="column">
             <figure className="card project-card effect-terry">
               <img
-                src={require('../images/liri_node_app_logo.jpg')}
+                src={require('../images/liri_node.png')}
                 alt="giftastic"
               />
               <figcaption>
-                <h2>Liri Node</h2>
+                <h2>
+                  Liri<span>Node</span>
+                </h2>
                 <p>
-                <Tippy
-                  content="GitHub"
-                  className="GitHub"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon={['fab', 'github']}
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
+                  <Tippy
+                    content="GitHub"
+                    className="GitHub"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon={['fab', 'github']}
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
                 </p>
                 <p>
-                <Tippy
-                  content="Play"
-                  className="Play"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="play-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
+                  <Tippy
+                    content="Play"
+                    className="Play"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="play-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
                 </p>
                 <p>
-                <Tippy
-                  content="Info"
-                  className="Info"
-                  placement="right-end"
-                  arrow="true"
-                >
-                  <span className="icon">
-                    <a href="https://github.com/DustinMcGilvray">
-                      <FontAwesomeIcon
-                        icon="info-circle"
-                        size="sm"
-                        color="white"
-                      />
-                    </a>
-                  </span>
-                </Tippy>
-              </p>
+                  <Tippy
+                    content="Info"
+                    className="Info"
+                    placement="right-end"
+                    arrow="true"
+                  >
+                    <span className="icon">
+                      <a href="https://github.com/DustinMcGilvray">
+                        <FontAwesomeIcon
+                          icon="info-circle"
+                          size="sm"
+                          color="white"
+                        />
+                      </a>
+                    </span>
+                  </Tippy>
+                </p>
               </figcaption>
             </figure>
           </div>

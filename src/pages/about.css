@@ -27,9 +27,70 @@ Link {
     float: right;
 }
 
-.about-card:hover {
-
+/*Hover Effect Start from W3 School 
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slideleft*/
+.container-bio{
+    position: relative;
+    width: 50%;
 }
+
+.container-bio:hover .overlay {
+    width: 100%;
+}
+
+.container-craft{
+    position: relative;
+    width: 50%;
+}
+
+.container-craft:hover .overlay {
+    width: 100%;
+}
+
+.container-code{
+    position: relative;
+    width: 50%;
+}
+
+.container-code:hover .overlay {
+    width: 100%;
+}
+
+.container-docs{
+    position: relative;
+    width: 50%;
+}
+
+.container-docs:hover .overlay {
+    width: 100%;
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+/*Hover Effect End*/
 
 .about-card-title-bio {
     margin: 0;
