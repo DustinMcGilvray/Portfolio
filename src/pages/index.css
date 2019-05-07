@@ -11,7 +11,7 @@
 } */
 
 #landing-card {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.39), rgba(255, 255, 255, 0.39)), url(../images/pottery_hands.jpg), url(../images/computer-keyboard.jpg);
+    background-image: linear-gradient(rgba(19, 18, 18, 0.39), rgba(255, 255, 255, 0.39)), url(../images/pottery_hands.jpg), url(../images/computer-keyboard.jpg);
     background-position: right, left;
     background-size: cover, 50% 100%, 50% 100%;
     background-repeat: no-repeat, no-repeat;
@@ -50,7 +50,7 @@
 #word-code {
     position: absolute;
     right: 0;
-    color: rgb(90, 88, 88);
+    color: rgba(57, 168, 30, 0.486);
     font-size: 27vh; 
     font-weight: bold;
     writing-mode: vertical-lr;

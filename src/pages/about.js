@@ -13,8 +13,8 @@ const AboutMePage = () => (
             <Link to="/bio">
               <div id="about-bio" className="card about-card">
                 <h1 className="about-card-title-bio">BIO</h1>
-                <div class="overlay">
-                  <div class="text">Hello World</div>
+                <div class="overlay-bio">
+                  <div class="text">Who I am and What I do</div>
                 </div>
               </div>
             </Link>
@@ -27,8 +27,8 @@ const AboutMePage = () => (
             <Link to="/craft">
               <div id="about-craft" className="card about-card">
                 <h1 className="about-card-title-craft">CRAFT</h1>
-                <div class="overlay">
-                  <div class="text">Hello World</div>
+                <div class="overlay-craft">
+                  <div class="text">Craft Knowledge</div>
                 </div>
               </div>
             </Link>
@@ -41,8 +41,8 @@ const AboutMePage = () => (
             <Link to="/code">
               <div id="about-code" className="card about-card">
                 <h1 className="about-card-title-code">CODE</h1>
-                <div class="overlay">
-                  <div class="text">Hello World</div>
+                <div class="overlay-code">
+                  <div class="text">All about Code</div>
                 </div>
               </div>
             </Link>
@@ -55,8 +55,8 @@ const AboutMePage = () => (
             <Link to="/docs">
               <div id="about-docs" className="card about-card">
                 <h1 className="about-card-title-docs">DOCS</h1>
-                <div class="overlay">
-                  <div class="text">Hello World</div>
+                <div class="overlay-docs">
+                  <div class="text">Resume, Cover Letter, and More Stuff</div>
                 </div>
               </div>
             </Link>

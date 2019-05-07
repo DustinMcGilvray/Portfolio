@@ -1,5 +1,6 @@
 #contact-all {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.39), rgba(255, 255, 255, 0.39)), url(../images/mail-bw.jpg), url(../images/cell-phone-bw.jpg);
+    mix-blend-mode: screen; 
+    background-image: linear-gradient(rgba(19, 18, 18, 0.39), rgba(255, 255, 255, 0.39)), url(../images/mail-bw.jpg), url(../images/cell-phone-bw.jpg);
     background-position: right, left;
     background-size: cover, 50% 100%, 50% 100%;
     background-repeat: no-repeat, no-repeat;
@@ -12,7 +13,7 @@
 #word-contact {
     position: absolute;
     left: 0;
-    color: rgb(90, 88, 88);
+    color: rgba(0, 255, 255, 0.363);
     font-size: 14vh; 
     font-weight: bold;
     float: left;

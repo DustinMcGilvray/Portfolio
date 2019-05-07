@@ -34,7 +34,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
     width: 50%;
 }
 
-.container-bio:hover .overlay {
+.container-bio:hover .overlay-bio{
     width: 100%;
 }
 
@@ -43,7 +43,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
     width: 50%;
 }
 
-.container-craft:hover .overlay {
+.container-craft:hover .overlay-craft {
     width: 100%;
 }
 
@@ -52,7 +52,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
     width: 50%;
 }
 
-.container-code:hover .overlay {
+.container-code:hover .overlay-code {
     width: 100%;
 }
 
@@ -61,17 +61,53 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
     width: 50%;
 }
 
-.container-docs:hover .overlay {
+.container-docs:hover .overlay-docs {
     width: 100%;
 }
 
 
-.overlay {
+.overlay-bio {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: rgba(12, 0, 186, 0.425);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.overlay-craft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(207, 122, 9, 0.548);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.overlay-code {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(76, 240, 11, 0.555);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.overlay-docs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(168, 28, 3, 0.507);
     overflow: hidden;
     width: 0;
     height: 100%;

@@ -5,3 +5,11 @@
     left: 50%;
     transform: translate(-125%, -50%);
 }
+
+.fMdhuL {
+    background: none;
+}
+
+.fMdhuL:hover {
+    background: rgba(82, 82, 97, 0.507);
+}
