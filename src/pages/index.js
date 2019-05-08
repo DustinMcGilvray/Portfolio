@@ -5,7 +5,9 @@ import './index.css'
 const IndexPage = () => (
   <Layout>
     <div id="landing-card" className="card">
+    <div>
       <div id="word-craft">CRAFT</div>
+    </div>
       <div
         id="name-title"
         className="has-text-white has-text-white-bold is-uppercase"

@@ -1,1 +1,23 @@
+.active-link {
+    background-color: rgba(35, 155, 235, 0.507);
+}
 
+.active-link .fa-brain {
+    color: white;
+}
+
+.active-link .fa-th-large {
+    color: white;
+}
+
+.active-link .fa-newspaper {
+    color: white;
+}
+
+.active-link .fa-briefcase {
+    color: white;
+}
+
+.active-link .fa-address-card {
+    color: white;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Tippy from '@tippy.js/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -35,22 +36,24 @@ const Portfolio = () => (
                   </Tippy>
                 </p>
                 <p>
-                  <Tippy
-                    content="Play"
-                    className="Play"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="play-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
+                  <Link to='/giftastic-play'>
+                    <Tippy
+                      content="Play"
+                      className="Play"
+                      placement="right-end"
+                      arrow="true"
+                    >
+                      <span className="icon">
+                        <a href="https://github.com/DustinMcGilvray">
+                          <FontAwesomeIcon
+                            icon="play-circle"
+                            size="md"
+                            color="white"
+                          />
+                        </a>
+                      </span>
+                    </Tippy>
+                  </Link>
                 </p>
                 <p>
                   <Tippy

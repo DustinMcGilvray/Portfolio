@@ -126,17 +126,17 @@ figure.effect-terry p a {
 
 figure.effect-terry .fa-github:hover,
 figure.effect-terry .fa-github:focus {
-	color: #f3cf3f;
+	color: #e3f306;
 }
 
 figure.effect-terry .fa-play-circle:hover,
 figure.effect-terry .fa-play-circle:focus {
-	color: #f3cf3f;
+	color: #e3f306;
 }
 
 figure.effect-terry .fa-info-circle:hover,
 figure.effect-terry .fa-info-circle:focus {
-	color: #f3cf3f;
+	color: #e3f306;
 }
 
 figure.effect-terry:hover figcaption::before,

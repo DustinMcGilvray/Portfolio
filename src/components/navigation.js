@@ -8,7 +8,7 @@ const Nav = () => (
   <ul>
     <TippyGroup delay={1000}>
       <li>
-        <Link to="/dashboard">
+        <Link to="/dashboard" activeClassName="active-link">
           <Tippy
             content="Dashboard"
             className="Dashboard"
@@ -22,7 +22,7 @@ const Nav = () => (
         </Link>
       </li>
       <li>
-        <Link to="/news">
+        <Link to="/news" activeClassName="active-link">
           <Tippy
             content="News"
             className="News"
@@ -36,7 +36,7 @@ const Nav = () => (
         </Link>
       </li>
       <li>
-        <Link to="/projects">
+        <Link to="/projects" activeClassName="active-link">
           <Tippy
             content="Projects"
             className="Projects"
@@ -50,7 +50,7 @@ const Nav = () => (
         </Link>
       </li>
       <li>
-        <Link to="/about">
+        <Link to="/about" activeClassName="active-link">
           <Tippy
             content="About"
             className="About"
@@ -64,7 +64,7 @@ const Nav = () => (
         </Link>
       </li>
       <li>
-        <Link to="/contact">
+        <Link to="/contact" activeClassName="active-link">
           <Tippy
             content="Contact"
             className="Contact"
