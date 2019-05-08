@@ -110,20 +110,13 @@ figure p {
 	letter-spacing: 1px;
 }
 
-@media screen and (max-width: 920px) {
-	figure.effect-terry h2 {
-		padding: 0.75em 10px;
-		font-size: 120%;
-	}
-}
-
 figure.effect-terry p {
 	float: right;
 	clear: both;
 }
 
 figure.effect-terry p a {
-	display: block;
+    display: block;
     margin-bottom: 1em;
     color: rgba(255, 255, 255, 0.5);
 	opacity: 0;
@@ -165,21 +158,12 @@ figure.effect-terry:hover p a {
 figure.effect-terry:hover p a {
 	opacity: 1;
 }
-
-figure.effect-terry:hover p a:first-child {
-	-webkit-transition-delay: 0.025s;
-	transition-delay: 0.025s;
-}
-
-figure.effect-terry:hover p a:nth-child(2) {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
-}
-
-figure.effect-terry:hover p a:nth-child(3) {
-	-webkit-transition-delay: 0.075s;
-	transition-delay: 0.075s;
-}
-
 /*Hover Effect Terry End*/
 
+/*Media Queries for Mobile Responsiveness*/
+@media screen and (max-width: 920px) {
+	figure.effect-terry h2 {
+		padding: 0.75em 10px;
+		font-size: 120%;
+	}
+}

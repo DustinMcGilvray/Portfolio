@@ -24,7 +24,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/Giftastic" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -91,7 +91,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/80s-Movie-Title-Guessing-Game" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -158,7 +158,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/Bamazon-App" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -225,7 +225,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/Web-Scraper" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -281,7 +281,7 @@ const Portfolio = () => (
         <div className="columns is-gapless">
           <div className="column">
             <figure className="card project-card effect-terry">
-              <img src={require('../images/burger.jpg')} alt="giftastic" />
+              <img src={require('../images/burger.png')} alt="giftastic" />
               <figcaption>
                 <h2>
                   Code<span>Burger</span>
@@ -294,7 +294,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/Code-Burger" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -361,7 +361,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/Goonies-Friend-Finder" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -425,7 +425,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/Garbage-Pail-Kids-Card-Collector-Game" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -490,7 +490,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/Athena" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -562,7 +562,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/Trading-Grounds" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -626,7 +626,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/React-NYT-Search" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -693,7 +693,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/RPS-Multiplyer" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -760,7 +760,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/Clicky-Game" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -832,7 +832,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/Reeldex" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -884,7 +884,7 @@ const Portfolio = () => (
           <div className="column">
             <figure className="card project-card effect-terry">
               <img
-                src={require('../images/background_train_station.jpg')}
+                src={require('../images/train_scheduler.png')}
                 alt="giftastic"
               />
               <figcaption>
@@ -899,7 +899,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/Train-Scheduler" target="__blank">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -963,7 +963,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/Voltron-Trivia-Game" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
@@ -1030,7 +1030,7 @@ const Portfolio = () => (
                     arrow="true"
                   >
                     <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
+                      <a href="https://github.com/DustinMcGilvray/liri-node-app" target='__blank'>
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
                           size="md"
