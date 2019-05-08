@@ -27,7 +27,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -45,7 +45,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -63,7 +63,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -94,7 +94,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -112,7 +112,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -130,7 +130,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -161,7 +161,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -179,7 +179,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -197,7 +197,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -228,7 +228,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -246,7 +246,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -264,7 +264,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -297,7 +297,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -315,7 +315,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -333,7 +333,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -364,7 +364,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -382,7 +382,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -400,7 +400,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -428,7 +428,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -446,7 +446,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -464,7 +464,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -493,7 +493,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -511,7 +511,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -529,7 +529,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -565,7 +565,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -583,7 +583,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -601,7 +601,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -629,7 +629,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -647,7 +647,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -665,7 +665,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -696,7 +696,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -714,7 +714,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -732,7 +732,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -763,7 +763,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -781,7 +781,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -799,7 +799,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -835,7 +835,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -853,7 +853,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -871,7 +871,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -902,7 +902,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -920,7 +920,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -938,7 +938,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -966,7 +966,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -984,7 +984,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -1002,7 +1002,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -1033,7 +1033,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon={['fab', 'github']}
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -1051,7 +1051,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="play-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>
@@ -1069,7 +1069,7 @@ const Portfolio = () => (
                       <a href="https://github.com/DustinMcGilvray">
                         <FontAwesomeIcon
                           icon="info-circle"
-                          size="sm"
+                          size="md"
                           color="white"
                         />
                       </a>

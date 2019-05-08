@@ -131,8 +131,18 @@ figure.effect-terry p a {
 	transform: translate3d(90px,0,0);
 }
 
-figure.effect-terry p a:hover,
-figure.effect-terry p a:focus {
+figure.effect-terry .fa-github:hover,
+figure.effect-terry .fa-github:focus {
+	color: #f3cf3f;
+}
+
+figure.effect-terry .fa-play-circle:hover,
+figure.effect-terry .fa-play-circle:focus {
+	color: #f3cf3f;
+}
+
+figure.effect-terry .fa-info-circle:hover,
+figure.effect-terry .fa-info-circle:focus {
 	color: #f3cf3f;
 }
 
