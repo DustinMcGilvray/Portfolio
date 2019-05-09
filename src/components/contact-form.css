@@ -1,18 +1,12 @@
+#contact-form {
+    width: 100%;
+}
+
 #form-card {
-    width: 25vw;
-    height: 45vh;
-    float: right;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(25%, -50%);
-    margin-right: 8%;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
+    margin-top: 23vh;
+    padding: 15px;
 }
 
 #submit-form {
-    cursor: default;
+    cursor: pointer;
 }
