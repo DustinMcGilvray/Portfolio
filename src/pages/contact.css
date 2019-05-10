@@ -4,12 +4,12 @@
     background-size: cover, 50% 100%, 50% 100%;
     background-repeat: no-repeat, no-repeat; */
     /* background-color: black; */
-    height: 75.1vh;
+    height: 73vh;
     border: solid 5px black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
 }
 
-.icon {
+.contact-icon {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -18,10 +18,19 @@
 }
 
 .icon-card {
-    height: 37vh;
-    background-color: lightgray;
+    height: 12vh;
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
+#right-side {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 /* #word-contact {

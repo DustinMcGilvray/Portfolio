@@ -3,8 +3,10 @@
 }
 
 #form-card {
-    margin-top: 23vh;
     padding: 15px;
+    background-color: slategrey;
+    width: 40vw;
+    height: 40vh;
 }
 
 #submit-form {
