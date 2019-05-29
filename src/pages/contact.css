@@ -18,18 +18,42 @@
 }
 
 .icon-card {
-    height: 12vh;
+    height: 10.3vh;
     background: transparent;
     border: none;
     box-shadow: none;
 }
 
+#initials {
+    font-family: 'Playfair Display', serif;
+    color: white;
+}
+
+#left-side {
+    background-color: rgb(0, 0, 0);
+}
+
 #right-side {
+ background-image:url(../images/hello_phone_bw_no_text.png);
+ background-size: cover;
+ background-position: center center;
+ background-repeat: no-repeat;
+ margin: 0;
+ padding: 0;
+}
+
+#right-content {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#phone-text {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
 }
 
 

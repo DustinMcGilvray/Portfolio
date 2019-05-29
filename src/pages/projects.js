@@ -44,13 +44,11 @@ const Portfolio = () => (
                       arrow="true"
                     >
                       <span className="icon">
-                        <a href="https://github.com/DustinMcGilvray">
                           <FontAwesomeIcon
                             icon="play-circle"
                             size="md"
-                            color="white"
-                          />
-                        </a>
+                            color="white">
+                          </FontAwesomeIcon>
                       </span>
                     </Tippy>
                   </Link>

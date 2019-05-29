@@ -10,7 +10,7 @@
 #word-about {
     position: absolute;
     color: rgba(0, 255, 255, 0.363);
-    font-size:10vh; 
+    font-size:14em; 
     font-weight: bold;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
@@ -34,7 +34,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
     width: 50%;
 }
 
-.container-bio:hover .overlay-bio{
+#about-bio:hover .overlay-bio{
     width: 100%;
 }
 
@@ -43,7 +43,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
     width: 50%;
 }
 
-.container-craft:hover .overlay-craft {
+#about-craft:hover .overlay-craft {
     width: 100%;
 }
 
@@ -52,7 +52,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
     width: 50%;
 }
 
-.container-code:hover .overlay-code {
+#about-code:hover .overlay-code {
     width: 100%;
 }
 
@@ -61,10 +61,9 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
     width: 50%;
 }
 
-.container-docs:hover .overlay-docs {
+#about-docs:hover .overlay-docs {
     width: 100%;
 }
-
 
 .overlay-bio {
     position: absolute;
@@ -133,8 +132,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgba(253, 248, 246, 0.534);
-    font-size: 15vh; 
+    color: rgba(246, 250, 253, 0.534);
+    font-size: 8em; 
     font-weight: bold;
 }
 
@@ -145,7 +144,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgba(253, 248, 246, 0.534);
-    font-size: 15vh; 
+    font-size: 8em; 
     font-weight: bold;
 }
 
@@ -156,7 +155,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgba(253, 248, 246, 0.534);
-    font-size: 15vh; 
+    font-size: 8em; 
     font-weight: bold;
 }
 
@@ -167,8 +166,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgba(253, 248, 246, 0.534);
-
-    font-size: 15vh; 
+    font-size: 8em; 
     font-weight: bold;
 }
 

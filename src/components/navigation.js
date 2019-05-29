@@ -22,20 +22,6 @@ const Nav = () => (
         </Link>
       </li>
       <li>
-        <Link to="/news" activeClassName="active-link">
-          <Tippy
-            content="News"
-            className="News"
-            placement="right-end"
-            arrow="true"
-          >
-            <span className="icon">
-              <FontAwesomeIcon icon="newspaper" size="lg" color="black"/>
-            </span>
-          </Tippy>
-        </Link>
-      </li>
-      <li>
         <Link to="/projects" activeClassName="active-link">
           <Tippy
             content="Projects"

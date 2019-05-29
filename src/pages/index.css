@@ -28,33 +28,33 @@
     transform: translate(-50%, -50%);
     border: solid 0.5px white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.747), 0 6px 20px 0 rgba(0, 0, 0, 0.747);
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
     font-family: 'Playfair Display';
-    font-size: 3vw;
+    font-size: 3em;
+    cursor: default;
 }
 
 #word-craft {
     position: absolute;
     left: 0;
     color: rgba(0, 255, 255, 0.363);
-    font-size: 23vh; 
+    font-size: 12.5em; 
     font-weight: bold;
     float: left;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     mix-blend-mode: screen; 
+    cursor: default;
 }
 
 #word-code {
     position: absolute;
     right: 0;
     color: rgba(57, 168, 30, 0.486);
-    font-size: 27vh; 
+    font-size: 14.5em; 
     font-weight: bold;
     writing-mode: vertical-lr;
     mix-blend-mode: screen; 
+    cursor: default;
 }
 
