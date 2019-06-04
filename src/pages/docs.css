@@ -1,12 +1,19 @@
 #docs-card {
     height: 76vh;
-    background-color: lightgray;
+	background-image: url("../images/harddrive_closeup.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
     border: solid 5px black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
 }
 
 .document-card {
-    height: 25vh;
+	height: 25vh;
+}
+
+#doc-top-image {
+	background-position: top;
 }
 
 /*Hover Effect*/
@@ -15,7 +22,6 @@ figure {
 	position: relative;
 	overflow: hidden;
 	min-width: 320px;
-	background: #020202;
 	text-align: center;
 	cursor: pointer;
 }
@@ -79,8 +85,8 @@ figure p {
 }
 
 figure.effect-oscar {
-	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
-	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+	/* background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%); */
+	/* background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%); */
 }
 
 figure.effect-oscar img {
@@ -91,7 +97,7 @@ figure.effect-oscar img {
 
 figure.effect-oscar figcaption {
     padding: 3em;
-	background-color: rgba(58,52,42,0.7);
+	background-color: rgba(161, 159, 159, 0.349);
 	-webkit-transition: background-color 0.35s;
 	transition: background-color 0.35s;
 }

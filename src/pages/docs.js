@@ -11,7 +11,6 @@ const MyDocs = () => (
         <div className="columns is-gapless">
           <div className="column container-resume-pdf">
             <figure className="document-card effect-oscar">
-              <img src={require('../images/file_vault_bw.png')} alt="" />
               <figcaption>
                 <h2>
                   PDF<span>Resume</span>
@@ -29,7 +28,6 @@ const MyDocs = () => (
         <div className="columns is-gapless">
           <div className="column container-resume-npm">
             <figure className="document-card effect-oscar">
-              <img src={require('../images/file_vault_bw.png')} alt="" />
               <figcaption>
                 <h2>
                   NPM<span>Resume</span>
@@ -47,7 +45,6 @@ const MyDocs = () => (
         <div className="columns is-gapless">
           <div className="column container-coverletter-pdf">
             <figure className="document-card effect-oscar">
-              <img src={require('../images/file_vault_bw.png')} alt="" />
               <figcaption>
                 <h2>
                   PDF<span>Cover Letter</span>
