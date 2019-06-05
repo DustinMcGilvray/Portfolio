@@ -11,7 +11,7 @@ const Portfolio = () => (
       <section>
         <div className="columns is-gapless">
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img src={require('../images/giphy_api.gif')} alt="giftastic" />
               <figcaption>
                 <h2>
@@ -75,7 +75,7 @@ const Portfolio = () => (
             </figure>
           </div>
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img
                 src={require('../images/movie_theater_logo.jpg')}
                 alt="giftastic"
@@ -142,7 +142,7 @@ const Portfolio = () => (
             </figure>
           </div>
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img
                 src={require('../images/bamazon_cli.png')}
                 alt="giftastic"
@@ -209,7 +209,7 @@ const Portfolio = () => (
             </figure>
           </div>
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img
                 src={require('../images/lego-minifigs-on-beam.jpg')}
                 alt="giftastic"
@@ -281,7 +281,7 @@ const Portfolio = () => (
       <section>
         <div className="columns is-gapless">
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img src={require('../images/burger.png')} alt="giftastic" />
               <figcaption>
                 <h2>
@@ -345,7 +345,7 @@ const Portfolio = () => (
             </figure>
           </div>
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img
                 src={require('../images/goonies_friend.jpg')}
                 alt="giftastic"
@@ -412,7 +412,7 @@ const Portfolio = () => (
             </figure>
           </div>
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img src={require('../images/gpk_collage.jpg')} alt="giftastic" />
               <figcaption>
                 <h2>
@@ -476,7 +476,7 @@ const Portfolio = () => (
             </figure>
           </div>
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img
                 src={require('../images/clouds_pink_hue.jpg')}
                 alt="giftastic"
@@ -546,7 +546,7 @@ const Portfolio = () => (
       <section>
         <div className="columns is-gapless">
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img
                 src={require('../images/trading_grounds.jpg')}
                 alt="giftastic"
@@ -613,7 +613,7 @@ const Portfolio = () => (
             </figure>
           </div>
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img src={require('../images/nyt_search.jpg')} alt="giftastic" />
               <figcaption>
                 <h2>
@@ -677,7 +677,7 @@ const Portfolio = () => (
             </figure>
           </div>
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img
                 src={require('../images/rpsls_game_logo_sized.jpg')}
                 alt="giftastic"
@@ -744,7 +744,7 @@ const Portfolio = () => (
             </figure>
           </div>
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img
                 src={require('../images/cds.jpg')}
                 alt="giftastic"
@@ -816,7 +816,7 @@ const Portfolio = () => (
       <section>
         <div className="columns is-gapless">
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img
                 src={require('../images/background-film.jpg')}
                 alt="giftastic"
@@ -883,7 +883,7 @@ const Portfolio = () => (
             </figure>
           </div>
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img
                 src={require('../images/train_scheduler.png')}
                 alt="giftastic"
@@ -950,7 +950,7 @@ const Portfolio = () => (
             </figure>
           </div>
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img src={require('../images/voltron.jpg')} alt="voltron" />
               <figcaption>
                 <h2>
@@ -1014,7 +1014,7 @@ const Portfolio = () => (
             </figure>
           </div>
           <div className="column">
-            <figure className="card project-card effect-terry">
+            <figure className="card effect-terry">
               <img
                 src={require('../images/liri_node.png')}
                 alt="giftastic"

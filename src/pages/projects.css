@@ -121,7 +121,6 @@ figure.effect-terry p {
 
 figure.effect-terry p a{
     display: block;
-    /* margin-bottom: 1em; */
     color: rgba(255, 255, 255, 0.5);
 	opacity: 0;
 	-webkit-transform: translate3d(90px,0,0);

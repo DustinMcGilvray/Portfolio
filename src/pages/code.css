@@ -1,6 +1,118 @@
 #code-card {
-    height: 75vh;
-    background-color: lightgray;
+    height: 73vh;
     border: solid 5px black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+    /* background-image: url(../images/code_bw.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; */
+}
+
+.logo-card {
+    position: relative;
+    width: 100%;
+    height: 12vh;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.skill-label {
+    position: absolute;
+    color: #0a0a0a;
+    width: 100%;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    font-weight: bold; 
+    writing-mode: vertical-lr;
+}
+
+.logo-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: red;
+}
+
+.logo-card:hover .logo-overlay{
+    opacity: 1;
+}
+
+.skill-graph {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#html-skill {
+    background-image: url(../images/logo/html_logo.png);
+}
+
+#css-skill {
+    background-image: url(../images/logo/css_logo.png);
+}
+
+#javascript-skill {
+    background-image: url(../images/logo/js_logo.png);
+}
+
+#jquery-skill {
+    background-image: url(../images/logo/jquery_logo.png);
+}
+
+#node-skill {
+    background-image: url(../images/logo/nodejs.png);
+    background-size: 40%;
+}
+
+#ajax-skill {
+    background-image: url(../images/logo/ajax_logo.png);
+    background-size: 33%;
+}
+
+#rest-skill {
+    background-image: url(../images/logo/rest_api_logo.png);
+}
+
+#postman-skill {
+    background-image: url(../images/logo/postman_logo_no_text.png);
+}
+
+#swagger-skill {
+    background-image: url(../images/logo/swagger-logo.png);
+}
+#mysql-skill {
+    background-image: url(../images/logo/mysql_workbench_icon.png);
+}
+
+#sequelize-skill {
+    background-image: url(../images/logo/sequelize_icon.png);
+}
+
+#mongodb-skill {
+    background-image: url(../images/logo/mongodb_leaf_logo.png)
+}
+
+#react-skill {
+    background-image: url(../images/logo/react_logo_black.png)
+}
+
+#router-skill {
+    background-image: url(../images/logo/react_router_logo_black.png)
+}
+
+#es6-skill {
+    background-image: url(../images/logo/es6_logo.png);
 }

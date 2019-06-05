@@ -13,7 +13,9 @@
     font-size:14em; 
     font-weight: bold;
     writing-mode: vertical-lr;
-    transform: rotate(180deg);
+    top: 50%;
+    left: 50%;
+    transform: translate(-220%, -50%);
     mix-blend-mode: screen; 
 }
 
