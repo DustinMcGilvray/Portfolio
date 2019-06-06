@@ -1,12 +1,13 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Gauge from '../components/gauges'
 import './code.css'
 
 const MyCode = () => (
   <Layout>
     <div id="code-card" className="card">
       <div className="columns is-gapless">
-        <div className="column">
+        <div id="summary-side" className="column">
           <h1>Code Summary</h1>
           <p>Place some verbage here about coding and stuff.</p>
         </div>
@@ -19,7 +20,10 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>HTML5</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <div className="skill-graph">
+                      <Gauge>
+                      </Gauge>
+                    </div>
                   </div>
                 </div>
               </div>

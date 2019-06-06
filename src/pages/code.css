@@ -33,28 +33,12 @@
     background-color: black;
 }
 
-.color-red {
-    background-color: rgba(255, 0, 0, 0.418);
-}
-
-.color-blue {
-    background-color: blue;
-}
-
-.color-white {
-    background-color: white;
-}
-
-.color-green {
-    background-color: green;
-}
-
-.color-orange {
-    background-color: orange;
-}
-
-.color-yellow {
-    background-color: yellow;
+#summary-side {
+    background-image: url(../images/computer-keyboard_bw.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: greenyellow;  
 }
 
 .logo-overlay {
@@ -78,7 +62,7 @@
     color: white;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
@@ -204,7 +188,7 @@
 }
 
 #styled-components-skill {
-    background-image: url(../images/logo/styled-components.png);
+    background-image: url(../images/logo/styled-components_colored.png);
     background-size: 50%;
 }
 
