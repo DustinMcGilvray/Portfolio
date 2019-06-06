@@ -1,5 +1,5 @@
 #code-card {
-    height: 73vh;
+    height: 78vh;
     border: solid 5px black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
     /* background-image: url(../images/code_bw.png);
@@ -11,8 +11,8 @@
 .logo-card {
     position: relative;
     width: 100%;
-    height: 12vh;
-    background-size: 45%;
+    height: 11vh;
+    background-size: 35%;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -27,6 +27,34 @@
     transform: translate(-60%, -50%);
     font-weight: bold; 
     writing-mode: vertical-lr;
+}
+
+#skills-side {
+    background-color: black;
+}
+
+.color-red {
+    background-color: rgba(255, 0, 0, 0.418);
+}
+
+.color-blue {
+    background-color: blue;
+}
+
+.color-white {
+    background-color: white;
+}
+
+.color-green {
+    background-color: green;
+}
+
+.color-orange {
+    background-color: orange;
+}
+
+.color-yellow {
+    background-color: yellow;
 }
 
 .logo-overlay {
@@ -68,6 +96,14 @@
     background-image: url(../images/logo/js_logo.png);
 }
 
+#bootstrap-skill {
+    background-image: url(../images/logo/bootstrap_icon_2.png);
+}
+
+#firebase-skill {
+    background-image: url(../images/logo/firebase_icon.png);
+}
+
 #jquery-skill {
     background-image: url(../images/logo/jquery_logo.png);
 }
@@ -93,6 +129,15 @@
 #swagger-skill {
     background-image: url(../images/logo/swagger-logo.png);
 }
+
+#heroku-skill {
+    background-image: url(../images/logo/heroku_icon.png);
+}
+
+#materialize-skill {
+    background-image: url(../images/logo/materialize_logo.png);
+}
+
 #mysql-skill {
     background-image: url(../images/logo/mysql_workbench_icon.png);
 }
@@ -102,17 +147,83 @@
 }
 
 #mongodb-skill {
-    background-image: url(../images/logo/mongodb_leaf_logo.png)
+    background-image: url(../images/logo/mongodb_leaf_logo.png);
+}
+
+#mocha-skill {
+    background-image: url(../images/logo/mocha_logo.png);
+}
+
+#chai-skill {
+    background-image: url(../images/logo/chai_logo.png);
 }
 
 #react-skill {
-    background-image: url(../images/logo/react_logo_black.png)
+    background-image: url(../images/logo/react_icon.png);
 }
 
 #router-skill {
-    background-image: url(../images/logo/react_router_logo_black.png)
+    background-image: url(../images/logo/react_router_logo.png);
 }
 
 #es6-skill {
     background-image: url(../images/logo/es6_logo.png);
+}
+
+#react-materialize-skill {
+    background-image: url(../images/logo/react_materialize_logo.png);
+}
+
+#bulma-skill {
+    background-image: url(../images/logo/bulma_logo.png);
+}
+
+
+#gatsby-skill {
+    background-image: url(../images/logo/gatsby_js.png)
+}
+
+#graphql-skill {
+    background-image: url(../images/logo/graphql_logo.png)
+}
+
+#contentful-skill {
+    background-image: url(../images/logo/contentful_logo.png);
+}
+
+#git-skill {
+    background-image: url(../images/logo/git_logo.png);
+}
+
+#github-skill {
+    background-image: url(../images/logo/GitHub-Mark-Light-120px-plus.png);
+}
+
+#gitlab-skill {
+    background-image: url(../images/logo/gitlab_logo.png);
+}
+
+#styled-components-skill {
+    background-image: url(../images/logo/styled-components.png);
+    background-size: 50%;
+}
+
+#netlify-skill {
+    background-image: url(../images/logo/netlify_logo.png);
+}
+
+#express-skill {
+    background-image: url(../images/logo/express_logo_white.png);
+}
+
+#handlebars-skill {
+    background-image: url(../images/logo/handlebars_logo_red.png);
+}
+
+#vscode-skill {
+    background-image: url(../images/logo/vs_code_logo.png);
+}
+
+#terminal-skill {
+    background-image: url(../images/logo/terminal_logo_white.png);
 }
