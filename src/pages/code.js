@@ -10,6 +10,7 @@ const MyCode = () => (
         <div id="summary-side" className="column">
           <h1>Code Summary</h1>
           <p>Place some verbage here about coding and stuff.</p>
+          
         </div>
         <div id="skills-side" className="column">
           <section>
@@ -20,10 +21,7 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>HTML5</div>
                     </div>
-                    <div className="skill-graph">
-                      <Gauge>
-                      </Gauge>
-                    </div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
@@ -34,7 +32,7 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>CSS3</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
@@ -44,30 +42,30 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>JavaScript</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="2" />
                   </div>
                 </div>
               </div>
               <div className="column">
-              <div id="bootstrap-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>Bootstrap</div>
+                <div id="bootstrap-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>Bootstrap</div>
+                    </div>
+                    <Gauge number="3" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
-            <div className="column">
-              <div id="firebase-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>Firebase</div>
+              <div className="column">
+                <div id="firebase-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>Firebase</div>
+                    </div>
+                    <Gauge number="3" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
             </div>
           </section>
 
@@ -79,7 +77,7 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>jQuery</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
@@ -89,7 +87,7 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>AJAX</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
@@ -99,30 +97,30 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>Node.js</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
               <div className="column">
-              <div id="express-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>Express</div>
+                <div id="express-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>Express</div>
+                    </div>
+                    <Gauge number="3" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
-            <div className="column">
-              <div id="handlebars-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>Handlebars</div>
+              <div className="column">
+                <div id="handlebars-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>Handlebars</div>
+                    </div>
+                    <Gauge number="3" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
             </div>
           </section>
 
@@ -134,7 +132,7 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>API</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
@@ -144,40 +142,40 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>Postman</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
               <div className="column">
-              <div id="swagger-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>Swagger.io</div>
+                <div id="swagger-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>Swagger.io</div>
+                    </div>
+                    <Gauge number="3" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
               <div className="column">
-              <div id="heroku-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>Heroku</div>
+                <div id="heroku-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>Heroku</div>
+                    </div>
+                    <Gauge number="3" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
-            <div className="column">
-              <div id="materialize-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>Materialize</div>
+              <div className="column">
+                <div id="materialize-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>Materialize</div>
+                    </div>
+                    <Gauge number="4" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
             </div>
           </section>
 
@@ -189,7 +187,7 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>mySQL</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
@@ -199,7 +197,7 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>Sequelize</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
@@ -209,30 +207,30 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>MongoDB</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
               <div className="column">
-              <div id="mocha-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>Mocha</div>
+                <div id="mocha-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>Mocha</div>
+                    </div>
+                    <Gauge number="2" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
-            <div className="column">
-              <div id="chai-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>Chai</div>
+              <div className="column">
+                <div id="chai-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>Chai</div>
+                    </div>
+                    <Gauge number="2" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
             </div>
           </section>
 
@@ -244,7 +242,7 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>React</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
@@ -254,7 +252,7 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>React Router</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
@@ -264,30 +262,30 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>ES6</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
               <div className="column">
-              <div id="react-materialize-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>React Materialize</div>
+                <div id="react-materialize-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>React Materialize</div>
+                    </div>
+                    <Gauge number="4" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
-            <div className="column">
-              <div id="bulma-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>Bulma</div>
+              <div className="column">
+                <div id="bulma-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>Bulma</div>
+                    </div>
+                    <Gauge number="4" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
             </div>
           </section>
 
@@ -299,7 +297,7 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>Gatsby.js</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
@@ -309,7 +307,7 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>GraphQL</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
@@ -319,30 +317,30 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>Contentful</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="1" />
                   </div>
                 </div>
               </div>
               <div className="column">
-              <div id="styled-components-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>Styled Components</div>
+                <div id="styled-components-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>Styled Components</div>
+                    </div>
+                    <Gauge number="2" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
-            <div className="column">
-              <div id="netlify-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>Netlify</div>
+              <div className="column">
+                <div id="netlify-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>Netlify</div>
+                    </div>
+                    <Gauge number="1" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
             </div>
           </section>
 
@@ -354,7 +352,7 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>Git</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="3" />
                   </div>
                 </div>
               </div>
@@ -364,43 +362,42 @@ const MyCode = () => (
                     <div class="skill-label">
                       <div>GitHub</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="4" />
                   </div>
                 </div>
               </div>
               <div className="column">
-              <div id="gitlab-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>GitLab</div>
+                <div id="gitlab-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>GitLab</div>
+                    </div>
+                    <Gauge number="3" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
-            <div className="column">
-              <div id="vscode-skill" className="logo-card">
-                <div className="logo-overlay">
-                  <div class="skill-label">
-                    <div>VS Code</div>
+              <div className="column">
+                <div id="vscode-skill" className="logo-card">
+                  <div className="logo-overlay">
+                    <div class="skill-label">
+                      <div>VS Code</div>
+                    </div>
+                    <Gauge number="4" />
                   </div>
-                  <div className="skill-graph">Skill Level Graph</div>
                 </div>
               </div>
-            </div>
-            <div className="column">
+              <div className="column">
                 <div id="terminal-skill" className="logo-card">
                   <div className="logo-overlay">
                     <div class="skill-label">
                       <div>Terminal</div>
                     </div>
-                    <div className="skill-graph">Skill Level Graph</div>
+                    <Gauge number="4" />
                   </div>
                 </div>
               </div>
             </div>
           </section>
-
         </div>
       </div>
     </div>

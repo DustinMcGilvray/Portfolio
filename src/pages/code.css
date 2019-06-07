@@ -61,7 +61,17 @@
 .skill-graph {
     color: white;
     position: absolute;
-    top: 50%;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.skill-level {
+    color: white;
+    position: absolute;
+    top: 80%;
     left: 60%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
