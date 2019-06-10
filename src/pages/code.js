@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import CodeSummary from '../components/code-summary'
 import Gauge from '../components/gauges'
 import './code.css'
 
@@ -7,12 +8,13 @@ const MyCode = () => (
   <Layout>
     <div id="code-card" className="card">
       <div className="columns is-gapless">
+
         <div id="summary-side" className="column">
-          <h1>Code Summary</h1>
-          <p>Place some verbage here about coding and stuff.</p>
-          
+                <CodeSummary/> 
         </div>
+
         <div id="skills-side" className="column">
+
           <section>
             <div className="columns is-gapless">
               <div className="column">
@@ -25,7 +27,6 @@ const MyCode = () => (
                   </div>
                 </div>
               </div>
-
               <div className="column">
                 <div id="css-skill" className="logo-card">
                   <div className="logo-overlay">
@@ -95,7 +96,7 @@ const MyCode = () => (
                 <div id="node-skill" className="logo-card">
                   <div className="logo-overlay">
                     <div class="skill-label">
-                      <div>Node.js</div>
+                      <div>Node</div>
                     </div>
                     <Gauge number="3" />
                   </div>
@@ -130,7 +131,7 @@ const MyCode = () => (
                 <div id="rest-skill" className="logo-card">
                   <div className="logo-overlay">
                     <div class="skill-label">
-                      <div>API</div>
+                      <div>RestAPI</div>
                     </div>
                     <Gauge number="3" />
                   </div>
@@ -150,7 +151,7 @@ const MyCode = () => (
                 <div id="swagger-skill" className="logo-card">
                   <div className="logo-overlay">
                     <div class="skill-label">
-                      <div>Swagger.io</div>
+                      <div>Swagger</div>
                     </div>
                     <Gauge number="3" />
                   </div>
@@ -295,7 +296,7 @@ const MyCode = () => (
                 <div id="gatsby-skill" className="logo-card">
                   <div className="logo-overlay">
                     <div class="skill-label">
-                      <div>Gatsby.js</div>
+                      <div>Gatsby</div>
                     </div>
                     <Gauge number="3" />
                   </div>
@@ -380,7 +381,7 @@ const MyCode = () => (
                 <div id="vscode-skill" className="logo-card">
                   <div className="logo-overlay">
                     <div class="skill-label">
-                      <div>VS Code</div>
+                      <div>VSCode</div>
                     </div>
                     <Gauge number="4" />
                   </div>
@@ -398,6 +399,7 @@ const MyCode = () => (
               </div>
             </div>
           </section>
+
         </div>
       </div>
     </div>
