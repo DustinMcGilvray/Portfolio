@@ -1,16 +1,46 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Layout from '../components/layout'
 import CodeSummary from '../components/code-summary'
+import DreyfusTable from '../components/dreyfus-table'
 import Gauge from '../components/gauges'
 import './code.css'
 
-const MyCode = () => (
+class MyCode extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { 
+      isTableHidden: false,
+      isSummaryHidden: true 
+  }
+  }
+
+  showTable = () => {
+    this.setState({
+      ...this.state,
+      isTableHidden: true,
+      isSummaryHidden: false
+    })
+  }
+
+  closeTable = () => {
+    console.log("CLICK")
+    this.setState({
+      ...this.state,
+      isTableHidden: false,
+      isSummaryHidden: true
+    })
+  }
+
+  render() {
+    return (
   <Layout>
     <div id="code-card" className="card">
       <div className="columns is-gapless">
 
         <div id="summary-side" className="column">
-                <CodeSummary/> 
+          {this.state.isSummaryHidden &&  <CodeSummary showTable={this.showTable}/> }
+
+          {this.state.isTableHidden && <DreyfusTable closeTable={this.closeTable}/> }  
         </div>
 
         <div id="skills-side" className="column">
@@ -18,7 +48,7 @@ const MyCode = () => (
           <section>
             <div className="columns is-gapless">
               <div className="column">
-                <div id="html-skill" className="logo-card">
+                <div id="html-skill" className="logo-card" onClick={this.showTable}>
                   <div className="logo-overlay">
                     <div class="skill-label">
                       <div>HTML5</div>
@@ -28,7 +58,7 @@ const MyCode = () => (
                 </div>
               </div>
               <div className="column">
-                <div id="css-skill" className="logo-card">
+                <div id="css-skill" className="logo-card">              
                   <div className="logo-overlay">
                     <div class="skill-label">
                       <div>CSS3</div>
@@ -404,6 +434,8 @@ const MyCode = () => (
       </div>
     </div>
   </Layout>
-)
+    )
+}
+}
 
 export default MyCode

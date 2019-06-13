@@ -1,15 +1,15 @@
 import React from 'react'
 import './code-summary.css'
 
-const CodeSummary = () => (
+const CodeSummary = (props) => (
   <section>
     <div  className="columns is-gapless">
       <div className="column">
       <div id="code-summary-card" className="card">
-      <div className="card-content">
+      <div className="card-content" onClick={props.showTable}>
       <p>
         Place some verbage here about coding and stuff. All kinds of stuff
-        about my coding skills. Syntactical Sugar, etc.
+        about my coding skills. Syntactical Sugar,
         </p>
       </div>
           </div>

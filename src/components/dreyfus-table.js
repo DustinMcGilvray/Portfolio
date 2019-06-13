@@ -2,22 +2,23 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './dreyfus-table.css'
 
-const SkillTable = () => (
+const SkillTable = props => {
+  return (
   <section>
     <div className="columns is-gapless">
       <div className="column">
         <div id="dreyfus-table-card" className="card">
-        <FontAwesomeIcon icon={"times-circle"} className='is-pulled-right'/>
-          <h6>
-            <i>
+          <header className='card-header'>
+            <p className='card-header-title is-centered'>
               A Five-Stage Model of the Mental Activities Involved in Directed
               Skill Acquisition
-            </i>
-          </h6>
-          <br />
-          <p>by</p>
-          <br />
-          <p>Stuart E. Dreyfus & Hubert L. Dreyfus</p>
+          by
+            Stuart E. Dreyfus & Hubert L. Dreyfus
+            </p>
+            <span className='card-header-icon'>
+              <FontAwesomeIcon id="dreyfus-table-close" icon={"times-circle"} onClick={props.closeTable}/>
+            </span>
+          </header>
           <div className="card-content">
             <div className="table-container">
               <table id="dreyfus-table" class="table is-bordered is-narrow">
@@ -82,6 +83,7 @@ const SkillTable = () => (
       </div>
     </div>
   </section>
-)
+  )
+}
 
 export default SkillTable

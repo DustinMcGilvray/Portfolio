@@ -11,6 +11,7 @@
     background-size: 35%;
     background-repeat: no-repeat;
     background-position: center center;
+    cursor: pointer;
 }
 
 .skill-label {
