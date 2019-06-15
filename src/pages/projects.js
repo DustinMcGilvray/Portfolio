@@ -1,279 +1,52 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React, { Component } from 'react'
+// import { Link } from 'gatsby'
+import MyProject from '../components/project-item'
 import Layout from '../components/layout'
 import Tippy from '@tippy.js/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './projects.css'
 
-const Portfolio = () => (
+class Portfolio extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+
+    }
+  }
+  render() {
+    return(
+  
   <Layout>
     <div id="portfolio-card" className="card">
       <section>
         <div className="columns is-gapless">
           <div className="column">
-            <figure className="card effect-terry">
-              <img src={require('../images/giphy_api.gif')} alt="giftastic" />
-              <figcaption>
-                <h2>
-                  Gif<span>tastic</span>
-                </h2>
-                <p>
-                  <Tippy
-                    content="GitHub"
-                    className="GitHub"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray/Giftastic" target='__blank'>
-                        <FontAwesomeIcon
-                          icon={['fab', 'github']}
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Link to='/giftastic-play'>
-                    <Tippy
-                      content="Play"
-                      className="Play"
-                      placement="right-end"
-                      arrow="true"
-                    >
-                      <span className="icon">
-                          <FontAwesomeIcon
-                            icon="play-circle"
-                            size="md"
-                            color="white">
-                          </FontAwesomeIcon>
-                      </span>
-                    </Tippy>
-                  </Link>
-                </p>
-                <p>
-                  <Tippy
-                    content="Info"
-                    className="Info"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="info-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-              </figcaption>
-            </figure>
+            <MyProject
+            name='Giftastic'
+            repo='https://github.com/DustinMcGilvray/Giftastic'
+            image={require('../images/giphy_api.gif')}
+            />
           </div>
           <div className="column">
-            <figure className="card effect-terry">
-              <img
-                src={require('../images/movie_theater_logo.jpg')}
-                alt="giftastic"
-              />
-              <figcaption>
-                <h2>
-                  Word<span>Guess</span>
-                </h2>
-                <p>
-                  <Tippy
-                    content="GitHub"
-                    className="GitHub"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray/80s-Movie-Title-Guessing-Game" target='__blank'>
-                        <FontAwesomeIcon
-                          icon={['fab', 'github']}
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Play"
-                    className="Play"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="play-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Info"
-                    className="Info"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="info-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-              </figcaption>
-            </figure>
+            <MyProject
+            name='WordGuess'
+            repo='https://github.com/DustinMcGilvray/80s-Movie-Title-Guessing-Game'
+            image={require('../images/movie_theater_logo.jpg')}
+            />          
           </div>
           <div className="column">
-            <figure className="card effect-terry">
-              <img
-                src={require('../images/bamazon_cli.png')}
-                alt="giftastic"
-              />
-              <figcaption>
-                <h2>
-                  Bamazon<span>CLI</span>
-                </h2>
-                <p>
-                  <Tippy
-                    content="GitHub"
-                    className="GitHub"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray/Bamazon-App" target='__blank'>
-                        <FontAwesomeIcon
-                          icon={['fab', 'github']}
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Play"
-                    className="Play"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="play-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Info"
-                    className="Info"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="info-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-              </figcaption>
-            </figure>
+            <MyProject
+              name='BamazonCLI'
+              repo='https://github.com/DustinMcGilvray/Bamazon-App'
+              image={require('../images/bamazon_cli.png')}
+              />   
           </div>
           <div className="column">
-            <figure className="card effect-terry">
-              <img
-                src={require('../images/lego-minifigs-on-beam.jpg')}
-                alt="giftastic"
-              />
-              <figcaption>
-                <h2>
-                  Web<span>scraper</span>
-                </h2>
-                <p>
-                  <Tippy
-                    content="GitHub"
-                    className="GitHub"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray/Web-Scraper" target='__blank'>
-                        <FontAwesomeIcon
-                          icon={['fab', 'github']}
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Play"
-                    className="Play"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="play-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Info"
-                    className="Info"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="info-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-              </figcaption>
-            </figure>
+            <MyProject
+            name='WebScraper'
+            repo='https://github.com/DustinMcGilvray/Web-Scraper'
+            image={require('../images/lego-minifigs-on-beam.jpg')}
+            />         
           </div>
         </div>
       </section>
@@ -281,264 +54,32 @@ const Portfolio = () => (
       <section>
         <div className="columns is-gapless">
           <div className="column">
-            <figure className="card effect-terry">
-              <img src={require('../images/burger.png')} alt="giftastic" />
-              <figcaption>
-                <h2>
-                  Code<span>Burger</span>
-                </h2>
-                <p>
-                  <Tippy
-                    content="GitHub"
-                    className="GitHub"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray/Code-Burger" target='__blank'>
-                        <FontAwesomeIcon
-                          icon={['fab', 'github']}
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Play"
-                    className="Play"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="play-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Info"
-                    className="Info"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="info-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-              </figcaption>
-            </figure>
+            <MyProject
+              name='CodeBurger'
+              repo='https://github.com/DustinMcGilvray/Code-Burger'
+              image={require('../images/burger.png')}
+            />           
           </div>
           <div className="column">
-            <figure className="card effect-terry">
-              <img
-                src={require('../images/goonies_friend.jpg')}
-                alt="giftastic"
-              />
-              <figcaption>
-                <h2>
-                  Friend<span>Finder</span>
-                </h2>
-                <p>
-                  <Tippy
-                    content="GitHub"
-                    className="GitHub"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray/Goonies-Friend-Finder" target='__blank'>
-                        <FontAwesomeIcon
-                          icon={['fab', 'github']}
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Play"
-                    className="Play"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="play-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Info"
-                    className="Info"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="info-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-              </figcaption>
-            </figure>
+            <MyProject
+            name='FriendFinder'
+            repo='https://github.com/DustinMcGilvray/Goonies-Friend-Finder'
+            image={require('../images/goonies_friend.jpg')}
+            />    
           </div>
           <div className="column">
-            <figure className="card effect-terry">
-              <img src={require('../images/gpk_collage.jpg')} alt="giftastic" />
-              <figcaption>
-                <h2>
-                  Card<span>Collector</span>
-                </h2>
-                <p>
-                  <Tippy
-                    content="GitHub"
-                    className="GitHub"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray/Garbage-Pail-Kids-Card-Collector-Game" target='__blank'>
-                        <FontAwesomeIcon
-                          icon={['fab', 'github']}
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Play"
-                    className="Play"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="play-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Info"
-                    className="Info"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="info-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-              </figcaption>
-            </figure>
+            <MyProject
+            name='CardCollector'
+            repo='https://github.com/DustinMcGilvray/Garbage-Pail-Kids-Card-Collector-Game'
+            image={require('../images/gpk_collage.jpg')}
+            /> 
           </div>
           <div className="column">
-            <figure className="card effect-terry">
-              <img
-                src={require('../images/clouds_pink_hue.jpg')}
-                alt="giftastic"
-              />
-              <figcaption>
-                <h2>Athena<span>App</span></h2>
-                <p>
-                  <Tippy
-                    content="GitHub"
-                    className="GitHub"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray/Athena" target='__blank'>
-                        <FontAwesomeIcon
-                          icon={['fab', 'github']}
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Play"
-                    className="Play"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="play-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Info"
-                    className="Info"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="info-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-              </figcaption>
-            </figure>
+            <MyProject
+            name='AthenaApp'
+            repo='https://github.com/DustinMcGilvray/Athena'
+            image={require('../images/clouds_pink_hue.jpg')}
+            /> 
           </div>
         </div>
       </section>
@@ -546,73 +87,18 @@ const Portfolio = () => (
       <section>
         <div className="columns is-gapless">
           <div className="column">
-            <figure className="card effect-terry">
-              <img
-                src={require('../images/trading_grounds.jpg')}
-                alt="giftastic"
-              />
-              <figcaption>
-                <h2>
-                  Trading<span>Grounds</span>
-                </h2>
-                <p>
-                  <Tippy
-                    content="GitHub"
-                    className="GitHub"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray/Trading-Grounds" target='__blank'>
-                        <FontAwesomeIcon
-                          icon={['fab', 'github']}
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Play"
-                    className="Play"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="play-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-                <p>
-                  <Tippy
-                    content="Info"
-                    className="Info"
-                    placement="right-end"
-                    arrow="true"
-                  >
-                    <span className="icon">
-                      <a href="https://github.com/DustinMcGilvray">
-                        <FontAwesomeIcon
-                          icon="info-circle"
-                          size="md"
-                          color="white"
-                        />
-                      </a>
-                    </span>
-                  </Tippy>
-                </p>
-              </figcaption>
-            </figure>
+            <MyProject
+            name='TradingGrounds'
+            repo='https://github.com/DustinMcGilvray/Trading-Grounds'
+            image={require('../images/trading_grounds.jpg')}
+            /> 
           </div>
           <div className="column">
+          <MyProject
+          name='AthenaApp'
+          repo='https://github.com/DustinMcGilvray/Athena'
+          image={require('../images/clouds_pink_hue.jpg')}
+          /> 
             <figure className="card effect-terry">
               <img src={require('../images/nyt_search.jpg')} alt="giftastic" />
               <figcaption>
@@ -677,6 +163,11 @@ const Portfolio = () => (
             </figure>
           </div>
           <div className="column">
+          <MyProject
+          name='AthenaApp'
+          repo='https://github.com/DustinMcGilvray/Athena'
+          image={require('../images/clouds_pink_hue.jpg')}
+          /> 
             <figure className="card effect-terry">
               <img
                 src={require('../images/rpsls_game_logo_sized.jpg')}
@@ -744,6 +235,11 @@ const Portfolio = () => (
             </figure>
           </div>
           <div className="column">
+          <MyProject
+          name='AthenaApp'
+          repo='https://github.com/DustinMcGilvray/Athena'
+          image={require('../images/clouds_pink_hue.jpg')}
+          /> 
             <figure className="card effect-terry">
               <img
                 src={require('../images/cds.jpg')}
@@ -1084,6 +580,8 @@ const Portfolio = () => (
       </section>
     </div>
   </Layout>
-)
+    )
+  }
+}
 
 export default Portfolio

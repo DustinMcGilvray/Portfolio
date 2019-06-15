@@ -9,8 +9,9 @@ const CodeSummary = (props) => (
       <div className="card-content" onClick={props.showTable}>
       <p>
         Place some verbage here about coding and stuff. All kinds of stuff
-        about my coding skills. Syntactical Sugar,
+        about my coding skills. Syntactical Sugar
         </p>
+        <button className="button is-primary is-inverted is-outlined is-fullwidth" onClick={props.showTable}>Skill Table</button>
       </div>
           </div>
       </div>

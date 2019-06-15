@@ -48,7 +48,7 @@ class MyCode extends Component {
           <section>
             <div className="columns is-gapless">
               <div className="column">
-                <div id="html-skill" className="logo-card" onClick={this.showTable}>
+                <div id="html-skill" className="logo-card">
                   <div className="logo-overlay">
                     <div class="skill-label">
                       <div>HTML5</div>

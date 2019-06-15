@@ -4,17 +4,17 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
 }
 
-h2 {
+/* h2 {
 	font-family: 'Source Sans Pro', sans-serif;
-}
+} */
 
 /*Hover Effect Terry Start https://github.com/codrops/HoverEffectIdeas*/
-figure {
+/* figure {
     overflow: hidden;
     height: 19vh;	
 }
 
-figure figcaption > a {
+figure figcaption > .icon-link{
 	z-index: 1000;
 	text-indent: 200%;
 	white-space: nowrap;
@@ -37,7 +37,7 @@ figure figcaption::after {
 }
 
 figure figcaption,
-figure figcaption > a {
+figure figcaption > .icon-link {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -78,7 +78,7 @@ figure.effect-terry figcaption::after {
 }
 
 figure.effect-terry img,
-figure.effect-terry p a {
+figure.effect-terry p .icon-link {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 }
@@ -119,7 +119,7 @@ figure.effect-terry p {
 	clear: both;
 }
 
-figure.effect-terry p a{
+figure.effect-terry p .icon-link{
     display: block;
     color: rgba(255, 255, 255, 0.5);
 	opacity: 0;
@@ -134,7 +134,7 @@ figure.effect-terry .fa-github:focus {
 
 figure.effect-terry .fa-play-circle:hover,
 figure.effect-terry .fa-play-circle:focus {
-	color: #e3f306;
+	color: #06e3f3;
 }
 
 figure.effect-terry .fa-info-circle:hover,
@@ -153,20 +153,21 @@ figure.effect-terry:hover img {
 }
 
 figure.effect-terry:hover h2,
-figure.effect-terry:hover p a {
+figure.effect-terry:hover p .icon-link {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
-figure.effect-terry:hover p a {
+figure.effect-terry:hover p .icon-link{
 	opacity: 1;
-}
+} */
 /*Hover Effect Terry End*/
 
 /*Media Queries for Mobile Responsiveness*/
-@media screen and (max-width: 920px) {
+/* @media screen and (max-width: 920px) {
 	figure.effect-terry h2 {
 		padding: 0.75em 10px;
 		font-size: 120%;
 	}
-}
+
+} */

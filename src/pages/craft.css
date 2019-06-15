@@ -1,6 +1,10 @@
 #craft-card {
     height: 75vh;
-    background-color: lightgray;
+    background-image: url('../images//pottery_hands.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
     border: solid 5px black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
 }
