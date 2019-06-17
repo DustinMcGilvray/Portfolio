@@ -6,7 +6,7 @@ import "./project-item.css"
 const ProjectItem = (props) => (
     <div id="info-card" className="card">
     <figure className="card effect-terry">
-    <img src={props.image} alt="giftastic" />
+    <img src={props.image} alt={props.alt} />
     <figcaption>
       <h2>
         {props.name}
@@ -39,12 +39,14 @@ const ProjectItem = (props) => (
             placement="right-end"
             arrow="true"
           >
-            <span className="icon" onClick={props.playApp}>
+            <span className="icon">
+            <a href={props.play} target="__blank">
                 <FontAwesomeIcon
                   icon="play-circle"
                   size="md"
                   color="white">
                 </FontAwesomeIcon>
+                </a>
             </span>
           </Tippy>
         </div>
