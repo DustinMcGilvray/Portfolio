@@ -6,6 +6,7 @@ h2 {
 figure {
     overflow: hidden;
     height: 19vh;	
+    cursor: default;
 }
 
 figure figcaption > .icon-link{
@@ -123,17 +124,20 @@ figure.effect-terry p .icon-link{
 
 figure.effect-terry .fa-github:hover,
 figure.effect-terry .fa-github:focus {
-	color: #e3f306;
+    color: #06e3f3;
+    cursor: pointer;
 }
 
 figure.effect-terry .fa-play-circle:hover,
 figure.effect-terry .fa-play-circle:focus {
-	color: #06e3f3;
+    color: #06e3f3;
+    cursor: pointer;
 }
 
 figure.effect-terry .fa-info-circle:hover,
 figure.effect-terry .fa-info-circle:focus {
-	color: #e3f306;
+    color: #06e3f3;
+    cursor: pointer;
 }
 
 figure.effect-terry:hover figcaption::before,

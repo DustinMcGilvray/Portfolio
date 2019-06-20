@@ -23,7 +23,6 @@ class MyCode extends Component {
   }
 
   closeTable = () => {
-    console.log("CLICK")
     this.setState({
       ...this.state,
       isTableHidden: false,

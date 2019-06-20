@@ -5,8 +5,41 @@
  */
 
 // You can delete this file if you're not using it
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faNewspaper, faThLarge, faBriefcase, faBrain, faAddressCard, faEnvelope, faPhone, faPaperPlane, faUser, faCommentAlt, faPlayCircle, faInfoCircle, faLayerGroup, faSms, faTimesCircle} from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import {
+  faNewspaper,
+  faThLarge,
+  faBriefcase,
+  faBrain,
+  faAddressCard,
+  faEnvelope,
+  faPhone,
+  faPaperPlane,
+  faUser,
+  faCommentAlt,
+  faPlayCircle,
+  faInfoCircle,
+  faLayerGroup,
+  faSms,
+  faTimesCircle,
+} from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faNewspaper, faThLarge, faBriefcase, faBrain, faAddressCard, faEnvelope, faPhone, faPaperPlane, faUser, faCommentAlt, faPlayCircle, faInfoCircle, faLayerGroup, faSms, faTimesCircle);
+library.add(
+  fab,
+  faNewspaper,
+  faThLarge,
+  faBriefcase,
+  faBrain,
+  faAddressCard,
+  faEnvelope,
+  faPhone,
+  faPaperPlane,
+  faUser,
+  faCommentAlt,
+  faPlayCircle,
+  faInfoCircle,
+  faLayerGroup,
+  faSms,
+  faTimesCircle
+)

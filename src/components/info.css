@@ -1,5 +1,16 @@
-#play-card {
-    height: 77vh;
-    border: solid 5px black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+#info-column {
+    height: 75vh;
+}
+
+#info-card {
+    /* min-height: 75vh; */
+}
+
+.tech-stack{
+   border: none;
+   flex: 1;
+}
+
+.card-footer-item {
+    border-right: none;
 }
