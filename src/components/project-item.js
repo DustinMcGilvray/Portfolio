@@ -37,7 +37,7 @@ const ProjectItem = props => (
               placement="right-end"
               arrow="true"
             >
-              <span className="icon">
+              <span className="icon" onClick={props.showCLI}>
                 <a href={props.play} target="__blank">
                   <FontAwesomeIcon icon="play-circle" size="md" color="white" />
                 </a>
