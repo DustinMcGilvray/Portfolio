@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import ProjectGroup from '../components/project-group'
 import ProjectInfo from '../components/info'
 import CLIInfo from '../components/play-cli'
+import projects from '../project-array.json'
 import './projects.css'
 
 class Portfolio extends Component {
@@ -11,15 +12,19 @@ class Portfolio extends Component {
     this.state = {
       isInfoShowing: false,
       isCLIShowing: false,
-      isProjectGroupShowing: true
+      isProjectGroupShowing: true,
+      currentProject: {},
+      projects: projects
     }
   }
 
-  showInfo = () => {
+  showInfo = (id) => {
+   const chosenProject = this.state.projects.filter( project => {return project.id==id} )
     this.setState({
       ...this.state,
       isInfoShowing: true,
-      isProjectGroupShowing: false
+      isProjectGroupShowing: false,
+      currentProject: chosenProject[0]
     })
   }
 
@@ -56,9 +61,18 @@ class Portfolio extends Component {
           <div className="columns is-gapless">
             {this.state.isProjectGroupShowing && <ProjectGroup showInfo={this.showInfo} showCLI={this.showCLI}/>}
 
-            {this.state.isInfoShowing && <ProjectInfo closeInfo={this.closeInfo}/>}
+            {this.state.isInfoShowing && 
+              <ProjectInfo 
+              id={this.state.currentProject.id}
+              key={this.state.currentProject.id}
+              name={this.state.currentProject.name}
+              summary={this.state.currentProject.summary}
+              techArray={this.state.currentProject.techArray}
+              showInfo={this.showInfo} 
+              closeInfo={this.closeInfo}
+              />}
 
-            {this.state.isCLIShowing && <CLIInfo closeCLI={this.closeCLI}/>}
+            {this.state.isCLIShowing && <CLIInfo closeCLI={this.closeCLI} titleCLI={this.titleCLI}/>}
           </div>
         </div>
       </Layout>

@@ -10,3 +10,8 @@
 .card-footer-item {
     border-right: none;
 }
+
+.logo-image{
+    width: 150px;
+    height: 150px;
+}

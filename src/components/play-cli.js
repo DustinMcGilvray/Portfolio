@@ -12,7 +12,6 @@ const AppCLI = props => {
               <p class="card-header-title is-centered is-size-3">{props.titleCLI}</p>
               <div className="card-header-icon">
                 <span className="icon">
-                {console.log("click")}
                   <FontAwesomeIcon
                     icon={'times-circle'}
                     onClick={props.closeCLI}
