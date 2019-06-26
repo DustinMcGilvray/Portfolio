@@ -10,11 +10,9 @@ class projectGroup extends Component {
   };
 
   componentDidMount(){
-
     console.log(this.state.projects);
   }
   
-
     render() {
         return (
             <div>

@@ -19,7 +19,7 @@ class Portfolio extends Component {
   }
 
   showInfo = (id) => {
-   const chosenProject = this.state.projects.filter( project => {return project.id==id} )
+   const chosenProject = this.state.projects.filter( project => {return project.id===id} )
     this.setState({
       ...this.state,
       isInfoShowing: true,
