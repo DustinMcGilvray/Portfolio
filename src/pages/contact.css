@@ -4,7 +4,7 @@
     background-size: cover, 50% 100%, 50% 100%;
     background-repeat: no-repeat, no-repeat; */
     background-color: black;
-    height: 73vh;
+    height: 75vh;
     border: solid 5px black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
 }
@@ -56,7 +56,7 @@
 #word-contact {
     position: absolute;
     color: rgba(0, 255, 255, 0.363);
-    font-size: 10em; 
+    font-size: 11em; 
     font-weight: bold;
     writing-mode: vertical-lr;
     mix-blend-mode: screen; 

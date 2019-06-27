@@ -6,8 +6,8 @@ import './contact.css'
 const Contact = () => (
   <Layout>
     <div id="contact-all" className="card">
+    <div className="columns is-gapless">
     <div id="word-contact">Contact</div>
-      <div className="columns is-gapless">
         <div id="left-side" className="column is-half">
         </div>
 

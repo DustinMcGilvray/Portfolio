@@ -1,5 +1,5 @@
 #docs-card {
-    height: 76vh;
+    height: 75vh;
 	background-image: url("../images/harddrive_closeup.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 }
 
 .document-card {
-	height: 25vh;
+	height: 22vh;
 }
 
 #doc-top-image {

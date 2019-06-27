@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Resume from '../files/dustin_mcgilvray_resume.pdf'
 import CoverLetter from '../files/dustin_mcgilvray_coverletter.pdf'
 import './docs.css'
@@ -7,6 +9,18 @@ import './docs.css'
 const MyDocs = () => (
   <Layout>
     <div id="docs-card" className="card">
+    <header className="card-header is-shadowless">
+        <p class="card-header-title is-centered is-size-3 has-text-white">
+          DOCS
+        </p>
+        <div className="card-header-icon">
+          <Link to="/about">
+            <span className="icon">
+              <FontAwesomeIcon icon={'chevron-circle-left'} color="white" />
+            </span>
+          </Link>
+        </div>
+      </header>
       <section>
         <div className="columns is-gapless">
           <div className="column container-resume-pdf">
