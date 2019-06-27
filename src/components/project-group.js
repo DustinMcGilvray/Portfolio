@@ -28,6 +28,7 @@ class projectGroup extends Component {
               repo={project.repo}
               play={project.play}
               showInfo={this.props.showInfo}
+              showCLI={this.props.showCLI}
             />
           ))}
           </div>

@@ -23,6 +23,7 @@ import {
   faLayerGroup,
   faSms,
   faTimesCircle,
+  faCode
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -41,5 +42,6 @@ library.add(
   faInfoCircle,
   faLayerGroup,
   faSms,
-  faTimesCircle
+  faTimesCircle,
+  faCode
 )

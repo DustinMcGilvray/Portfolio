@@ -5,7 +5,7 @@ import './project-item.css'
 
 const ProjectItem = props => (
   <div className="column">
-    <div id="info-card" className="card">
+    <div className="card">
       <figure className="card effect-terry">
         <img src={props.image} alt={props.alt} />
         <figcaption>
@@ -38,14 +38,14 @@ const ProjectItem = props => (
                 placement="right-end"
                 arrow="true"
               >
-                <span className="icon" onClick={props.showCLI}>
-                  <a href={props.play} target="__blank">
+                <span className="icon" onClick={() => props.showCLI(props.id)} value={props.id}>
+               <a href={props.play} target="__blank"> 
                     <FontAwesomeIcon
                       icon="play-circle"
                       size="md"
                       color="white"
                     />
-                  </a>
+                 </a> 
                 </span>
               </Tippy>
             </div>

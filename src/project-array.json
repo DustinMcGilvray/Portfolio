@@ -36,7 +36,6 @@
         "image": "../images/apps/bamazon_cli.png",
         "alt": "Bamazon CLI",
         "repo": "https://github.com/DustinMcGilvray/Bamazon-App",
-        "play": "",
         "summary": "Bamazon is a Node.js Command-Line Interface (CLI) application that consists of multiple user interface with varying features. You can shop and 'purchase' as a Customer, view product sales, control inventory levels, and add new products as a Manager, or develop new departments and review P&L tables as a Supervisor.",
         "techArray": [ 
             "../images/logo/js_logo.png",
@@ -56,7 +55,7 @@
             "../images/logo/js_logo.png",
             "../images/logo/nodejs.png",
             "../images/logo/handlebars_logo_red.png",
-            ".../images/logo/express_logo_white.png",
+            "../images/logo/express_logo_white.png",
             "../images/logo/mongodb_leaf_logo.png"
         ]
     },
@@ -242,7 +241,6 @@
         "image": "../images/apps/liri_node.png",
         "alt": "Liri Node App",
         "repo": "https://github.com/DustinMcGilvray/liri-node-app",
-        "play": "",
         "summary": "LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.",
         "techArray": [
             "../images/logo/js_logo.png",

@@ -1,5 +1,7 @@
-#info-column {
-    height: 75vh;
+#info-card {
+    background-color: black;
+    height: 76vh;
+    width: 100%;
 }
 
 .tech-stack{
@@ -12,6 +14,6 @@
 }
 
 .logo-image{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
