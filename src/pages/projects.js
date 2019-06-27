@@ -40,8 +40,8 @@ class Portfolio extends Component {
     const chosenProject = this.state.projects.filter( project => {return project.id===id} )
     this.setState({
       ...this.state,
-      isCLIShowing: true,
-      isProjectGroupShowing: false,
+      isCLIShowing: id === 3 || id === 16 ? true:false,
+      isProjectGroupShowing: id === 3 || id === 16 ? false:true,
       currentProject: chosenProject[0]
     })
     console.log(chosenProject)
@@ -73,7 +73,7 @@ class Portfolio extends Component {
                 closeInfo={this.closeInfo}
               />}
 
-            {this.state.isCLIShowing && 
+           {this.state.isCLIShowing && 
               <PlayCLI
                 id={this.state.currentProject.id}
                 key={this.state.currentProject.id}
