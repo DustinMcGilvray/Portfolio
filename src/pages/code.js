@@ -36,7 +36,7 @@ class MyCode extends Component {
         <div id="code-card" className="card">
           <div className="columns is-gapless">
 
-            <div id="summary-side" className="column">
+            <div id="code-summary-side" className="column">
               {this.state.isSummaryHidden &&  <CodeSummary showTable={this.showTable}/> }
 
               {this.state.isTableHidden && <DreyfusTable closeTable={this.closeTable}/> }  

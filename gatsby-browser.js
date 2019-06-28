@@ -24,7 +24,8 @@ import {
   faSms,
   faTimesCircle,
   faCode,
-  faChevronCircleLeft
+  faChevronCircleLeft,
+  faFilePdf
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -45,5 +46,6 @@ library.add(
   faSms,
   faTimesCircle,
   faCode,
-  faChevronCircleLeft
+  faChevronCircleLeft,
+  faFilePdf
 )

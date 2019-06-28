@@ -1,0 +1,33 @@
+#resume-card {
+    height: 40vh;
+}
+
+#cover-letter-card {
+    min-height: 36vh;
+}
+
+#npm-resume-card {
+    min-height: 36vh;
+}
+
+#resume-card-content {
+    min-height: 32vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#cover-letter-content {
+    min-height: 28vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#npm-resume-content {
+    min-height: 28vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.docs-card-footer {
+    flex: 1;
+}
