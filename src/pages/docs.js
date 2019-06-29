@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import Layout from '../components/layout'
 import DocsSummary from '../components/docs-summary'
 import DocGroup from '../components/doc-group'
-import Resume from '../files/dustin_mcgilvray_resume.pdf'
-import CoverLetter from '../files/dustin_mcgilvray_coverletter.pdf'
 import './docs.css'
 
 class MyDocs extends Component {

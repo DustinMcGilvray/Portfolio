@@ -1,13 +1,28 @@
 #resume-card {
     height: 40vh;
+    border-bottom: solid 1px;
+    background: transparent;
 }
 
 #cover-letter-card {
     min-height: 36vh;
+    background: transparent;
 }
 
 #npm-resume-card {
     min-height: 36vh;
+    border-left: solid 1px;
+    background: transparent;
+}
+
+.doc-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:3em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.616);
 }
 
 #resume-card-content {
@@ -30,4 +45,13 @@
 
 .docs-card-footer {
     flex: 1;
+}
+
+.card-footer {
+    border-top: none;
+    color: white;
+}
+
+.card-footer-item:not(:last-child) {
+    border-right: none;
 }

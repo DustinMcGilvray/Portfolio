@@ -6,7 +6,7 @@ import './craft.css'
 
 const MyCraft = () => (
     <Layout>
-    <div id="bio-card" className="card">
+    <div id="craft-card" className="card">
       <header className="card-header is-shadowless">
         <p class="card-header-title is-centered is-size-3 has-text-white">
           CRAFT
