@@ -2,94 +2,66 @@ import React, { Component } from 'react'
 import Layout from '../components/layout'
 import DocsSummary from '../components/docs-summary'
 import DocGroup from '../components/doc-group'
+import ResumeImageModal from '../components/resume-image-modal'
+import CoverLetterImageModal from '../components/coverletter-image-modal'
 import './docs.css'
 
 class MyDocs extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { 
+      isResumeHidden: false,
+      isCoverLetterHidden: false,
+      isDocGroupHidden: true 
+  }
+  }
 
+  showResume = () => {
+    this.setState({
+      ...this.state,
+      isResumeHidden: true,
+      isDocGroupHidden: false
+    })
+  }
 
+  closeResume = () => {
+    this.setState({
+      ...this.state,
+      isResumeHidden: false,
+      isDocGroupHidden: true
+    })
+  }
 
+  showCoverLetter = () => {
+    this.setState({
+      ...this.state,
+      isCoverLetterHidden: true,
+      isDocGroupHidden: false 
+    })
+  }
 
-
-
+  closeCoverLetter = () => {
+    this.setState({
+      ...this.state,
+      isCoverLetterHidden: false,
+      isDocGroupHidden: true 
+    })
+  }
 
   render() {
-    return(
-
+    return (
       <Layout>
         <div id="docs-card" className="card">
-        <div className="columns is-gapless">
-          <div id="docs-summary-side" className="column">
-            <DocsSummary/>
+          <div className="columns is-gapless">
+            <div id="docs-summary-side" className="column">
+              <DocsSummary />
+            </div>
+            <div id="docs-side" className="column">
+              {this.state.isResumeHidden && <ResumeImageModal closeResume={this.closeResume}/>}
+              {this.state.isCoverLetterHidden && <CoverLetterImageModal closeCoverLetter={this.closeCoverLetter}/>}
+              {this.state.isDocGroupHidden && <DocGroup showResume={this.showResume} showCoverLetter={this.showCoverLetter}/>}
+            </div>
           </div>
-          <div id="docs-side" className="column">
-               <DocGroup/>
-          </div>
-        </div>
-
-
-      {/*   <header className="card-header is-shadowless">
-            <p class="card-header-title is-centered is-size-3 has-text-white">
-              DOCS
-            </p>
-            <div className="card-header-icon">
-              <Link to="/about">
-                <span className="icon">
-                  <FontAwesomeIcon icon={'chevron-circle-left'} color="white" />
-                </span>
-              </Link>
-            </div>
-          </header>
-          <section>
-            <div className="columns is-gapless">
-              <div className="column container-resume-pdf">
-                <figure className="document-card effect-oscar">
-                  <figcaption>
-                    <h2>
-                      PDF<span>Resume</span>
-                    </h2>
-                    <p>Take a moment to review my credentials!</p>
-                    <a href={Resume} target="_blank" rel="noopener noreferrer">
-                      View
-                    </a>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </section>
-          <section>
-            <div className="columns is-gapless">
-              <div className="column container-resume-npm">
-                <figure className="document-card effect-oscar">
-                  <figcaption>
-                    <h2>
-                      NPM<span>Resume</span>
-                    </h2>
-                    <p>Here is Resume as a CLI App Packaged as an NPM Module!</p>
-                    <a href="https://www.npmjs.com/package/dustinmcgilvray_resume" target="_blank" rel="noopener noreferrer">
-                      View
-                    </a>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </section>
-          <section>
-            <div className="columns is-gapless">
-              <div className="column container-coverletter-pdf">
-                <figure className="document-card effect-oscar">
-                  <figcaption>
-                    <h2>
-                      PDF<span>Cover Letter</span>
-                    </h2>
-                    <p>Take a Moment to Read my Cover Letter!</p>
-                    <a href={CoverLetter} target="_blank" rel="noopener noreferrer">
-                      View
-                    </a>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </section>*/}
         </div>
       </Layout>
     )

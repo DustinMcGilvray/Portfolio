@@ -4,87 +4,101 @@ import Resume from '../files/dustin_mcgilvray_resume.pdf'
 import CoverLetter from '../files/dustin_mcgilvray_coverletter.pdf'
 import './doc-group.css'
 
-const DocGroup = () => (
+const DocGroup = (props) => (
   <div className="columns is-gapless is-multiline">
     <div className="column is-full">
-      <div id="resume-card" className="card is-shadowless">
-        <div id="resume-card-content" class="card-content">
-          <p class="content doc-name">Resume</p>
-        </div>
-        <footer class="card-footer docs-card-footer">
-          <p class="card-footer-item">
-            <div className="card-header-icon">
-              <span className="icon">
-              <a href={Resume} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon
-                  icon={'file-pdf'}
-                  color={'white'}
-                  size={'2x'}
-                />
-                </a>
-              </span>
+      <figure id="resume-card" className="card is-shadowless effect-oscar">
+        <figcaption>
+          <h2>
+            Res<span>ume</span>
+          </h2>
+          <section className="section">
+            <div className="columns is-gapless">
+              <div className="column">
+                <p>
+                  <a href={Resume} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon
+                      icon={'file-pdf'}
+                      color={'white'}
+                      size={'lg'}
+                    />
+                  </a>
+                </p>
+              </div>
+              <div className="column">
+                <p>
+                    <div onClick={props.showResume}>
+                        <FontAwesomeIcon icon={'image'} color={'white'} size={'lg'} />
+                    </div>
+                </p>
+              </div>
             </div>
-          </p>
-          <p class="card-footer-item">
-            <div className="card-header-icon">
-              <span className="icon">
-                <FontAwesomeIcon icon={'image'} color={'white'} size={'2x'} />
-              </span>
-            </div>
-          </p>
-        </footer>
-      </div>
+          </section>
+        </figcaption>
+      </figure>
     </div>
     <div className="column is-half">
-      <div id="cover-letter-card" className="card is-shadowless">
-        <div id="cover-letter-content" class="card-content">
-          <p className="content doc-name">Cover Letter</p>
-        </div>
-        <footer class="card-footer docs-card-footer">
-          <p className="card-footer-item">
-            <div className="card-header-icon">
-              <span className="icon">
-              <a href={CoverLetter} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon
-                  icon={'file-pdf'}
-                  color={'white'}
-                  size={'2x'}
-                />
-                </a>
-              </span>
+      <figure id="cover-letter-card" className="card is-shadowless effect-oscar">
+        <figcaption>
+          <h2>
+            Cover<span>Letter</span>
+          </h2>
+          <section className="section">
+            <div className="columns is-gapless">
+              <div className="column">
+                <p>
+                  <a
+                    href={CoverLetter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={'file-pdf'}
+                      color={'white'}
+                      size={'lg'}
+                    />
+                  </a>
+                </p>
+              </div>
+              <div className="column">
+                <p>
+                    <div onClick={props.showCoverLetter}>
+                        <FontAwesomeIcon icon={'image'} color={'white'} size={'lg'} />
+                    </div>
+                </p>
+              </div>
             </div>
-          </p>
-          <p className="card-footer-item">
-            <div className="card-header-icon">
-              <span className="icon">
-                <FontAwesomeIcon icon={'image'} color={'white'} size={'2x'} />
-              </span>
-            </div>
-          </p>
-        </footer>
-      </div>
+          </section>
+        </figcaption>
+      </figure>
     </div>
     <div className="column is-half">
-      <div id="npm-resume-card" className="card is-shadowless">
-        <div id="npm-resume-content" class="card-content">
-          <p className="content doc-name">NPM Resume</p>
-        </div>
-        <footer className="card-footer docs-card-footer">
-          <p className="card-footer-item">
-            <div className="card-header-icon">
-              <span className="icon">
-              <a href="https://www.npmjs.com/package/dustinmcgilvray_resume" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon
-                  icon={['fab', 'npm']}
-                  color={'white'}
-                  size={'3x'}
-                />
-                </a>
-              </span>
+      <figure id="npm-resume-card" className="card is-shadowless effect-oscar">
+        <figcaption>
+          <h2>
+            NPM<span>Resume</span>
+          </h2>
+          <section className="section">
+            <div className="columns is-gapless">
+              <div className="column">
+                <p>
+                  <a
+                    href="https://www.npmjs.com/package/dustinmcgilvray_resume"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={['fab', 'npm']}
+                      color={'white'}
+                      size={'2x'}
+                    />
+                  </a>
+                </p>
+              </div>
             </div>
-          </p>
-        </footer>
-      </div>
+          </section>
+        </figcaption>
+      </figure>
     </div>
   </div>
 )

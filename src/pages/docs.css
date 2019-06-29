@@ -26,12 +26,12 @@ figure {
 	cursor: pointer;
 }
 
-figure img {
+/* figure img {
 	position: relative;
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-}
+} */
 
 figure figcaption {
 	padding: 2em;
