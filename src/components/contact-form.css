@@ -1,14 +1,25 @@
-#contact-form {
-    width: 100%;
-}
-
 #form-card {
-    padding: 15px;
-    background-color: slategrey;
-    width: 40vw;
-    height: 40vh;
+background-color: rgba(0, 0, 0, 0.61);
+/* height: 75%;
+width: 65%; */
 }
 
-#submit-form {
-    cursor: pointer;
+.button {
+  border-radius: 0;
+  border: none;
+}
+
+#contact-form-content {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  height: 100%;
+  padding: 20px;
+} 
+
+#form-position {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  right: -25%;
+  transform: translate(-50%, -50%);
 }

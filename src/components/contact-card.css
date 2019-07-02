@@ -1,8 +1,12 @@
-#contact-card {
-    background-color: rgba(61, 216, 216, 0.363);
-    width: 15vw;
-    height: 35vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377); 
-    border-radius: 0;
-    padding: 3%;
+/* #contact-card {
+    background-color: black;
+    height: 12vh;
+} */
+
+#contact-icon {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

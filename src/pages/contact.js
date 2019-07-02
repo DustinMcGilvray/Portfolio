@@ -1,32 +1,26 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
-// import ContactRadial from '../components/contact-radial'
+import ContactSummary from '../components/contact-summary'
+import ContactForm from '../components/contact-form'
 import './contact.css'
 
 class Contact extends Component {
-
-  render(){
-    return(
-
+  render() {
+    return (
       <Layout>
-        <div id="contact-all" className="card">
-        <div className="columns is-gapless">
-        <div id="word-contact">Contact</div>
-            <div id="left-side" className="column is-half">
-            </div>
-    
-            <div id="right-side" className="column is-half">
-              <div id="right-content">
-               
+        <div id="contact-card" className="card is-shadowless">
+          <div className="columns is-gapless">
+            <div id="contact-summary-side" className="column">
+              <ContactSummary/>
               </div>
+            <div id="contact-side" className="column">
+              <ContactForm/>
             </div>
-    
           </div>
         </div>
       </Layout>
     )
   }
 }
-
 
 export default Contact

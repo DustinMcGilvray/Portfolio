@@ -9,7 +9,7 @@ const DocGroup = (props) => (
     <div className="column is-full">
       <figure id="resume-card" className="card is-shadowless effect-oscar">
         <figcaption>
-          <h2>
+          <h2 className="doc-group-font">
             Res<span>ume</span>
           </h2>
           <section className="section">
@@ -27,7 +27,7 @@ const DocGroup = (props) => (
               </div>
               <div className="column">
                 <p>
-                    <div onClick={props.showResume}>
+                    <div className="image-pointer" onClick={props.showResume}>
                         <FontAwesomeIcon icon={'image'} color={'white'} size={'lg'} />
                     </div>
                 </p>
@@ -40,7 +40,7 @@ const DocGroup = (props) => (
     <div className="column is-half">
       <figure id="cover-letter-card" className="card is-shadowless effect-oscar">
         <figcaption>
-          <h2>
+          <h2 className="doc-group-font">
             Cover<span>Letter</span>
           </h2>
           <section className="section">
@@ -62,7 +62,7 @@ const DocGroup = (props) => (
               </div>
               <div className="column">
                 <p>
-                    <div onClick={props.showCoverLetter}>
+                    <div className="image-pointer" onClick={props.showCoverLetter}>
                         <FontAwesomeIcon icon={'image'} color={'white'} size={'lg'} />
                     </div>
                 </p>
@@ -75,7 +75,7 @@ const DocGroup = (props) => (
     <div className="column is-half">
       <figure id="npm-resume-card" className="card is-shadowless effect-oscar">
         <figcaption>
-          <h2>
+          <h2 className="doc-group-font">
             NPM<span>Resume</span>
           </h2>
           <section className="section">

@@ -9,7 +9,7 @@ const CodeSummary = (props) => (
       <div className="column">
       <div id="code-summary-card" className="card">
       <header className="card-header is-shadowless">
-      <p class="card-header-title is-centered is-size-3 has-text-white">
+      <p className="card-header-title is-centered is-size-3 has-text-white">
         CODE
       </p>
       <div className="card-header-icon">

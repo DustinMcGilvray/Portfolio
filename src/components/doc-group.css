@@ -15,17 +15,6 @@
     background: rgba(168, 28, 3, 0.507);
 }
 
-/* .doc-name {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size:3em;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.616);
-    mix-blend-mode: lighten;
-} */
-
 #resume-card-content {
     min-height: 32vh;
     display: flex;
@@ -36,6 +25,10 @@
     min-height: 28vh;
     display: flex;
     flex-direction: column;
+}
+
+.image-pointer{
+	cursor: pointer;
 }
 
 #npm-resume-content {
@@ -66,13 +59,6 @@ figure {
 	text-align: center;
 	cursor: pointer;
 }
-
-/* figure img {
-	position: relative;
-	display: block;
-	min-height: 100%;
-	max-width: 100%;
-} */
 
 figure figcaption {
 	padding: 2em;
@@ -105,7 +91,7 @@ figure figcaption > a {
 	opacity: 0;
 }
 
-figure h2 {
+figure .doc-group-font{
 	word-spacing: -0.15em;
     font-weight: 300;
     font-size: 2em;
@@ -129,12 +115,6 @@ figure.effect-oscar {
 	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
     background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
 }
-
-/* figure.effect-oscar img {
-	opacity: 0.9;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
-} */
 
 figure.effect-oscar figcaption {
     padding: 3em;
@@ -170,7 +150,7 @@ figure.effect-oscar p {
 	transform: scale(0);
 }
 
-figure.effect-oscar:hover h2 {
+figure.effect-oscar:hover .doc-group-font {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
@@ -185,7 +165,3 @@ figure.effect-oscar:hover p {
 figure.effect-oscar:hover figcaption {
 	background-color: rgba(58,52,42,0);
 }
-
-/* figure.effect-oscar:hover img {
-	opacity: 0.4;
-} */
