@@ -1,4 +1,35 @@
 #contact-summary-card {
-    background-color: rgba(255, 255, 255, 0.219);
+    background-color: transparent;
     height: 77vh;
 }
+
+
+/* #contact-summary-footer {
+    display: flex;
+    min-height: 77vh;
+    flex-direction: row; 
+} */
+
+.contact-method-info {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-position {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 5px;
+    margin-right: 2px;
+  }

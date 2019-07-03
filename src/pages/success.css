@@ -1,0 +1,20 @@
+#success-card{
+    background-image: url(../images/backgrounds/piney_woods_bw.png);
+    background-size: cover;
+    margin: 0;
+    background-position: center center;
+    height: 78vh;
+    border: solid 5px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+}
+
+.success-container {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px rgb(1, 70, 1);
+    padding: 5%;
+    background-color: rgba(0, 128, 0, 0.603);
+}

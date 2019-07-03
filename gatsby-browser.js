@@ -27,7 +27,8 @@ import {
   faChevronCircleLeft,
   faFilePdf,
   faImage,
-  faFileAlt
+  faFileAlt,
+  faCheck
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -51,5 +52,6 @@ library.add(
   faChevronCircleLeft,
   faFilePdf,
   faImage,
-  faFileAlt
+  faFileAlt,
+  faCheck
 )
