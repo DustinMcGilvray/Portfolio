@@ -28,7 +28,8 @@ import {
   faFilePdf,
   faImage,
   faFileAlt,
-  faCheck
+  faCheck,
+  faQuestionCircle
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -53,5 +54,6 @@ library.add(
   faFilePdf,
   faImage,
   faFileAlt,
-  faCheck
+  faCheck,
+  faQuestionCircle
 )

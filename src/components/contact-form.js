@@ -84,6 +84,20 @@ const ContactForm = () => (
                   </p>
                 </div>
                 <div className="field">
+                  <p className="control is-expanded has-icons-left has-icons-right">
+                    <input
+                      className="input"
+                      type="text"
+                      name="messageSubject"
+                      id="messageSubject"
+                      placeholder="Subject"
+                    />
+                    <span className="icon is-small is-left">
+                      <FontAwesomeIcon icon="question-circle" size="sm" />
+                    </span>
+                  </p>
+                </div>
+                <div className="field">
                   <p className="control">
                     <textarea
                       className="textarea"
