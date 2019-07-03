@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './contact-form.css'
 
-class ContactForm extends Component {
-  render() {
-    return (
+const ContactForm = () => (
+
       <div className="columns is-gapless">
         <div className="column">
           <div id="form-card" className="card is-shadowless">
@@ -109,7 +108,5 @@ class ContactForm extends Component {
         </div>
       </div>
     )
-  }
-}
 
 export default ContactForm
