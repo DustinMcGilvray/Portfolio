@@ -33,6 +33,15 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-source-openweathermap`,
+      options: {
+        apikey: '7c2ef146781b36100bc270e676a56f95',
+        location: 'Tyler',
+        units: 'imperial',
+        type: 'forecast'
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
   ],
