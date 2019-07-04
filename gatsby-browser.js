@@ -29,7 +29,11 @@ import {
   faImage,
   faFileAlt,
   faCheck,
-  faQuestionCircle
+  faQuestionCircle,
+  faHome,
+  faPodcast,
+  faVideo,
+  faCloudSunRain
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -55,5 +59,9 @@ library.add(
   faImage,
   faFileAlt,
   faCheck,
-  faQuestionCircle
+  faQuestionCircle,
+  faHome,
+  faPodcast,
+  faVideo,
+  faCloudSunRain
 )

@@ -1,0 +1,31 @@
+#dashboard-main-card {
+    height: 76.2vh;
+    background-color: rgb(102, 97, 97);
+    border: solid 5px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+}
+
+#navigation-side {
+    background-color: rgb(180, 170, 245);
+    height: 75vh;
+}
+
+#data-card-1 {
+    height: 10vh;
+}
+
+#data-card-2 {
+    height: 10vh;
+}
+
+#data-card-3 {
+    height: 24vh;
+}
+
+#data-card-4 {
+    height: 24vh;
+}
+
+#data-card-5 {
+    height: 30vh;
+}

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
-import Clock from 'react-live-clock';
+import DateTime from '../components/date-time'
+import DashBoardMainMenu from '../components/dashboard-menu-main'
+import './dashboard.css'
 
 /*Weather API: https://rapidapi.com/community/api/open-weather-map */
 /*WakaTime API: https://wakatime.com/developers */
@@ -11,43 +13,51 @@ class Dashboard extends Component {
   render() {
     return (
       <Layout>
-      <div className="columns is-mobile">
-      <div className="column">
-        <div className="card">
-        News Ticker Here
-        </div>
-      </div>
-      </div>
+        <div id="dashboard-main-card" className="card">
+          <section className="columns is-gapless is-fullheight">
 
-        <div className="columns is-mobile">
-        <div className="column">
-          <div className="card">
-          
-          </div>
-        </div>
-          <div className="column">
-            <div className="card">
-              <Clock 
-              style={{fontSize: '2em'}}
-              format={'h:mm:ss'} 
-              ticking={true} 
-              timezone={'US/Central'} 
-              />
-            </div>
-          </div>
-        </div>
+           <DashBoardMainMenu/>
 
-        <div className="columns is-mobile">
-        <div className="column">
-          <div className="card">
-          
-          </div>
-        </div>
-          <div className="column">
-            <div className="card">
-             
+            <div id="information-side" className="column">
+
+              <div className="columns">
+                <div className="column ">
+                  <div id="data-card-1" className="card">
+                  
+                  </div>
+                </div>
+                <div className="column">
+                  <div id="data-card-2" className="card">DATA HERE</div>
+                </div>
+                <div className="column">
+                  <DateTime />
+                </div>
+              </div>
+
+              <div className="columns">
+                <div className="column">
+                  <div className="card">News Ticker</div>
+                </div>
+              </div>
+
+              <div className="columns">
+                <div className="column ">
+                  <div id="data-card-3" className="card">DATA HERE</div>
+                </div>
+                <div className="column">
+                  <div id="data-card-4" className="card">DATA HERE</div>
+                </div>
+              </div>
+
+              <div className="columns">
+              <div className="column ">
+                <div id="data-card-5" className="card">DATA HERE</div>
+              </div>
             </div>
-          </div>
+
+            </div>
+
+          </section>
         </div>
       </Layout>
     )
