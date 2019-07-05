@@ -1,32 +1,31 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
 const DashboardMainMenu = () => (
-    <aside
+  <aside
     id="navigation-side"
-    className="column section menu is-narrow is-fullheight is-narrow-mobile is-hidden-mobile"
+    className="menu"
   >
     <ul className="menu-list">
       <li>
-        <a href="#">
-          <FontAwesomeIcon icon={'newspaper'} size={'lg'} />
-        </a>
+        <span className="icon is-large">
+          <FontAwesomeIcon icon={'newspaper'} size={'lg'} color={'white'} />
+        </span>
       </li>
       <li>
-        <a href="#">
-          <FontAwesomeIcon icon={'podcast'} size={'lg'} />
-        </a>
+        <span className="icon is-large">
+          <FontAwesomeIcon icon={'podcast'} size={'lg'} color={'white'}/>
+        </span>
       </li>
       <li>
-        <a href="#">
-          <FontAwesomeIcon icon={'video'} size={'lg'} />
-        </a>
+        <span className="icon is-large">
+          <FontAwesomeIcon icon={'video'} size={'lg'} color={'white'}/>
+        </span>
       </li>
       <li>
-        <a href="#">
-          <FontAwesomeIcon icon={'cloud-sun-rain'} size={'lg'} />
-        </a>
+        <span className="icon is-large">
+          <FontAwesomeIcon icon={'cloud-sun-rain'} size={'lg'} color={'white'}/>
+        </span>
       </li>
     </ul>
   </aside>
