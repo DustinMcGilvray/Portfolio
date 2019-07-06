@@ -11,6 +11,7 @@
 
 #data-card-1 {
     height: 10vh;
+    background-color: red;
 }
 
 #data-card-2 {
@@ -18,11 +19,11 @@
 }
 
 #data-card-3 {
-    height: 24vh;
+    height: 10vh;
 }
 
 #data-card-4 {
-    height: 24vh;
+    height: 30vh;
 }
 
 #data-card-5 {
@@ -30,11 +31,11 @@
 }
 
 #data-card-6 {
-    height: 75vh;
+    height: 24vh;
 }
 
-#data-card-6 {
-    height: 10vh;
+#data-card-7 {
+    height: 75vh;
 }
 
 #data-card-7 {
@@ -42,5 +43,5 @@
 }
 
 #data-card-8 {
-    height: 50vh;
+    height: 35vh;
 }

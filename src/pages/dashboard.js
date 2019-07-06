@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Layout from '../components/layout'
 import DateTime from '../components/date-time'
 import DashBoardMainMenu from '../components/dashboard-menu-main'
+import WeatherDayWidget from '../components/weather-day-widget'
 import NewsTicker from '../components/news-ticker'
 import './dashboard.css'
 
@@ -25,31 +26,33 @@ class Dashboard extends Component {
             <div className="columns">
               <div className="column">
                 <div id="data-card-1" className="card">
-                  DATA HERE
+                  <WeatherDayWidget/>
                 </div>
                 </div>
                 <div className="column">
                   <div id="data-card-2" className="card">
-                  DATA HERE
+                  DATA HERE 2
                   </div>
                 </div>
                 <div className="column">
-                  <DateTime />
+                <div id="data-card-3" className="card">
+                  DATA HERE 3
+                  </div>
                 </div>
               </div>
 {/*Split Middle Column */}
               <div className="columns">
                 <div className="column">
-                  <div id="data-card-3" className="card">DATA HERE</div>
+                  <div id="data-card-4" className="card">DATA HERE 4</div>
                 </div>
                 <div className="column is-6">
-                  <div id="data-card-4" className="card">DATA HERE</div>
+                  <div id="data-card-5" className="card">DATA HERE 5</div>
                 </div>
               </div>
 {/*Single Middle Column */}
               <div className="columns">
               <div className="column">
-                <div id="data-card-5" className="card">DATA HERE 5</div>
+                <div id="data-card-6" className="card">DATA HERE 6</div>
               </div>
             </div>
 {/*News Ticker Column */}
@@ -63,25 +66,25 @@ class Dashboard extends Component {
           </div>
 {/*Far Right Column */}
           <div className="column">
-          <div id="data-card-6" className="card">
+          <div id="data-card-7" className="card">
           <div className="columns is-gapless">
           <div className="column">
           <div id="data-card-6" className="card">
-            DATA HERE
+          <DateTime />
           </div>
           </div>
           </div>
           <div className="columns">
           <div className="column">
           <div id="data-card-7" className="card">
-            DATA HERE
+            DATA HERE 7
           </div>
           </div>
           </div>
           <div className="columns">
           <div className="column">
           <div id="data-card-8" className="card">
-            DATA HERE
+            DATA HERE 8
           </div>
           </div>
           </div>

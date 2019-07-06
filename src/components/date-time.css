@@ -1,16 +1,15 @@
 #time-date-card {
-    height: 10vh;
+    height: 7vh;
 }
 
 #time-style {
-    font-size: 2em;
-    padding: 5px;
+    font-size: 1.4em;
 }
 
 #day-style {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 #month-year-style {
-    font-size: 1.5em;
+    font-size: 1em;
 }
