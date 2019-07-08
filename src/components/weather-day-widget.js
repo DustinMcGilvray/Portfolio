@@ -2,6 +2,9 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import '../scss/open-weather-icons.scss'
 
+/*OpenWeatherMap API: https://openweathermap.org/api */
+/*Weather API: https://rapidapi.com/community/api/open-weather-map */
+
 const WeatherDayWidget = () => (
 
   <StaticQuery

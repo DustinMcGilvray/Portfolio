@@ -3,13 +3,12 @@ import Layout from '../components/layout'
 import DateTime from '../components/date-time'
 import DashBoardMainMenu from '../components/dashboard-menu-main'
 import WeatherDayWidget from '../components/weather-day-widget'
+import WakaTimeWidget from '../components/wakatime-widget'
 import NewsTicker from '../components/news-ticker'
 import './dashboard.css'
 
-/*Weather API: https://rapidapi.com/community/api/open-weather-map */
-/*WakaTime API: https://wakatime.com/developers */
 /*Listen Notes API for Podcasts: https://www.listennotes.com/api/ */
-/*YouTube API for Coding Tutporials: https://developers.google.com/youtube/v3/ */
+/*YouTube API for Coding Tutorials: https://developers.google.com/youtube/v3/ */
 
 class Dashboard extends Component {
   render() {
@@ -31,7 +30,7 @@ class Dashboard extends Component {
                 </div>
                 <div className="column">
                   <div id="data-card-2" className="card">
-                  DATA HERE 2
+                  <WakaTimeWidget/>
                   </div>
                 </div>
                 <div className="column">
