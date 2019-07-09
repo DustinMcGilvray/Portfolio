@@ -5,6 +5,8 @@ import DreyfusTable from '../components/dreyfus-table'
 import CodeGroup from '../components/code-group'
 import './code.css'
 
+//TODO: Add MERN & JAM Stack onClick that highlights corresponding tech languages
+
 class MyCode extends Component {
   constructor(props) {
     super(props)

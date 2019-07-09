@@ -57,7 +57,15 @@ module.exports = {
         name: `wakatime`,
       }
     },
+    {
+      resolve: `gatsby-source-youtube-v2`,
+      options: {
+        channelId: ['UCW5YeuERMmlnqo4oq8vwUpg', 'UCK8sQmJBp8GCxrOtXWBpyEA'],
+        apiKey: 'AIzaSyCAOInlc3UOPNByCzYwdUftfKMTdcgDx3I',
+        maxVideos: 50 // Defaults to 50
+      },
+    },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
+    'gatsby-plugin-offline'
   ],
 }
