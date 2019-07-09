@@ -58,6 +58,17 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-source-thirdparty',
+      options: {
+        // The url, this should be the endpoint you are attempting to pull data from
+        url: `https://newsapi.org/v2/top-headlines?country=us&apiKey=b6f739a31b20487fb0a56b712ec890b4`,
+  
+        // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
+        // using this name. i.e. posts.json
+        name: `newsapi`,
+      }
+    },
+    {
       resolve: `gatsby-source-youtube-v2`,
       options: {
         channelId: ['UCW5YeuERMmlnqo4oq8vwUpg', 'UCK8sQmJBp8GCxrOtXWBpyEA'],
