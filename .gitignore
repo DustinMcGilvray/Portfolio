@@ -7,3 +7,6 @@ yarn-error.log
 /public
 .DS_Store
 .vscode/
+
+#API Keys
+.env.development

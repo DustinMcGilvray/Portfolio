@@ -17,7 +17,7 @@ const ContactForm = () => (
             <div id="contact-form-content" className="card-content">
               <form
                 name="contact-form"
-                method="post"
+                method="POST"
                 action="/success"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
