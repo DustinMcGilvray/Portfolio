@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import Ticker from 'react-ticker'
+import NewsApiWidget from '../components/news-api-widget'
+
 
 /*https://github.com/AndreasFaust/react-ticker */
+/* https://www.npmjs.com/package/react-ticker */
 
 class NewsTicker extends Component {
 
@@ -14,7 +17,9 @@ state = {
 
             <Ticker speed={this.state.move ? 6 : 0}>
                 {() => (
-                    <h1 onMouseEnter={() => {this.setState({move: false})}} onMouseLeave={() => this.setState({move: true})}> THIS IS JUST A TEST +++ </h1>
+                    <div onMouseEnter={() => {this.setState({move: false})}} onMouseLeave={() => this.setState({move: true})}> 
+                        <NewsApiWidget/>             
+                    </div>
                 )}
             </Ticker>
         )
