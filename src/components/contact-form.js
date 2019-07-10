@@ -6,7 +6,7 @@ import './contact-form.css'
 
 /*https://codebushi.com/form-handling-gatsby-netlify/ */
 
-const ContactForm = (props) => (
+const ContactForm = () => (
 
   
           <div id="form-card" className="card is-shadowless">
@@ -22,7 +22,6 @@ const ContactForm = (props) => (
                 action="/success/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-                onSubmit={props.handleSubmit}
               >
                 <div className="field is-horizontal">
                   <div className="field-body">
