@@ -2,12 +2,13 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './contact-form.css'
 
+//TODO: Debug Contact Form Submit with Netlify Forms
+
 /*https://codebushi.com/form-handling-gatsby-netlify/ */
 
-const ContactForm = () => (
+const ContactForm = (props) => (
 
-      <div className="columns is-gapless">
-        <div className="column">
+  
           <div id="form-card" className="card is-shadowless">
             <header className="card-header is-shadowless">
               <p className="card-header-title is-centered is-size-3 has-text-white">
@@ -16,11 +17,12 @@ const ContactForm = () => (
             </header>
             <div id="contact-form-content" className="card-content">
               <form
-                name="contact-form"
-                method="POST"
-                action="/success"
+                name="contact"
+                method="post"
+                action="/success/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
+                onSubmit={props.handleSubmit}
               >
                 <div className="field is-horizontal">
                   <div className="field-body">
@@ -120,8 +122,7 @@ const ContactForm = () => (
               </form>
             </div>
           </div>
-        </div>
-      </div>
+
     )
 
 export default ContactForm

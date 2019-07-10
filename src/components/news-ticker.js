@@ -15,7 +15,7 @@ state = {
     render() {
         return (
 
-            <Ticker speed={this.state.move ? 6 : 0}>
+            <Ticker speed={this.state.move ? 6 : 0} offset={'run-in'}>
                 {() => (
                     <div onMouseEnter={() => {this.setState({move: false})}} onMouseLeave={() => this.setState({move: true})}> 
                         <NewsApiWidget/>             

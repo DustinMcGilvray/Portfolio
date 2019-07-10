@@ -25,7 +25,9 @@ const NewsApiWidget = () => (
   }
       }
     `}
+
     render={data => (
+
       <div>
         <a href={data.thirdPartyNewsapi.articles[0].url} target="__blank">
             {data.thirdPartyNewsapi.articles[0].title}
