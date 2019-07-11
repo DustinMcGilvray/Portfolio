@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 import Ticker from 'react-ticker'
-import NewsApiWidget from '../components/news-api-widget'
+import './news-ticker.css'
+
 
 
 /*https://github.com/AndreasFaust/react-ticker */
@@ -15,13 +17,45 @@ state = {
     render() {
         return (
 
-            <Ticker speed={this.state.move ? 6 : 0} offset={'run-in'}>
+            <div onMouseEnter={() => {this.setState({move: false})}} onMouseLeave={() => this.setState({move: true})}> 
+            <Ticker speed={this.state.move ? 6 : 0} offset='run-in' mode='smooth'>
                 {() => (
-                    <div onMouseEnter={() => {this.setState({move: false})}} onMouseLeave={() => this.setState({move: true})}> 
-                        <NewsApiWidget/>             
-                    </div>
+                    <StaticQuery
+                    query={graphql`
+                      query NewsApiQuery {
+                  thirdPartyNewsapi{
+                    articles {
+                      source {
+                        name
+                      }
+                      author
+                      title
+                      description
+                      url
+                      urlToImage
+                      publishedAt
+                      content
+                    }
+                  }
+                      }
+                    `}
+                 render={data => (
+                <div style={{whiteSpace: 'nowrap'}}>
+                  {data.thirdPartyNewsapi.articles.map(
+                    (article)=>(
+                        <span>
+                            <a id="news-article" href={article.url}>
+                                {article.title}
+                            </a>
+                        </span>
+                    )
+                  )}
+                </div>
                 )}
-            </Ticker>
+                />         
+                )}
+                </Ticker>
+                </div>
         )
     }
 }

@@ -18,6 +18,7 @@
     "gatsby-plugin-prefetch-google-fonts": "^1.4.2",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.1",
+    "gatsby-source-apiserver": "^2.0.0",
     "gatsby-source-openweathermap": "^1.0.5",
     "gatsby-source-thirdparty": "^1.0.6",
     "gatsby-source-youtube-v2": "^1.0.1",

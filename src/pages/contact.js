@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
 import ContactSummary from '../components/contact-summary'
-import ContactForm2 from '../components/contact-form-2'
+import ContactForm from '../components/contact-form'
 import './contact.css'
 
 class Contact extends Component {
@@ -17,7 +17,7 @@ class Contact extends Component {
             <div id="contact-side" className="column">
             <div className="columns is-gapless">
             <div className="column">
-              <ContactForm2/>
+              <ContactForm/>
               </div>
               </div>
             </div>

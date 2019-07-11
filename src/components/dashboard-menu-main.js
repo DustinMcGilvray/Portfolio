@@ -8,7 +8,7 @@ const DashboardMainMenu = () => (
   >
     <ul className="menu-list">
       <li>
-        <span className="icon is-large">
+      <span className="icon is-large">
           <FontAwesomeIcon icon={'newspaper'} size={'lg'} color={'white'} />
         </span>
       </li>
