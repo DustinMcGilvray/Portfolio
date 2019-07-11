@@ -6,6 +6,7 @@ import WeatherDayWidget from '../components/weather-day-widget'
 import WakaTimeWidget from '../components/wakatime-widget'
 import YouTubeWidget from '../components/youtube-widget'
 import NewsTicker from '../components/news-ticker'
+import PodcastWidget from '../components/podcast-widget'
 import './dashboard.css'
 
 /*Listen Notes API for Podcasts: https://www.listennotes.com/api/ */
@@ -25,7 +26,7 @@ class Dashboard extends Component {
               <div className="columns">
                 <div className="column">
                   <div id="data-card-1" className="card">
-                    <WeatherDayWidget />
+                   DATA HERE 1
                   </div>
                 </div>
                 <div className="column">
@@ -48,7 +49,7 @@ class Dashboard extends Component {
                 </div>
                 <div className="column is-6">
                   <div id="data-card-5" className="card">
-                    DATA HERE 5
+                    <PodcastWidget/>
                   </div>
                 </div>
               </div>
@@ -56,7 +57,7 @@ class Dashboard extends Component {
               <div className="columns">
                 <div className="column">
                   <div id="data-card-6" className="card">
-                    
+                    DATA HERE 6
                   </div>
                 </div>
               </div>
@@ -89,7 +90,7 @@ class Dashboard extends Component {
                 <div className="columns">
                   <div className="column">
                     <div id="data-card-8" className="card">
-                      DATA HERE 8
+                    <WeatherDayWidget />
                     </div>
                   </div>
                 </div>

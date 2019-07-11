@@ -3,10 +3,9 @@ import { StaticQuery, graphql } from 'gatsby'
 import Ticker from 'react-ticker'
 import './news-ticker.css'
 
-
-
 /*https://github.com/AndreasFaust/react-ticker */
 /* https://www.npmjs.com/package/react-ticker */
+/* https://newsapi.org/docs */
 
 class NewsTicker extends Component {
 
@@ -18,7 +17,7 @@ state = {
         return (
 
             <div onMouseEnter={() => {this.setState({move: false})}} onMouseLeave={() => this.setState({move: true})}> 
-            <Ticker speed={this.state.move ? 6 : 0} offset='run-in' mode='smooth'>
+            <Ticker speed={this.state.move ? 6 : 0} offset='run-in' mode='smooth' height={40}>
                 {() => (
                     <StaticQuery
                     query={graphql`
@@ -40,7 +39,7 @@ state = {
                       }
                     `}
                  render={data => (
-                <div style={{whiteSpace: 'nowrap'}}>
+                <div id="outer-ticker-div" style={{whiteSpace: 'nowrap'}}>
                   {data.thirdPartyNewsapi.articles.map(
                     (article)=>(
                         <span>

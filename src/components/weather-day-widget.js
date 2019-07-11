@@ -5,6 +5,8 @@ import '../scss/open-weather-icons.scss'
 /*OpenWeatherMap API: https://openweathermap.org/api */
 /*Weather API: https://rapidapi.com/community/api/open-weather-map */
 
+//TODO: Establish Math.round function for Temp return
+
 const WeatherDayWidget = () => (
 
   <StaticQuery
@@ -19,18 +21,29 @@ const WeatherDayWidget = () => (
               main
               icon
             }
+            main {
+              temp
+            }
           }
         }
       }
     `}
     render={data => (
-      <div>
-        <h1>{data.openWeather.city.name}</h1>
+      <div className="card">
+      <div className="card-content">
+      {(() =>
+      <p className="title">
+       {data.openWeather.list[0].main.temp}
+      </p>
+      )()}
+      </div>
+
         <p>{data.openWeather.list[0].weather[0].main}</p>
+        <p>
         <span className="icon">
-          <i className={`owi owi-2x owi-${data.openWeather.list[0].weather[0].icon}`}> </i>
+          <i className={`owi owi-3x owi-${data.openWeather.list[0].weather[0].icon}`}> </i>
         </span>
-        <p />
+        </p>
       </div>
     )}
   />

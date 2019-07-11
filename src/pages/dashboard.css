@@ -9,6 +9,10 @@
     background-color: transparent;
 }
 
+#news-ticker-card {
+    background-color: black;
+}
+
 #data-card-1 {
     height: 10vh;
 }
@@ -30,7 +34,7 @@
 }
 
 #data-card-6 {
-    height: 24vh;
+    height: 22vh;
 }
 
 #data-card-7 {

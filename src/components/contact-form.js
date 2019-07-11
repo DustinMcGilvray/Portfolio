@@ -115,13 +115,13 @@ const ContactForm = () => (
                   className="button is-outlined is-fullwidth"
                   type="submit"
                   value="Send Message"
+                  name="submitButton"
                 >
                   Send Message
                 </button>
               </form>
             </div>
           </div>
-
     )
 
 export default ContactForm
