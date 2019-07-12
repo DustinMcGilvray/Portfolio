@@ -33,7 +33,7 @@ const WeatherDayWidget = () => (
       <div className="card-content">
       {(() =>
       <p className="title">
-       {data.openWeather.list[0].main.temp}
+       {data.openWeather.list[0].main.temp} &#8457;
       </p>
       )()}
       </div>

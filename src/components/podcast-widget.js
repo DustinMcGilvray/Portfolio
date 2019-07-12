@@ -31,12 +31,23 @@ const PodcastWidget = () => (
   }
 }
     `}
- render={data => (
+
+render={data => (
 <div>
-<a href={data.allPodcasts.nodes[0].podcasts[0].listennotes_url}>
-  <p>{data.allPodcasts.nodes[0].podcasts[0].title}</p>
- </a>
- <img src={data.allPodcasts.nodes[0].podcasts[0].image} alt="podcast"/>
+<a href={data.allPodcasts.nodes[1].podcasts[0].listennotes_url} target='__blank'>
+<img src={data.allPodcasts.nodes[1].podcasts[0].thumbnail} alt="podcast" style={{height:'128px', width:'128px'}}/>
+</a>
+<div>  
+<p>
+Title: {data.allPodcasts.nodes[1].podcasts[0].title}
+</p>
+<p>
+Description: {data.allPodcasts.nodes[1].podcasts[0].description}
+</p>
+<p>
+Total Episodes: {data.allPodcasts.nodes[1].podcasts[0].total_episodes}
+</p>
+</div>
 </div>
 )}
 />         
