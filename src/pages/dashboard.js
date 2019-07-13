@@ -31,7 +31,7 @@ class Dashboard extends Component {
                 </div>
                 <div className="column">
                   <div id="data-card-2" className="card">
-                    <WakaTimeWidget />
+                    DATA HERE 2
                   </div>
                 </div>
                 <div className="column">
@@ -57,7 +57,7 @@ class Dashboard extends Component {
               <div className="columns">
                 <div className="column">
                   <div id="data-card-6" className="card">
-                    DATA HERE 6
+                  <WakaTimeWidget />
                   </div>
                 </div>
               </div>

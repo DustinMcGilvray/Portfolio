@@ -8,7 +8,6 @@ import './contact-form.css'
 
 const ContactForm = () => (
 
-  
           <div id="form-card" className="card is-shadowless">
             <header className="card-header is-shadowless">
               <p className="card-header-title is-centered is-size-3 has-text-white">

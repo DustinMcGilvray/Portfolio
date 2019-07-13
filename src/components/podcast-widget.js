@@ -37,7 +37,6 @@ render={data => (
 <a href={data.allPodcasts.nodes[1].podcasts[0].listennotes_url} target='__blank'>
 <img src={data.allPodcasts.nodes[1].podcasts[0].thumbnail} alt="podcast" style={{height:'128px', width:'128px'}}/>
 </a>
-<div>  
 <p>
 Title: {data.allPodcasts.nodes[1].podcasts[0].title}
 </p>
@@ -47,7 +46,7 @@ Description: {data.allPodcasts.nodes[1].podcasts[0].description}
 <p>
 Total Episodes: {data.allPodcasts.nodes[1].podcasts[0].total_episodes}
 </p>
-</div>
+<img src="../images/logo/listen_notes_api_logo.png" alt='logo' style={{width: '150px'}}/>
 </div>
 )}
 />         

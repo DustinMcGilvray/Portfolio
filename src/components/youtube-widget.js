@@ -32,8 +32,10 @@ const YouTubeWidget = () => (
     `}
     render={data => (
       <div>
-      <h1>{data.allYoutubeVideo.edges[0].node.title}</h1>
-      <p>{data.allYoutubeVideo.edges[0].node.channelTitle}</p>
+      <h1>Channel Name: {data.allYoutubeVideo.edges[0].node.channelTitle}</h1>
+      <p>Title: {data.allYoutubeVideo.edges[0].node.title}</p>
+      <p>Video Id: {data.allYoutubeVideo.edges[0].node.videoId}</p>
+      <p>Description: {data.allYoutubeVideo.edges[0].node.description}</p>
       <img className='image is-128x128' src={`${data.allYoutubeVideo.edges[0].node.thumbnail.url}`} alt='thumbnail'/>
       </div>
     )}

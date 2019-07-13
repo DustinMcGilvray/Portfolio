@@ -43,9 +43,13 @@ const WakaTimeWidget = () => (
     `}
     render={data => (
       <div>
+      <p>Code Time This week: {data.thirdPartyWakatime.data[0].grand_total.text}</p>
+      <p>Editor of Choice: {data.thirdPartyWakatime.data[0].editors[0].name}</p>
       <p>
-      {data.thirdPartyWakatime.data[0].projects[0].name}
+      Project: {data.thirdPartyWakatime.data[0].projects[0].name}
     </p>
+    <p>{data.thirdPartyWakatime.data[0].projects[0].percent} % of coding time this week spent on the {data.thirdPartyWakatime.data[0].projects[0].name}</p>
+    LANGUAGES
         <p>
           {data.thirdPartyWakatime.data[0].languages[0].name}{''} - {''}
           {data.thirdPartyWakatime.data[0].languages[0].digital}
@@ -54,14 +58,10 @@ const WakaTimeWidget = () => (
           {data.thirdPartyWakatime.data[0].languages[1].name}{''} - {''}
           {data.thirdPartyWakatime.data[0].languages[1].digital}
         </p>
-
         <p>
-          {data.thirdPartyWakatime.data[0].languages[2].name}{''} - {''}
-          {data.thirdPartyWakatime.data[0].languages[2].digital}
+          Weekly Coding Time on this {data.thirdPartyWakatime.data[0].projects[0].name} is {data.thirdPartyWakatime.data[0].projects[0].digital}
         </p>
-        <p>
-          Weekly Coding Time on this Portfolio {data.thirdPartyWakatime.data[0].projects[0].digital}
-        </p>
+        <p>{data.thirdPartyWakatime.data[0].range.text}.</p>
       
       </div>
     )}
