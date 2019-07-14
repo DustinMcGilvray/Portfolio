@@ -7,6 +7,7 @@ import WakaTimeWidget from '../components/wakatime-widget'
 import YouTubeWidget from '../components/youtube-widget'
 import NewsTicker from '../components/news-ticker'
 import PodcastWidget from '../components/podcast-widget'
+import CalendarWidget from '../components/calendar-widget'
 import './dashboard.css'
 
 /*Listen Notes API for Podcasts: https://www.listennotes.com/api/ */
@@ -76,20 +77,21 @@ class Dashboard extends Component {
                 <div className="columns is-gapless">
                   <div className="column">
                     <div id="data-card-6" className="card">
-                      <DateTime />
-                    </div>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column">
-                    <div id="data-card-7" className="card">
-                      DATA HERE 7
+                    <CalendarWidget/>
+                   
                     </div>
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column">
                     <div id="data-card-8" className="card">
+                    <DateTime />
+                    </div>
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column">
+                    <div id="data-card-9" className="card">
                     <WeatherDayWidget />
                     </div>
                   </div>

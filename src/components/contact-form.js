@@ -25,7 +25,7 @@ const ContactForm = () => (
                 <div className="field is-horizontal">
                   <div className="field-body">
                     <div className="field">
-                      <p className="control is-expanded has-icons-left">
+                      <p className="is-expanded has-icons-left">
                         <input type="hidden" name="bot-field" />
                         <input type="hidden" name="form-name" value="contact" />
                         <input
@@ -41,7 +41,7 @@ const ContactForm = () => (
                       </p>
                     </div>
                     <div className="field">
-                      <p className="control is-expanded has-icons-left has-icons-right">
+                      <p className="is-expanded has-icons-left has-icons-right">
                         <input
                           className="input"
                           type="text"
@@ -57,7 +57,7 @@ const ContactForm = () => (
                   </div>
                 </div>
                 <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right">
+                  <p className="is-expanded has-icons-left has-icons-right">
                     <input
                       className="input"
                       type="phone"
@@ -71,7 +71,7 @@ const ContactForm = () => (
                   </p>
                 </div>
                 <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right">
+                  <p className="is-expanded has-icons-left has-icons-right">
                     <input
                       className="input"
                       type="email"
@@ -85,7 +85,7 @@ const ContactForm = () => (
                   </p>
                 </div>
                 <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right">
+                  <p className="is-expanded has-icons-left has-icons-right">
                     <input
                       className="input"
                       type="text"
@@ -99,7 +99,7 @@ const ContactForm = () => (
                   </p>
                 </div>
                 <div className="field">
-                  <p className="control">
+                  <p>
                     <textarea
                       className="textarea"
                       rows="10"
