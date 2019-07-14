@@ -20,13 +20,11 @@ const ContactForm = () => (
                 method="post"
                 action="/success/"
                 data-netlify="true"
-                data-netlify-honeypot="bot-field"
               >
                 <div className="field is-horizontal">
                   <div className="field-body">
                     <div className="field">
                       <p className="is-expanded has-icons-left">
-                        <input type="hidden" name="bot-field" />
                         <input type="hidden" name="form-name" value="contact" />
                         <input
                           className="input"
