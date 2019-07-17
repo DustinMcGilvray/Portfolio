@@ -2,8 +2,6 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './contact-form.css'
 
-//TODO: Debug Contact Form Submit with Netlify Forms
-
 /*https://codebushi.com/form-handling-gatsby-netlify/ */
 
 const ContactForm = () => (

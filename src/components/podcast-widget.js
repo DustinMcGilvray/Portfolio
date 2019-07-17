@@ -1,5 +1,8 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import './podcast-widget.css'
+
+/*Listen Notes API for Podcasts: https://www.listennotes.com/api/ */
 
 const PodcastWidget = () => (
     <StaticQuery
@@ -33,20 +36,20 @@ const PodcastWidget = () => (
     `}
 
 render={data => (
-<div>
-<a href={data.allPodcasts.nodes[1].podcasts[0].listennotes_url} target='__blank'>
-<img src={data.allPodcasts.nodes[1].podcasts[0].thumbnail} alt="podcast" style={{height:'128px', width:'128px'}}/>
-</a>
-<p>
+<div id='podcast-card' className='card has-text-white'>
+<div className='columns is-gapless'>
+<div className='column is-narrow'>
+<img className='image' src={data.allPodcasts.nodes[1].podcasts[0].thumbnail} alt="podcast" style={{height:'150px', width:'150px'}}/>
+</div>
+<div className='column'>
+<h1>
 Title: {data.allPodcasts.nodes[1].podcasts[0].title}
-</p>
-<p>
-Description: {data.allPodcasts.nodes[1].podcasts[0].description}
-</p>
+</h1>
 <p>
 Total Episodes: {data.allPodcasts.nodes[1].podcasts[0].total_episodes}
 </p>
-<img src="../images/logo/listen_notes_api_logo.png" alt='logo' style={{width: '150px'}}/>
+</div>
+</div>
 </div>
 )}
 />         

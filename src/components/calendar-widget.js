@@ -8,11 +8,14 @@ import '@fullcalendar/daygrid/main.css';
 class MyCalendar extends Component {
 
   render() {
-    return (
-      <FullCalendar defaultView="dayGridMonth" 
+      return (
+          <div className='card'>
+          
+          <FullCalendar defaultView="dayGridMonth" 
         plugins={[ dayGridPlugin ]}
         height={5}
       />
+          </div>
     )
   }
 

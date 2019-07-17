@@ -2,6 +2,7 @@ const moment = require('moment')
 const startDate = moment().subtract(7, 'days').format('YYYY-MM-DD')
 const endDate = moment().format('YYYY-MM-DD')
 
+
 module.exports = {
   siteMetadata: {
     title: 'Dustin McGilvray',
@@ -85,8 +86,9 @@ module.exports = {
           "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
         },
           name: "podcasts",
-      },
-  },
+      }
+    },
+      
     'gatsby-plugin-sass',
     'gatsby-plugin-offline'
   ],

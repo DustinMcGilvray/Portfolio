@@ -7,10 +7,8 @@ import WakaTimeWidget from '../components/wakatime-widget'
 import YouTubeWidget from '../components/youtube-widget'
 import NewsTicker from '../components/news-ticker'
 import PodcastWidget from '../components/podcast-widget'
-import CalendarWidget from '../components/calendar-widget'
+// import CalendarWidget from '../components/calendar-widget'
 import './dashboard.css'
-
-/*Listen Notes API for Podcasts: https://www.listennotes.com/api/ */
 
 class Dashboard extends Component {
   render() {
@@ -23,81 +21,49 @@ class Dashboard extends Component {
               <DashBoardMainMenu />
             </div>
             <div id="information-side" className="column is-9">
-              {/*Top Row of Columns */}
+           {/*Single Middle Column */}
+         
+             <div id="data-card-6">
+             <WakaTimeWidget />           
+         </div>
+
+              {/*Split Top Column */}
               <div className="columns">
                 <div className="column">
-                  <div id="data-card-1" className="card">
-                   DATA HERE 1
-                  </div>
-                </div>
-                <div className="column">
-                  <div id="data-card-2" className="card">
-                    DATA HERE 2
-                  </div>
-                </div>
-                <div className="column">
-                  <div id="data-card-3" className="card">
-                    DATA HERE 3
-                  </div>
-                </div>
-              </div>
-              {/*Split Middle Column */}
-              <div className="columns">
-                <div className="column">
-                  <div id="data-card-4" className="card">
                     <YouTubeWidget/>
-                  </div>
                 </div>
-                <div className="column is-6">
-                  <div id="data-card-5" className="card">
+                <div className="column">
                     <PodcastWidget/>
-                  </div>
-                </div>
-              </div>
-              {/*Single Middle Column */}
-              <div className="columns">
-                <div className="column">
-                  <div id="data-card-6" className="card">
-                  <WakaTimeWidget />
-                  </div>
-                </div>
-              </div>
-              {/*News Ticker Column */}
-              <div className="columns">
-                <div className="column">
-                  <div id="news-ticker-card" className="card">
-                    <NewsTicker />
-                  </div>
                 </div>
               </div>
             </div>
             {/*Far Right Column */}
             <div className="column">
-              <div id="data-card-7" className="card">
                 <div className="columns is-gapless">
                   <div className="column">
-                    <div id="data-card-6" className="card">
-                    <CalendarWidget/>
-                   
-                    </div>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column">
-                    <div id="data-card-8" className="card">
                     <DateTime />
-                    </div>
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column">
-                    <div id="data-card-9" className="card">
-                    <WeatherDayWidget />
-                    </div>
+                   
                   </div>
                 </div>
-              </div>
+                <div className="columns">
+                  <div className="column">
+                    <WeatherDayWidget />
+                  </div>
+                </div>
+              
             </div>
+          </div>
+           {/*News Ticker Column */}
+          <div className='columns is-gapless'>
+          <div className='column'>
+          <div id="news-ticker-card" className="card">
+                    <NewsTicker />
+                  </div>
+          </div>
           </div>
         </div>
       </Layout>
