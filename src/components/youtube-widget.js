@@ -35,12 +35,13 @@ const YouTubeWidget = () => (
       <div id='youtube-card' className='card has-text-white'>
       <div className='columns is-gapless'>      
       <div className='column is-narrow'>
-      <img className='image' src={`${data.allYoutubeVideo.edges[0].node.thumbnail.url}`} alt='thumbnail' style={{height:'150px', width:'150px'}}/>
+      <img className='image' src={`${data.allYoutubeVideo.edges[0].node.thumbnail.url}`} alt='thumbnail' style={{height:'100px', width:'100px'}}/>
       </div>
       <div className='column'>
-      <h1>Channel Name: {data.allYoutubeVideo.edges[0].node.channelTitle}</h1>
-      <p>Title: {data.allYoutubeVideo.edges[0].node.title}</p>
-      <p>Video Id: {data.allYoutubeVideo.edges[0].node.videoId}</p>
+      <h1>{data.allYoutubeVideo.edges[0].node.channelTitle}</h1>
+      <p className='has-text-centered'>{data.allYoutubeVideo.edges[0].node.title}</p>
+      {/* <p>Video Id: {data.allYoutubeVideo.edges[0].node.videoId}</p> */}
+      <img src='../images/logo/yt_logo_rgb_dark.png' alt='YouTube Logo' style={{width:'100px'}}/>
       </div>     
       </div>
       </div>

@@ -1,6 +1,6 @@
 const moment = require('moment') 
-const startDate = moment().subtract(7, 'days').format('YYYY-MM-DD')
-const endDate = moment().format('YYYY-MM-DD')
+const startDate = moment().subtract(14, 'days').format('YYYY-MM-DD')
+const endDate = moment().subtract(7, 'days').format('YYYY-MM-DD')
 
 
 module.exports = {
@@ -51,7 +51,7 @@ module.exports = {
       resolve: 'gatsby-source-thirdparty',
       options: {
         // The url, this should be the endpoint you are attempting to pull data from
-        url: `https://wakatime.com/api/v1/users/current/summaries?api_key=eb116994-9948-4c70-88de-71eb4d07d84f&start=${startDate}&end=${endDate}`,
+        url: `https://wakatime.com/api/v1/users/current/stats/last_7_days?api_key=eb116994-9948-4c70-88de-71eb4d07d84f`,
   
         // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
         // using this name. i.e. posts.json

@@ -1,12 +1,7 @@
-#news-ticker-card {
-    background-color: transparent;
-}
+
 
 #news-article {
     padding-right: 25px;
     font-size: 1.5em;
-}
-
-#news-ticker-card{
-    background-color: transparent;
+    color: white;
 }

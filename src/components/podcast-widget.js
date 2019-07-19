@@ -39,15 +39,16 @@ render={data => (
 <div id='podcast-card' className='card has-text-white'>
 <div className='columns is-gapless'>
 <div className='column is-narrow'>
-<img className='image' src={data.allPodcasts.nodes[1].podcasts[0].thumbnail} alt="podcast" style={{height:'150px', width:'150px'}}/>
+<img className='image' src={data.allPodcasts.nodes[0].podcasts[0].thumbnail} alt="podcast" style={{height:'100px', width:'100px'}}/>
 </div>
 <div className='column'>
 <h1>
-Title: {data.allPodcasts.nodes[1].podcasts[0].title}
+Title: {data.allPodcasts.nodes[0].podcasts[0].title}
 </h1>
 <p>
-Total Episodes: {data.allPodcasts.nodes[1].podcasts[0].total_episodes}
+Total Episodes: {data.allPodcasts.nodes[0].podcasts[0].total_episodes}
 </p>
+<img src='../images/logo/listen_notes_api_logo.png' alt='logo' style={{width:'125px'}} />
 </div>
 </div>
 </div>

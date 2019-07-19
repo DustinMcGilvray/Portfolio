@@ -7,7 +7,7 @@ import WakaTimeWidget from '../components/wakatime-widget'
 import YouTubeWidget from '../components/youtube-widget'
 import NewsTicker from '../components/news-ticker'
 import PodcastWidget from '../components/podcast-widget'
-// import CalendarWidget from '../components/calendar-widget'
+import CalendarWidget from '../components/calendar-widget'
 import './dashboard.css'
 
 class Dashboard extends Component {
@@ -20,51 +20,73 @@ class Dashboard extends Component {
             <div className="column is-narrow is-narrow-mobile is-hidden-mobile">
               <DashBoardMainMenu />
             </div>
-            <div id="information-side" className="column is-9">
-           {/*Single Middle Column */}
-         
-             <div id="data-card-6">
-             <WakaTimeWidget />           
-         </div>
 
-              {/*Split Top Column */}
+            <div id="information-side" className="column is-9">
+
+              {/*WakaTime Top Column */}
+              <div className='columns'>
+              <div className='column'>
+                <WakaTimeWidget />
+                </div>
+              </div>
+
+
+              {/*YouTube & Podcast Column */}
               <div className="columns">
                 <div className="column">
-                    <YouTubeWidget/>
+                  <div className="columns">
+                    <div className="column">
+                      <PodcastWidget />
+                    </div>
+                  </div>
+                  <div className="columns">
+                    <div className="column">
+                      <YouTubeWidget />
+                    </div>
+                  </div>
                 </div>
-                <div className="column">
-                    <PodcastWidget/>
+
+            {/* Calendar Column */}
+              <div id="calendar-column" className="column">
+                <div id="calendar-card">
+                  <CalendarWidget/>
                 </div>
               </div>
             </div>
+          </div>
+
             {/*Far Right Column */}
-            <div className="column">
-                <div className="columns is-gapless">
-                  <div className="column">
-                    <DateTime />
-                  </div>
+            <div id="far-right-column" className="column">
+              <div className="columns">
+                <div className="column">
+                  <DateTime />
                 </div>
-                <div className="columns">
-                  <div className="column">
-                   
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column">
-                    <WeatherDayWidget />
-                  </div>
-                </div>
+              </div>
               
+              <div className="columns">
+                <div className="column">
+                  <WeatherDayWidget />
+                </div>
+              </div>
+              <div className="columns">
+                <div className="column">
+                  <div id="data-card" className="card">
+                    Data Here
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-           {/*News Ticker Column */}
-          <div className='columns is-gapless'>
-          <div className='column'>
-          <div id="news-ticker-card" className="card">
-                    <NewsTicker />
-                  </div>
+
+          {/*News Ticker Column */}
+          <div className="columns">
+            <div className="column">
+              <div id="news-ticker-card" className="card">
+                <NewsTicker />
+              </div>
+            </div>
           </div>
-          </div>
+
         </div>
       </Layout>
     )

@@ -1,11 +1,5 @@
 #time-date-card {
-    background-color: transparent;
-}
-
-#time-style {
-    font-size: 2em;
-}
-
-#day-month-style {
-    font-size: 1em;
+    background-color: blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+    height: 11vh;
 }

@@ -39,7 +39,7 @@ state = {
                       }
                     `}
                  render={data => (
-                <div id="outer-ticker-div" style={{whiteSpace: 'nowrap'}}>
+                <div style={{whiteSpace: 'nowrap'}}>
                   {data.thirdPartyNewsapi.articles.map(
                     (article)=>(
                         <span>
