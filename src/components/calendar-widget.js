@@ -22,19 +22,19 @@ state={
       return (
           <div id='calendar-card' className='card'>
           
-          <FullCalendar defaultView='dayGridWeek' 
-        plugins={[ dayGridPlugin, timeGridPlugin, resourceTimelinePlugin ]}
-        header={{
+          <FullCalendar 
+          defaultView='dayGridWeek' 
+          plugins={[ dayGridPlugin, timeGridPlugin, resourceTimelinePlugin ]}
+          header={{
               right: 'next',
               left: 'prev',
               center: 'title'
-      }}
-      height={225}
-      
-      schedulerLicenseKey={'GPL-My-Project-Is-Open-Source'}
-      nowIndicator={true}
-      now={Date.now()}
-      events={this.state.calendarEvents}
+              }}
+          height={225}
+          schedulerLicenseKey={'GPL-My-Project-Is-Open-Source'}
+          nowIndicator={true}
+          now={Date.now()}
+          events={this.state.calendarEvents}
       />
           </div>
     )

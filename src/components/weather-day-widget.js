@@ -84,7 +84,7 @@ const WeatherDayWidget = () => (
           </div>
             <footer className='card-footer'>
             <p className='card-footer-item'>
-            <img src="../images/logo/openweather-negative-logo-RGB.png" alt='logo' style={{width: '100px'}}/>
+            <img src="../images/logo/openweather-white-logo-RGB.png" alt='logo' style={{width: '100px'}}/>
             </p>
             
           </footer>

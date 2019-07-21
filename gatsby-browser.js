@@ -34,7 +34,7 @@ import {
   faPodcast,
   faVideo,
   faCloudSunRain,
-  faCalendarAlt
+  faCalendarAlt,
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -65,5 +65,5 @@ library.add(
   faPodcast,
   faVideo,
   faCloudSunRain,
-  faCalendarAlt
+  faCalendarAlt,
 )

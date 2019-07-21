@@ -81,9 +81,8 @@ class Dashboard extends Component {
           {/*News Ticker Column */}
           <div className="columns">
             <div className="column">
-              <div id="news-ticker-card" className="card">
+              
                 <NewsTicker />
-              </div>
             </div>
           </div>
 

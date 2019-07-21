@@ -1,9 +1,25 @@
 #calendar-card{
-    background-color: blue;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+    background-color: #192f58;    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
     color: white;
 }
 
 #calendar-column{
     max-width: 350px;
+}
+
+.fc th{
+    color: white;
+}
+
+.fc-unthemed td.fc-today {
+    background-color: #122342;
+}
+
+.fc-button-primary {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.fc-button-primary:hover{
+    background-color: rgba(0, 255, 255, 0.623);
 }

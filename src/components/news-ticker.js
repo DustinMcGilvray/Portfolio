@@ -39,6 +39,7 @@ state = {
                       }
                     `}
                  render={data => (
+                   
                 <div style={{whiteSpace: 'nowrap'}}>
                   {data.thirdPartyNewsapi.articles.map(
                     (article)=>(

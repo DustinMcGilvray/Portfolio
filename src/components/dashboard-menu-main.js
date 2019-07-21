@@ -43,6 +43,13 @@ const DashboardMainMenu = () => (
         </span>
       </li>
       </Link>
+      <Link to='/wakatime'>
+      <li>
+        <span className="icon is-large">
+          <FontAwesomeIcon icon={'code'} size={'lg'} color={'white'}/>
+        </span>
+      </li>
+      </Link>
     </ul>
   </aside>
 )
