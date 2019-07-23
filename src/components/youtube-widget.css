@@ -1,3 +1,18 @@
 #youtube-card {
-    background-color: #192f58;    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+    background-color: #192f58;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+    height: 25vh;
 }
+
+.buttonBack___1mlaL carousel__back-button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.buttonNext___2mOCa carousel__next-button{
+    background-color: transparent;
+    border: none;
+    color: white;   
+}
+

@@ -176,10 +176,9 @@ const WakaTimeWidget = () => (
                 ]}
                 style={{ height: '100px' }}
                 lineWidth={20}
-                totalValue={100}
-                
+                totalValue={100}               
                 label={({data, dataIndex}) => 
-              data[0].percentage + '%'
+             data[0].percentage.toFixed(2) + '%'
               }
                 labelPosition={0}
                 labelStyle={{ fontSize: '1em', fontFamily: 'san-serif' }}

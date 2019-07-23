@@ -11,7 +11,7 @@ const DashboardMainMenu = () => (
     <Link to='/news'>
       <li>
       <span className="icon is-large">
-          <FontAwesomeIcon icon={'newspaper'} size={'lg'} color={'white'} />
+          <FontAwesomeIcon icon={'newspaper'} size={'lg'} color={'white'}/>
         </span>
         </li>
         </Link>

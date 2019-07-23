@@ -22,38 +22,51 @@ class Dashboard extends Component {
             </div>
 
             <div id="information-side" className="column is-9">
-
               {/*WakaTime Top Column */}
-              <div className='columns'>
-              <div className='column'>
-                <WakaTimeWidget />
+              <div className="columns">
+                <div className="column">
+                  <WakaTimeWidget />
                 </div>
               </div>
 
+              <div className='columns'>
+                <div className='column'>
+                  <div id='github-card' className='card has-text-white' >
+                  GitHub Data Here
+                  </div>
+                </div>
+              </div>
 
               {/*YouTube & Podcast Column */}
               <div className="columns">
                 <div className="column">
                   <div className="columns">
                     <div className="column">
-                      <PodcastWidget />
-                    </div>
-                  </div>
-                  <div className="columns">
-                    <div className="column">
                       <YouTubeWidget />
                     </div>
                   </div>
                 </div>
+                <div className="column">
+                <div className='columns'>
+                <div className='column'>
+                <PodcastWidget />
+                </div>
+                </div>
+                <div className='columns'>
+                <div className='column'>
+                <PodcastWidget />
+                </div>
+                </div>
+                </div>
 
-            {/* Calendar Column */}
-              <div id="calendar-column" className="column">
-                <div id="calendar-card">
-                  <CalendarWidget/>
+                {/* Calendar Column */}
+                <div id="calendar-column" className="column">
+                  <div id="calendar-card">
+                    <CalendarWidget />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
             {/*Far Right Column */}
             <div id="far-right-column" className="column">
@@ -62,17 +75,9 @@ class Dashboard extends Component {
                   <DateTime />
                 </div>
               </div>
-              
               <div className="columns">
                 <div className="column">
                   <WeatherDayWidget />
-                </div>
-              </div>
-              <div className="columns">
-                <div className="column">
-                  <div id="data-card" className="card">
-                    Data Here
-                  </div>
                 </div>
               </div>
             </div>
@@ -81,11 +86,9 @@ class Dashboard extends Component {
           {/*News Ticker Column */}
           <div className="columns">
             <div className="column">
-              
-                <NewsTicker />
+              <NewsTicker />
             </div>
           </div>
-
         </div>
       </Layout>
     )

@@ -1,16 +1,28 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import YouTubePlayer from './youtube-player'
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+  ButtonFirst,
+  ButtonLast,
+  ButtonPlay,
+} from 'pure-react-carousel'
+import 'pure-react-carousel/dist/react-carousel.es.css'
 import './youtube-widget.css'
 
-/*YouTube API for Coding Tutorials: https://developers.google.com/youtube/v3/ */
+/* YouTube API https://developers.google.com/youtube/v3/ */
+/* https://www.npmjs.com/package/pure-react-carousel */
 
 const YouTubeWidget = () => (
   <StaticQuery
     query={graphql`
       query YouTubeQuery {
-        allYoutubeVideo(
-          filter: { channelId: { eq: "UCW5YeuERMmlnqo4oq8vwUpg" } }
-        ) {
+        allYoutubeVideo {
           edges {
             node {
               id
@@ -32,18 +44,55 @@ const YouTubeWidget = () => (
       }
     `}
     render={data => (
-      <div id='youtube-card' className='card has-text-white'>
-      <div className='columns is-gapless'>      
-      <div className='column is-narrow'>
-      <img className='image' src={`${data.allYoutubeVideo.edges[0].node.thumbnail.url}`} alt='thumbnail' style={{height:'100px', width:'100px'}}/>
-      </div>
-      <div className='column'>
-      <h1>{data.allYoutubeVideo.edges[0].node.channelTitle}</h1>
-      <p className='has-text-centered'>{data.allYoutubeVideo.edges[0].node.title}</p>
-      {/* <p>Video Id: {data.allYoutubeVideo.edges[0].node.videoId}</p> */}
-      <img src='../images/logo/yt_logo_rgb_dark.png' alt='YouTube Logo' style={{width:'100px'}}/>
-      </div>     
-      </div>
+      <div id="youtube-card" className="card has-text-white">
+        <CarouselProvider
+          naturalSlideWidth={100}
+          naturalSlideHeight={50}
+          totalSlides={50}
+        >
+          <Slider>
+            {data.allYoutubeVideo.edges.map(edge => (
+              <Slide index={0}>
+                <YouTubePlayer videoId={edge.node.videoId} />
+              </Slide>
+            ))}
+          </Slider>
+          <ButtonFirst
+            style={{ backgroundColor: 'transparent', border: 'none' }}
+          >
+            <FontAwesomeIcon
+              icon={'fast-backward'}
+              size={'lg'}
+              color={'white'}
+            />
+          </ButtonFirst>
+          <ButtonBack
+            style={{ backgroundColor: 'transparent', border: 'none' }}
+          >
+            <FontAwesomeIcon icon={'backward'} size={'lg'} color={'white'} />
+          </ButtonBack>
+          <ButtonPlay
+            style={{ backgroundColor: 'transparent', border: 'none' }}
+          >
+            <FontAwesomeIcon icon={'play'} size={'lg'} color={'white'} />
+          </ButtonPlay>
+          <ButtonNext
+            style={{ backgroundColor: 'transparent', border: 'none' }}
+          >
+            {' '}
+            <FontAwesomeIcon icon={'forward'} size={'lg'} color={'white'} />
+          </ButtonNext>
+          <ButtonLast
+            style={{ backgroundColor: 'transparent', border: 'none' }}
+          >
+            <FontAwesomeIcon
+              icon={'fast-forward'}
+              size={'lg'}
+              color={'white'}
+            />
+          </ButtonLast>
+          </CarouselProvider>
+          <img src='../images/logo/yt_logo_rgb_dark.png' alt='YouTube Logo' style={{ width: '100px', padding:'15px'}}/>
       </div>
     )}
   />

@@ -35,6 +35,11 @@ import {
   faVideo,
   faCloudSunRain,
   faCalendarAlt,
+  faBackward,
+  faForward,
+  faFastBackward,
+  faFastForward,
+  faPlay
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -66,4 +71,9 @@ library.add(
   faVideo,
   faCloudSunRain,
   faCalendarAlt,
+  faBackward,
+  faForward,
+  faFastBackward,
+  faFastForward,
+  faPlay
 )

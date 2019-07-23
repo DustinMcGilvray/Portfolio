@@ -60,9 +60,13 @@ const WeatherDayWidget = () => (
           <p className="card-header-title is-uppercase is-centered is-size-4 has-text-white">
             {data.openWeather.city.name}
           </p>
-        </header>
+          </header>
+          <p className="is-uppercase is-centered is-size-5 has-text-white">
+          {data.openWeather.list[0].weather[0].description}
+        </p>
         <div className="card-content">
           <div className="content">
+         
             <span className="icon is-large">
               <i
                 className={`owi owi-4x owi-${
@@ -70,24 +74,37 @@ const WeatherDayWidget = () => (
                 }`}
               />
             </span>
+
             <div className="is-size-1">
               {Math.round(data.openWeather.list[0].main.temp)}&#176;
             </div>
-            <div className="is-uppercase">
-              {data.openWeather.list[0].weather[0].description}
-            </div>
-            <div>
-              {getCardinalDirection(data.openWeather.list[0].wind.deg)} at{' '}
-              {Math.round(data.openWeather.list[0].wind.speed)} mph
-            </div>
-            </div>
-          </div>
-            <footer className='card-footer'>
-            <p className='card-footer-item'>
-            <img src="../images/logo/openweather-white-logo-RGB.png" alt='logo' style={{width: '100px'}}/>
+
+            <p>
+              {Math.round(data.openWeather.list[0].main.temp_min)}&#176; Low
+              &nbsp; | &nbsp;
+              {Math.round(data.openWeather.list[0].main.temp_max)}&#176; High
             </p>
-            
-          </footer>
+
+            <p>
+              <span className="light-grey is-pulled-left">Humidity</span> &nbsp;
+              <span className="is-pulled-right">{data.openWeather.list[0].main.humidity} %</span> <br/>
+              <span className="light-grey is-pulled-left">Wind Direction</span> &nbsp;
+              <span className="is-pulled-right">{getCardinalDirection(data.openWeather.list[0].wind.deg)}</span> <br />
+              <span className="light-grey is-pulled-left">Wind Speed</span>&nbsp;
+              <span className="is-pulled-right">{Math.round(data.openWeather.list[0].wind.speed)} mph</span>
+            </p>
+
+          </div>
+        </div>
+        <footer className="card-footer">
+          <p className="card-footer-item">
+            <img
+              src="../images/logo/openweather-white-logo-RGB.png"
+              alt="logo"
+              style={{ width: '100px' }}
+            />
+          </p>
+        </footer>
       </div>
     )}
   />

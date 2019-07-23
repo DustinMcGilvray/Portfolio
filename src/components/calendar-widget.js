@@ -9,6 +9,8 @@ import '@fullcalendar/timegrid/main.css'
 import '@fullcalendar/resource-timeline/main.css'
 import './calendar-widget.css'
 
+{/* https://fullcalendar.io/ */}
+
 class MyCalendar extends Component {
 
 state={
@@ -20,8 +22,7 @@ state={
 
   render() {
       return (
-          <div id='calendar-card' className='card'>
-          
+          <div id='calendar-card' className='card'>         
           <FullCalendar 
           defaultView='dayGridWeek' 
           plugins={[ dayGridPlugin, timeGridPlugin, resourceTimelinePlugin ]}
