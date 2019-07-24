@@ -2,25 +2,38 @@
     background-color: #192f58;    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
     color: white;
+    height: 26vh;
 }
 
-#calendar-column{
-    max-width: 350px;
-}
-
-.fc th{
+.rbc-toolbar button {
     color: white;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    background: none;
+    background-image: none;
+    border: 1px solid #ccc;
+    padding: .375rem .5rem;
+    border-radius: 4px;
+    line-height: normal;
+    white-space: nowrap;
 }
 
-.fc-unthemed td.fc-today {
-    background-color: #122342;
+.rbc-today {
+    background-color: #5c47d1;
 }
 
-.fc-button-primary {
+/* #calendar-column{
+    max-width: 350px;
+} */
+
+/* .fc th{
+    color: white;
+} */
+
+/* .fc-button-primary {
     background-color: transparent;
     border-color: transparent;
-}
+} */
 
-.fc-button-primary:hover{
-    background-color: rgba(0, 255, 255, 0.623);
-}

@@ -52,11 +52,6 @@ class Dashboard extends Component {
                 <PodcastWidget />
                 </div>
                 </div>
-                <div className='columns'>
-                <div className='column'>
-                <PodcastWidget />
-                </div>
-                </div>
                 </div>
 
                 {/* Calendar Column */}

@@ -1,45 +1,39 @@
-import React, { Component } from 'react'
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid'
-import timeGridPlugin from '@fullcalendar/timegrid'
-import resourceTimelinePlugin from '@fullcalendar/resource-timeline';
-import '@fullcalendar/core/main.css'
-import '@fullcalendar/daygrid/main.css'
-import '@fullcalendar/timegrid/main.css'
-import '@fullcalendar/resource-timeline/main.css'
+
+import React, { Component } from "react";
+import {Calendar, momentLocalizer} from "react-big-calendar";
+import moment from "moment";
+import "react-big-calendar/lib/css/react-big-calendar.css";
 import './calendar-widget.css'
 
-{/* https://fullcalendar.io/ */}
+/* https://github.com/intljusticemission/react-big-calendar */
 
-class MyCalendar extends Component {
+moment.locale=("en-GB")
+const localizer = momentLocalizer(moment);
 
-state={
-  calendarWeekends: true,
-  calendarEvents: [
-    {title: 'coding event', start:new Date('07-19-2019 03:24:00')}
-  ]
-}
+class BigCalendar extends Component {
+  state = {
+    events: [
+      {
+        start: '',
+        end: '',
+        title: ""
+      }
+    ]
+  };
 
   render() {
-      return (
-          <div id='calendar-card' className='card'>         
-          <FullCalendar 
-          defaultView='dayGridWeek' 
-          plugins={[ dayGridPlugin, timeGridPlugin, resourceTimelinePlugin ]}
-          header={{
-              right: 'next',
-              left: 'prev',
-              center: 'title'
-              }}
-          height={225}
-          schedulerLicenseKey={'GPL-My-Project-Is-Open-Source'}
-          nowIndicator={true}
-          now={Date.now()}
-          events={this.state.calendarEvents}
-      />
-          </div>
-    )
+    return (
+      <div>
+        <Calendar
+          localizer={localizer}
+          defaultDate={new Date()}
+          views={{month:true}}
+          events={this.state.events}
+          style={{ height: "22vh" }}
+        />
+      </div>
+    );
   }
-
 }
-export default  MyCalendar
+
+export default BigCalendar;

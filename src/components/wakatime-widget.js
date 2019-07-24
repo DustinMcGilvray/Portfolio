@@ -184,7 +184,7 @@ const WakaTimeWidget = () => (
                 labelStyle={{ fontSize: '1em', fontFamily: 'san-serif' }}
                 background="#122342"
               />
-              <p className="has-text-white">{language.name}</p>
+              <p className="has-text-white language-name">{language.name}</p>
             </div>
           ))}
         </div>
