@@ -16,7 +16,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css'
 import './youtube-widget.css'
 
 /* YouTube API https://developers.google.com/youtube/v3/ */
-/* https://www.npmjs.com/package/pure-react-carousel */
+/* pure-react-carousel: https://www.npmjs.com/package/pure-react-carousel */
 
 const YouTubeWidget = () => (
   <StaticQuery
