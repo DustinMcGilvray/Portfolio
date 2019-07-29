@@ -4,6 +4,7 @@ import DateTime from '../components/date-time'
 import DashBoardMainMenu from '../components/dashboard-menu-main'
 import WeatherDayWidget from '../components/weather-day-widget'
 import WakaTimeWidget from '../components/wakatime-widget'
+import WakaTimeCommitsWidget from '../components/wakatime-commits-widget'
 import YouTubeWidget from '../components/youtube-widget'
 import NewsTicker from '../components/news-ticker'
 import PodcastWidget from '../components/podcast-widget'
@@ -32,7 +33,7 @@ class Dashboard extends Component {
               <div className='columns'>
                 <div className='column'>
                   <div id='github-card' className='card has-text-white' >
-                  GitHub Data Here
+                 <WakaTimeCommitsWidget/>
                   </div>
                 </div>
               </div>

@@ -50,6 +50,13 @@ const DashboardMainMenu = () => (
         </span>
       </li>
       </Link>
+      <Link to='/clock'>
+      <li>
+        <span className="icon is-large">
+          <FontAwesomeIcon icon={'clock'} size={'lg'} color={'white'}/>
+        </span>
+      </li>
+      </Link>
     </ul>
   </aside>
 )

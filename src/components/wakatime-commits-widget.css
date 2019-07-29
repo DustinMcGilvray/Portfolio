@@ -1,9 +1,5 @@
-#weather-main-card{
+#wakatime-commits-card{
     background-color: #192f58;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
-    height: 50.5vh;
-}
-
-.light-grey{
-    color: rgb(150, 147, 147);
+    height: 6vh;  
 }

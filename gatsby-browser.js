@@ -39,7 +39,10 @@ import {
   faForward,
   faFastBackward,
   faFastForward,
-  faPlay
+  faPlay,
+  faCaretSquareLeft,
+  faCaretSquareRight,
+  faClock
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -75,5 +78,8 @@ library.add(
   faForward,
   faFastBackward,
   faFastForward,
-  faPlay
+  faPlay,
+  faCaretSquareLeft,
+  faCaretSquareRight,
+  faClock
 )
