@@ -42,6 +42,8 @@ import {
   faPlay,
   faCaretSquareLeft,
   faCaretSquareRight,
+  faCaretSquareUp,
+  faCaretSquareDown,
   faClock
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -81,5 +83,7 @@ library.add(
   faPlay,
   faCaretSquareLeft,
   faCaretSquareRight,
+  faCaretSquareUp,
+  faCaretSquareDown,
   faClock
 )

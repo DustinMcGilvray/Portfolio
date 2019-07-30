@@ -32,7 +32,7 @@ class Dashboard extends Component {
 
               <div className='columns'>
                 <div className='column'>
-                  <div id='github-card' className='card has-text-white' >
+                  <div className='has-text-white' >
                  <WakaTimeCommitsWidget/>
                   </div>
                 </div>

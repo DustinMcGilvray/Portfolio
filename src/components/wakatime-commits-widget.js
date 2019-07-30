@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Moment from 'moment'
 import {
   CarouselProvider,
@@ -7,9 +8,6 @@ import {
   Slide,
   ButtonBack,
   ButtonNext,
-  ButtonFirst,
-  ButtonLast,
-  ButtonPlay,
 } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import './wakatime-commits-widget.css'
@@ -52,43 +50,88 @@ const WakaTimeCommitWidget = () => (
       }
     `}
     render={data => (
-      <div>
-        <CarouselProvider
-          orientation="vertical"
-          naturalSlideWidth={100}
-          naturalSlideHeight={10}
-          totalSlides={10}
-        >
-          <Slider>
-            <Slide>  
-            <div className='columns'>
-            <div className='column is-narrow is-vcentered'>        
-            <p className='is-pulled-left'>
-              {Moment(
-                data.thirdPartyWakatimeCommits.commits[0].committer_date
-              ).format('dddd, MMMM Do YYYY')}
-            </p>          
+      <div className="columns">
+        <div className="column">
+          <CarouselProvider
+            orientation="vertical"
+            naturalSlideWidth={100}
+            naturalSlideHeight={5}
+            totalSlides={10}
+          >
+            <div className="columns">
+              <div className="column">
+                <Slider className="slide-style">
+                  <Slide>
+                    <div className="columns">
+                      <div className="column is-narrow">
+                        <div className="image is-48x48">
+                          <img
+                            src="../icons/code_commit_icon_white.png"
+                            alt="code commit icon"
+                          />
+                        </div>
+                      </div>
+                      <div className="column">
+                        <p className="has-text-white has-text-left">
+                          <span className="light-grey">Commit Date: </span>
+                          {Moment(
+                            data.thirdPartyWakatimeCommits.commits[0]
+                              .committer_date
+                          ).format('dddd, MMMM Do YYYY')}
+                        </p>
+                        <p className="has-text-white has-text-left">
+                          <span className="light-grey">Code Time: </span>{' '}
+                          {
+                            data.thirdPartyWakatimeCommits.commits[0]
+                              .human_readable_total
+                          }
+                        </p>
+                      </div>
+                      <div className="column">
+                        <a
+                          className="has-text-white"
+                          href={
+                            data.thirdPartyWakatimeCommits.commits[0].html_url
+                          }
+                          target="__blank"
+                        >
+                          {data.thirdPartyWakatimeCommits.commits[0].message}
+                        </a>
+                      </div>
+                    </div>
+                  </Slide>
+                </Slider>
+              </div>
+              <div className="column is-narrow">
+                <ul>
+                  <li>
+                    <ButtonBack
+                      style={{ backgroundColor: 'transparent', border: 'none' }}
+                    >
+                      <FontAwesomeIcon
+                        icon={'caret-square-up'}
+                        size={'lg'}
+                        color={'white'}
+                      />
+                    </ButtonBack>
+                  </li>
+                  <li>
+                    <ButtonNext
+                      style={{ backgroundColor: 'transparent', border: 'none' }}
+                    >
+                      {' '}
+                      <FontAwesomeIcon
+                        icon={'caret-square-down'}
+                        size={'lg'}
+                        color={'white'}
+                      />
+                    </ButtonNext>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className='column'>
-            
-            <a
-                
-                href={data.thirdPartyWakatimeCommits.commits[0].html_url}
-                target="__blank"
-              >
-                {data.thirdPartyWakatimeCommits.commits[0].message}
-              </a>
-            </div>
-            <div className='column is-narrow'>
-            
-            <p>
-            {data.thirdPartyWakatimeCommits.commits[0].human_readable_total}
-          </p>           
-            </div>
-            </div>         
-            </Slide>
-          </Slider>
-        </CarouselProvider>
+          </CarouselProvider>
+        </div>
       </div>
     )}
   />

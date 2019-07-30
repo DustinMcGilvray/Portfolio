@@ -92,7 +92,7 @@ const YouTubeWidget = () => (
             />
           </ButtonLast>
           </CarouselProvider>
-          <img src='../images/logo/yt_logo_rgb_dark.png' alt='YouTube Logo' style={{ width: '100px', padding:'5px'}}/>
+          <img src='../images/logo/yt_logo_rgb_dark.png' alt='YouTube Logo' style={{ width: '100px', padding:'15px'}}/>
       </div>
     )}
   />
