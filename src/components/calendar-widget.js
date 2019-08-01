@@ -29,7 +29,7 @@ class BigCalendar extends Component {
           defaultDate={new Date()}
           views={{month:true}}
           events={this.state.events}
-          style={{ height: "22vh" }}
+          style={{ height: "22vh"}}
         />
       </div>
     );

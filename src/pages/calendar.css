@@ -1,8 +1,9 @@
-#calendar-card{
-    background-color: #192f58;    
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+#big-calendar-card{
+    height: 74vh;
+    background-color: #192f58;
     color: white;
-    height: 26vh;
+    border: solid 5px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
 }
 
 .rbc-toolbar button {
@@ -19,8 +20,8 @@
     line-height: normal;
     white-space: nowrap;
 }
-.rbc-header {
-    border-bottom: 4px solid #122342;
+#main-calendar + .rbc-header {
+    border-bottom: 4px solid white;
 }
 
 .rbc-header + .rbc-header {

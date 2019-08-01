@@ -7,3 +7,15 @@
 .slide-style{
     background-color: #192f58;
 }
+
+#slider-column{
+    padding-right: 0;
+}
+
+#commit-icon{
+padding-top: 20px;
+}
+
+#up-down-button-column{
+    padding-left: 0;
+}

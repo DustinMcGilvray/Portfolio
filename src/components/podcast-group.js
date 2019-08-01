@@ -5,11 +5,7 @@ import podcasts from '../podcast-array.json'
 
 class podcastGroup extends Component {
   state = {
-    podcasts,
-  }
-
-  componentDidMount() {
-    console.log(this.state.podcasts)
+    podcasts
   }
 
   render() {
@@ -28,8 +24,8 @@ class podcastGroup extends Component {
           </div>
         </section>
           <div className='arrow-icons' style={{padding:'5px'}}>
-            <span className='left-arrow' style={{paddingRight: '5px'}}><FontAwesomeIcon icon={'caret-square-left'} size={'lg'} color={'white'}/></span>
-            <span className='left-arrow' style={{paddingLeft: '5px'}}><FontAwesomeIcon icon={'caret-square-right'} size={'lg'} color={'white'} /></span>
+            <span className='left-arrow' style={{paddingRight: '5px'}}><FontAwesomeIcon icon={'caret-left'} size={'lg'} color={'white'}/></span>
+            <span className='left-arrow' style={{paddingLeft: '5px'}}><FontAwesomeIcon icon={'caret-right'} size={'lg'} color={'white'} /></span>
           </div>
       </div>
     )

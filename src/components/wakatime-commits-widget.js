@@ -2,6 +2,8 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Moment from 'moment'
+import randomColor from 'randomcolor'
+
 import {
   CarouselProvider,
   Slider,
@@ -53,79 +55,78 @@ const WakaTimeCommitWidget = () => (
       <div className="columns">
         <div className="column">
           <CarouselProvider
-            orientation="vertical"
+            orientation={"vertical"}
             naturalSlideWidth={100}
-            naturalSlideHeight={5}
-            totalSlides={10}
+            naturalSlideHeight={6}
+            totalSlides={7}
+            step={1}
           >
             <div className="columns">
-              <div className="column">
+              <div id='slider-column' className="column">
                 <Slider className="slide-style">
-                  <Slide>
+                {data.thirdPartyWakatimeCommits.commits.slice(0,7).map(commit => (
+                  <Slide index={0}>
                     <div className="columns">
-                      <div className="column is-narrow">
-                        <div className="image is-48x48">
-                          <img
-                            src="../icons/code_commit_icon_white.png"
-                            alt="code commit icon"
-                          />
-                        </div>
+                      <div id='commit-icon' className="column is-1">
+                      <a
+                          
+                      href={
+                        commit.html_url
+                      }
+                      target="__blank"
+                      style={{color: randomColor({ luminosity: 'light' }, { count: 27 })}}
+                    >
+                      <FontAwesomeIcon
+                      icon={['fab','github-square']}
+                      size={'2x'}
+                      color={'white'}
+                    />
+                    </a>
                       </div>
-                      <div className="column">
+                      <div className="column is-4">
                         <p className="has-text-white has-text-left">
                           <span className="light-grey">Commit Date: </span>
-                          {Moment(
-                            data.thirdPartyWakatimeCommits.commits[0]
-                              .committer_date
-                          ).format('dddd, MMMM Do YYYY')}
+                          {Moment(commit.committer_date).format('dddd, MMMM Do YYYY')}
                         </p>
                         <p className="has-text-white has-text-left">
                           <span className="light-grey">Code Time: </span>{' '}
-                          {
-                            data.thirdPartyWakatimeCommits.commits[0]
-                              .human_readable_total
-                          }
+                          {commit.human_readable_total}
                         </p>
                       </div>
-                      <div className="column">
-                        <a
-                          className="has-text-white"
-                          href={
-                            data.thirdPartyWakatimeCommits.commits[0].html_url
-                          }
-                          target="__blank"
-                        >
-                          {data.thirdPartyWakatimeCommits.commits[0].message}
-                        </a>
-                      </div>
+                      <div className="column is-7">
+                        <p>
+                         <span className='light-grey'>Commit Message: </span> {commit.message}
+                        </p>
+                      </div>                
                     </div>
                   </Slide>
+                  ))}
                 </Slider>
               </div>
-              <div className="column is-narrow">
+              <div id='up-down-button-column' className="column is-narrow">
                 <ul>
-                  <li>
-                    <ButtonBack
-                      style={{ backgroundColor: 'transparent', border: 'none' }}
-                    >
-                      <FontAwesomeIcon
-                        icon={'caret-square-up'}
-                        size={'lg'}
-                        color={'white'}
-                      />
-                    </ButtonBack>
-                  </li>
                   <li>
                     <ButtonNext
                       style={{ backgroundColor: 'transparent', border: 'none' }}
                     >
                       {' '}
                       <FontAwesomeIcon
-                        icon={'caret-square-down'}
-                        size={'lg'}
+                        icon={'caret-up'}
+                        size={'2x'}
                         color={'white'}
                       />
                     </ButtonNext>
+                  </li>
+                  <li>
+                    <ButtonBack
+                      style={{ backgroundColor: 'transparent', border: 'none' }}
+                    >
+                      <FontAwesomeIcon
+                        icon={'caret-down'}
+                        size={'2x'}
+                        color={'white'}
+                      />
+                    </ButtonBack>
                   </li>
                 </ul>
               </div>
