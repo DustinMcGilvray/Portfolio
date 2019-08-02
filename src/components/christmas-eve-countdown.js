@@ -7,8 +7,8 @@ class ChristmasEveCountdown extends Component {
       const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
       return (
         <div>
-          <h3 className="title">Christmas Eve is coming soon (Midnight of 23rd to 24th Dec, UTC time):</h3>
-          <Countdown date={`${year}-12-24T00:00:00`} />
+        <Countdown date={`${year}-12-24T00:00:00`} />
+          <h3>Christmas Eve Countdown</h3>
         </div>
       );
     }

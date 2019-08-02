@@ -28,6 +28,7 @@
     "gatsby-source-thirdparty": "^1.0.6",
     "gatsby-source-youtube-v2": "^1.0.1",
     "moment": "^2.24.0",
+    "moment-timezone": "^0.5.26",
     "node-sass": "^4.9.3",
     "prop-types": "^15.7.2",
     "pure-react-carousel": "^1.21.1",
