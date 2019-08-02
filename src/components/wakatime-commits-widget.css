@@ -1,7 +1,7 @@
 #wakatime-commits-card{
     background-color: #192f58;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
-    height: 6vh;  
+    height: 7vh;  
 }
 
 .slide-style{
@@ -13,9 +13,10 @@
 }
 
 #commit-icon{
-padding-top: 20px;
+padding-top: 25px;
 }
 
 #up-down-button-column{
     padding-left: 0;
+    padding-top: 20px;
 }

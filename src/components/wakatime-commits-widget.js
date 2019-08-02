@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Moment from 'moment'
 import randomColor from 'randomcolor'
+import './wakatime-commits-widget.css'
 
 import {
   CarouselProvider,
@@ -57,7 +58,7 @@ const WakaTimeCommitWidget = () => (
           <CarouselProvider
             orientation={"vertical"}
             naturalSlideWidth={100}
-            naturalSlideHeight={6}
+            naturalSlideHeight={7}
             totalSlides={7}
             step={1}
           >
@@ -94,7 +95,7 @@ const WakaTimeCommitWidget = () => (
                         </p>
                       </div>
                       <div className="column is-7">
-                        <p>
+                        <p className='has-text-left'>
                          <span className='light-grey'>Commit Message: </span> {commit.message}
                         </p>
                       </div>                
@@ -103,7 +104,7 @@ const WakaTimeCommitWidget = () => (
                   ))}
                 </Slider>
               </div>
-              <div id='up-down-button-column' className="column is-narrow">
+              <div id='up-down-button-column' className="column is-narrow is-vcentered">
                 <ul>
                   <li>
                     <ButtonNext
