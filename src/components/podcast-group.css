@@ -2,11 +2,13 @@
 #page-numbers {
     list-style: none;
     display: flex;
-
+    position: absolute;
+    margin-left: 46%;
+    margin-top: 5px;
 }
   
   #page-numbers > li {
-    margin-right: 0.3em;
+    margin-right: .5em;
     color: white;
     user-select: none;
     cursor: pointer;

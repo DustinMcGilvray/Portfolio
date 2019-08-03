@@ -58,7 +58,7 @@ const WakaTimeCommitWidget = () => (
           <CarouselProvider
             orientation={"vertical"}
             naturalSlideWidth={100}
-            naturalSlideHeight={7}
+            naturalSlideHeight={8}
             totalSlides={7}
             step={1}
           >
@@ -91,7 +91,11 @@ const WakaTimeCommitWidget = () => (
                         </p>
                         <p className="has-text-white has-text-left">
                           <span className="light-grey">Code Time: </span>{' '}
-                          {commit.human_readable_total}
+                          {commit.human_readable_total_with_seconds}
+                        </p>
+                        <p className="has-text-white has-text-left">
+                          <span className="light-grey">Commited At: </span>{' '}
+                          {Moment(commit.created_at).format('LT')}
                         </p>
                       </div>
                       <div className="column is-7">
@@ -104,7 +108,7 @@ const WakaTimeCommitWidget = () => (
                   ))}
                 </Slider>
               </div>
-              <div id='up-down-button-column' className="column is-narrow is-vcentered">
+              <div id='up-down-button-column' className="column is-1 is-vcentered">
                 <ul>
                   <li>
                     <ButtonNext

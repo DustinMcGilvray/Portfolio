@@ -2,9 +2,43 @@
     {
         "id": "0",
         "timezone": "America/Los_Angeles",
-        "image": ""
+        "name": "Los Angeles",
+        "image": "../images/clock/los_angeles.jpg",
+        "alt": "LA Skyline"
     },
     {
-        
+        "id": "1",
+        "timezone": "America/New_York",
+        "name": "New York",
+        "image": "../images/clock/new_york.jpg",
+        "alt": "NYC Skyline"
+    },
+    {
+        "id": "2",
+        "timezone": "Europe/Dublin",
+        "name": "Dublin",
+        "image": "../images/clock/dublin_guinness.jpg",
+        "alt": "Guinness Brewery"
+    },
+    {
+        "id": "3",
+        "timezone": "Asia/Hong_Kong",
+        "name": "Hong Kong",
+        "image": "../images/clock/beijing.jpg",
+        "alt": "Beijing Skyline"
+    },
+    {
+        "id": "4",
+        "timezone": "Australia/Sydney",
+        "name": "Sydney",
+        "image": "../images/clock/Sydney-skyline.jpg",
+        "alt": "Sydney Opera House"
+    },
+    {
+        "id": "5",
+        "timezone": "Asia/Tokyo",
+        "name": "Tokyo",
+        "image": "../images/clock/tokyo.jpg",
+        "alt": "Tokyo Skyline"
     }
 ]

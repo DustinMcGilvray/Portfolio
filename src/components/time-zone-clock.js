@@ -1,13 +1,23 @@
-import React from 'react';
-import Moment from 'moment-timezone';
+import React from 'react'
+import Clock from 'react-live-clock';
+import './time-zone-clock.css'
 
-const local = Moment().tz('America/Dallas')
-
-const TimeZone = (props) => (
-<div>
-    {Moment().tz(props.timezone).format('MMMM Do YYYY, h:mm:ss a')}
-    <p>{Moment(local).tz(props.timezone).format('Z zz')}</p>
-</div>
+const TimeZone = props => (
+  <div id="time-zone-card" className="card has-text-white">
+  <div className='card-content'>
+  
+  <Clock
+  style={{fontSize:'3em'}}
+  format={'h:mm:ss'}
+  ticking={true}
+  timezone={props.timezone}
+  />
+  </div>
+  <footer className='card-footer'>
+  <p className='timezone-place card-footer-item'>{props.name}</p>
+  </footer>
+    
+  </div>
 )
 
 export default TimeZone

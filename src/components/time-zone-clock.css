@@ -1,0 +1,17 @@
+#time-zone-card{
+    background-color: #192f58;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+}
+
+.timezone-clock{
+    font-size: 1em;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(10%, 95%);
+}
+
+.timezone-place{
+    font-size: 2em;
+}

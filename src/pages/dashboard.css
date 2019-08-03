@@ -18,6 +18,11 @@
     padding-right: 2%;
 }
 
+#commits-main-card{
+    background-color: #192f58;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+}
+
 #news-ticker-card {
     background-color: #192f58;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);

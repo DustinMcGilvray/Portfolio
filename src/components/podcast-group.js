@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
 import PodcastItem from '../components/podcast-item'
 import podcasts from '../podcast-array.json'
-
 import './podcast-group.css'
+
+/* https://codepen.io/PiotrBerebecki/pen/pEYPbY */
 
 class podcastGroup extends Component {
   constructor() {
     super();
     this.state = {
-      todos: podcasts,
+      channels: podcasts,
       currentPage: 1,
-      todosPerPage: 8
+      channelsPerPage: 8
     };
 
     this.handleClick = this.handleClick.bind(this);
@@ -25,25 +26,25 @@ class podcastGroup extends Component {
 
   render() {
 
-      const { todos, currentPage, todosPerPage } = this.state;
+      const { channels, currentPage, channelsPerPage } = this.state;
 
       // Logic for displaying current todos
-      const indexOfLastTodo = currentPage * todosPerPage;
-      const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
-      const currentTodos = todos.slice(indexOfFirstTodo, indexOfLastTodo);
+      const indexOfLastChannel = currentPage * channelsPerPage;
+      const indexOfFirstChannel = indexOfLastChannel - channelsPerPage;
+      const currentChannels = channels.slice(indexOfFirstChannel, indexOfLastChannel);
 
-      const renderTodos = currentTodos.map((todo, index) => {
+      const renderChannels = currentChannels.map((channel, index) => {
         return <PodcastItem
-        id={todo.id}
-        key={todo.id}
-        name={todo.name}
-        image={todo.image}
+        id={channel.id}
+        key={channel.id}
+        name={channel.name}
+        image={channel.image}
       />
       });
 
       // Logic for displaying page numbers
       const pageNumbers = [];
-      for (let i = 1; i <= Math.ceil(todos.length / todosPerPage); i++) {
+      for (let i = 1; i <= Math.ceil(channels.length / channelsPerPage); i++) {
         pageNumbers.push(i);
       }
 
@@ -65,7 +66,7 @@ class podcastGroup extends Component {
         <div>
         <section>
           <div className="columns is-gapless is-multiline">
-          {renderTodos}
+          {renderChannels}
           </div>
         </section>
         <ul id="page-numbers">
