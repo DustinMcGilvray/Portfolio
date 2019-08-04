@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
+import './countdown-widget.css'
 
 /* https://medium.com/@kristin_baumann/react-countdown-6455838b6faf */
 /* https://github.com/kristinbaumann/react-countdown */
@@ -84,29 +85,29 @@ class Countdown extends Component {
       <div className="Countdown">
         <span className="Countdown-col">
           <span className="Countdown-col-element">
-              <strong>{this.addLeadingZeros(countDown.days)}</strong>
-              <span>{countDown.days === 1 ? 'Day' : 'Days'}</span>
+              <strong className='countdown-days-num'>{this.addLeadingZeros(countDown.days)}</strong>&nbsp;
+              <span>{countDown.days === 1 ? 'Day' : 'Days'}</span>&nbsp;
           </span>
         </span>
 
         <span className="Countdown-col">
           <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.hours)}</strong>
-            <span>Hours</span>
+            <strong className='countdown-hours-num'>{this.addLeadingZeros(countDown.hours)}</strong>&nbsp;
+            <span>Hours</span>&nbsp;
           </span>
         </span>
 
 
         <span className="Countdown-col">
           <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.min)}</strong>
-            <span>Min</span>
+            <strong className='countdown-mins-num'>{this.addLeadingZeros(countDown.min)}</strong>&nbsp;
+            <span>Min</span>&nbsp;
           </span>
         </span>
 
         <span className="Countdown-col">
           <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.sec)}</strong>
+            <strong className='countdown-sec-num'>{this.addLeadingZeros(countDown.sec)}</strong>&nbsp;
             <span>Sec</span>
           </span>
         </span>

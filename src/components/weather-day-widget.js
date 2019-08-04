@@ -6,6 +6,7 @@ import './weather-day-widget.css'
 
 /*OpenWeatherMap API: https://openweathermap.org/api */
 /*Weather API: https://rapidapi.com/community/api/open-weather-map */
+/* https://openweathermap.org/weather-conditions */
 
 function getCardinalDirection(angle) {
   const directions = [
@@ -59,6 +60,7 @@ const WeatherDayWidget = () => (
         <header className="card-header is-shadowless">
           <p className="card-header-title is-uppercase is-centered is-size-4 has-text-white">
             {data.openWeather.city.name}
+            {data.openWeather.list[0].dt_txt}
           </p>
           </header>
           <p className="is-uppercase is-centered is-size-5 has-text-white">

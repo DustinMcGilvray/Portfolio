@@ -1,15 +1,13 @@
-#main-clock-card {
-    height: 78vh;
-    background-color: #122342;
-    border: solid 5px black;
+#weather-week-card{
+    background-color: #192f58;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
-    padding: 2% 0% 2% 0%;
 }
 
 .light-grey{
     color: rgb(150, 147, 147);
 }
 
-.dark-purple{
+.dark-purple {
     color: #122342;
+    font-weight: bold;
 }
