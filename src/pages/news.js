@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
-
+import NewsArticles from '../components/news-articles'
+import NewsArticleCard from '../components/news-article-card'
 class NewsPage extends Component {
 
   render() {
@@ -8,8 +9,15 @@ class NewsPage extends Component {
 
       <Layout>
           <div className="container has-text-centered">
-            <h1 className="title">News Page</h1>
-            <h2 className="subtitle">Coding News Feeds Here</h2>
+          <div className='columns'>
+          <div className='column'>
+          
+          <NewsArticles/>
+          </div>
+          <div className='column is-3'>       
+            <NewsArticleCard/>
+          </div>
+          </div>
           </div>
       </Layout>
     )

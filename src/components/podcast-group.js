@@ -35,6 +35,7 @@ class podcastGroup extends Component {
 
       const renderChannels = currentChannels.map((channel, index) => {
         return <PodcastItem
+        playPodcast={this.props.playPodcast}
         id={channel.id}
         key={channel.id}
         name={channel.name}
@@ -63,7 +64,7 @@ class podcastGroup extends Component {
 
       return (
 
-        <div>
+        <div id='podcast-card' className='card has-text-white'>
         <section>
           <div className="columns is-gapless is-multiline">
           {renderChannels}

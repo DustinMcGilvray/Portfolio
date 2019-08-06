@@ -2,9 +2,11 @@ import React from 'react'
 import PodcastGroup from '../components/podcast-group.js'
 import './podcast-widget.css'
 
-const PodcastWidget = () => (
+const PodcastWidget = (props) => (
   <div id="podcast-card" className="card has-text-white">
-    <PodcastGroup />
+    <PodcastGroup 
+      playPodcast={props.playPodcast}
+    />
   </div>
 )
 
