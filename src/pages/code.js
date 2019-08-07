@@ -40,7 +40,6 @@ class MyCode extends Component {
 
             <div id="code-summary-side" className="column">
               {this.state.isSummaryHidden &&  <CodeSummary showTable={this.showTable}/> }
-
               {this.state.isTableHidden && <DreyfusTable closeTable={this.closeTable}/> }  
             </div>
 

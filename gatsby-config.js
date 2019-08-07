@@ -157,7 +157,7 @@ module.exports = {
     {
       resolve: "gatsby-source-apiserver",
       options: {
-        url: "https://listen-api.listennotes.com/api/v2/podcasts/3c03b47b265647a5b6ad271eb55130a4?next_episode_pub_date=1479154463000&sort=recent_first",
+        url: "https://listen-api.listennotes.com/api/v2/podcasts/8a0c7771ad414b0bbb3865c4fbb21dda?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
           "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"

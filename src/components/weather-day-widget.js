@@ -1,6 +1,5 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-// import Moment from 'moment'
 import '../scss/open-weather-icons.scss'
 import './weather-day-widget.css'
 
@@ -56,46 +55,54 @@ const WeatherDayWidget = () => (
       }
     `}
     render={data => (
-      <div id="weather-main-card" className="card has-text-white ">
+      <div id="weather-main-card" className="card has-text-white equal-height">
         <header className="card-header is-shadowless">
-          <p className="card-header-title is-uppercase is-centered is-size-4 has-text-white">
+          <p className="card-header-title is-uppercase is-centered is-size-3 has-text-white">
             {data.openWeather.city.name}
-            {data.openWeather.list[0].dt_txt}
           </p>
-          </header>
-          <p className="is-uppercase is-centered is-size-5 has-text-white">
+        </header>
+        <p className="is-uppercase is-centered is-size-5 has-text-white">
           {data.openWeather.list[0].weather[0].description}
         </p>
         <div className="card-content">
           <div className="content">
-         
             <span className="icon is-large">
               <i
-                className={`owi owi-4x owi-${
+                className={`owi owi-5x owi-${
                   data.openWeather.list[0].weather[0].icon
                 }`}
               />
             </span>
-
             <div className="is-size-1">
               {Math.round(data.openWeather.list[0].main.temp)}&#176;
             </div>
-
-            <p>
+            <p class>
               {Math.round(data.openWeather.list[0].main.temp_min)}&#176; Low
               &nbsp; | &nbsp;
               {Math.round(data.openWeather.list[0].main.temp_max)}&#176; High
             </p>
-
-            <p>
+          </div>
+          <div className="content">
+            <span>
               <span className="light-grey is-pulled-left">Humidity</span> &nbsp;
-              <span className="is-pulled-right">{data.openWeather.list[0].main.humidity} %</span> <br/>
-              <span className="light-grey is-pulled-left">Wind Direction</span> &nbsp;
-              <span className="is-pulled-right">{getCardinalDirection(data.openWeather.list[0].wind.deg)}</span> <br />
-              <span className="light-grey is-pulled-left">Wind Speed</span>&nbsp;
-              <span className="is-pulled-right">{Math.round(data.openWeather.list[0].wind.speed)} mph</span>
-            </p>
-
+              <span className="is-pulled-right">
+                {data.openWeather.list[0].main.humidity} %
+              </span>{' '}
+              <br />
+              <span className="light-grey is-pulled-left">
+                Wind Direction
+              </span>{' '}
+              &nbsp;
+              <span className="is-pulled-right">
+                {getCardinalDirection(data.openWeather.list[0].wind.deg)}
+              </span>{' '}
+              <br />
+              <span className="light-grey is-pulled-left">Wind Speed</span>
+              &nbsp;
+              <span className="is-pulled-right">
+                {Math.round(data.openWeather.list[0].wind.speed)} mph
+              </span>
+            </span>
           </div>
         </div>
         <footer className="card-footer">

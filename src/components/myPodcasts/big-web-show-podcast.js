@@ -13,7 +13,7 @@ import {
 } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import PodcastPlayer from '../podcast-player.js'
-import '../podcast-widget.css'
+import './podcast-channel-player.css'
 
 /*Listen Notes API for Podcasts: https://www.listennotes.com/api/ */
 /* pure-react-carousel: https://www.npmjs.com/package/pure-react-carousel */
@@ -85,7 +85,18 @@ const BigWeb = (props) => (
       }
     `}
     render={data => (
-      <div id="podcastPlayerCard" className="card has-text-white">
+      <div id="podcastPlayerCard" className="card has-text-white equal-height">
+      <header className='card-header'>
+      <p className="card-header-title has-text-white">
+      {data.allBigWeb.nodes[0].title}
+    </p>
+    <a href="#" className="card-header-icon" aria-label="more options">
+      <span className="icon">
+        <FontAwesomeIcon icon={"times-circle"} color={'white'} onClick={() => props.closePlayer(props.id)} value={props.id}/>
+      </span>
+    </a>
+      </header>
+      <div className='card-content is-paddingless'>
       <CarouselProvider
       naturalSlideWidth={100}
       naturalSlideHeight={35}
@@ -119,15 +130,18 @@ const BigWeb = (props) => (
         <FontAwesomeIcon icon={'fast-forward'} size={'lg'} color={'white'} />
       </ButtonLast>
     </CarouselProvider>
-    <img
-      src="../images/logo/listen_notes_api_logo.png"
-      alt="logo"
-      style={{ width: '125px' }}
-    />
-    <div>
-        <p onClick={() => props.closePlayer(props.id)} value={props.id}>Close</p>
     </div>
-      </div>
+    
+    <footer className='card-footer'>
+    <p className='card-footer-item' >
+    <img
+    src="../images/logo/listen_notes_api_logo.png"
+    alt="logo"
+    style={{ width: '125px' }}
+  />
+    </p>
+    </footer>
+    </div>
     )}
   />
 )
