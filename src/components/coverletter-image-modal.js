@@ -1,6 +1,8 @@
 import React from 'react'
 
-const CoverLetterImageModal = (props) => (
+/*TODO: Update Cover Letter to be generic*/
+
+const CoverLetterImageModal = props => (
   <div class="modal is-active">
     <div class="modal-background" />
     <div class="modal-content">
@@ -11,7 +13,11 @@ const CoverLetterImageModal = (props) => (
         />
       </div>
     </div>
-    <button class="modal-close is-large" aria-label="close" onClick={props.closeCoverLetter}/>
+    <button
+      class="modal-close is-large"
+      aria-label="close"
+      onClick={props.closeCoverLetter}
+    />
   </div>
 )
 

@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './code-summary.css'
 
+/*TODO: Fill in Coding Summary*/
+
 const CodeSummary = (props) => (
   <section>
     <div  className="columns is-gapless">

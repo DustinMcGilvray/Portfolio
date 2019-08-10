@@ -32,8 +32,6 @@ const WeatherDayWidget = () => (
           list {
             weather {
               description
-              main
-              id
               icon
             }
             main {
@@ -42,8 +40,6 @@ const WeatherDayWidget = () => (
               humidity
               temp_min
               temp_max
-              sea_level
-              grnd_level
             }
             wind {
               deg

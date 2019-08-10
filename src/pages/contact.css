@@ -3,16 +3,16 @@
     background-size: cover;
     margin: 0;
     background-position: center center;
-    height: 78vh;
     border: solid 5px black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
 }
 
-#summary-side {
-    height: 77vh;
-}
-
-#contact-side {
-    height: 77vh;
+@media only screen and (max-width: 650px){
+    #contact-card{
+        background-image: none;
+        background-color: black;
+        border: solid 5px black;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+    }
 }
 

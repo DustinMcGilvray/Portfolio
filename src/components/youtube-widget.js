@@ -25,19 +25,7 @@ const YouTubeWidget = () => (
         allYoutubeVideo {
           edges {
             node {
-              id
-              title
-              description
               videoId
-              channelTitle
-              thumbnail {
-                url
-                width
-                height
-              }
-              localThumbnail {
-                id
-              }
             }
           }
         }
@@ -91,8 +79,12 @@ const YouTubeWidget = () => (
               color={'white'}
             />
           </ButtonLast>
-          </CarouselProvider>
-          <img src='../images/logo/yt_logo_rgb_dark.png' alt='YouTube Logo' style={{ width: '100px', padding:'15px'}}/>
+        </CarouselProvider>
+        <img
+          src="../images/logo/yt_logo_rgb_dark.png"
+          alt="YouTube Logo"
+          style={{ width: '100px', padding: '15px' }}
+        />
       </div>
     )}
   />

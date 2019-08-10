@@ -1,12 +1,11 @@
 #form-card {
 background-color:transparent;
-height: 77vh
 }
 
 .button {
   border-radius: 0;
   border: none;
-  background-color: rgba(0, 128, 0, 0.603);
+  background-color: rgb(4, 110, 110);
   color: white;
 }
 
@@ -22,6 +21,10 @@ height: 77vh
   border: none;
 }
 
+.input:focus {
+  border: .5px solid cyan;
+}
+
 .input::placeholder {
   color: rgba(255, 255, 255, 0.575);
 }
@@ -32,7 +35,21 @@ height: 77vh
   border: none;
 }
 
+.textarea:focus {
+  border: .5px solid cyan;
+}
+
 .textarea::placeholder {
   color: rgba(255, 255, 255, 0.575);
 }
 
+
+@media only screen and (max-width: 650px){
+  .input {
+    border: .5px solid white;
+  }
+
+  .textarea {
+    border: .5px solid white;
+  }
+}

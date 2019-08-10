@@ -5,7 +5,7 @@ import './code-item.css'
 const CodeItem = props => (
   <div className="column is-one-fifth">
     <div className="logo-card">
-    <img className="tech-image" src={props.image} alt={props.alt}/>
+      <img className="tech-image" src={props.image} alt={props.alt} />
       <div className="logo-overlay">
         <div class="skill-label">
           <div>{props.name}</div>

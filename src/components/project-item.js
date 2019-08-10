@@ -38,14 +38,18 @@ const ProjectItem = props => (
                 placement="right-end"
                 arrow="true"
               >
-                <span className="icon" onClick={() => props.showCLI(props.id)} value={props.id}>
-               <a href={props.play} target="__blank"> 
+                <span
+                  className="icon"
+                  onClick={() => props.showCLI(props.id)}
+                  value={props.id}
+                >
+                  <a href={props.play} target="__blank">
                     <FontAwesomeIcon
                       icon="play-circle"
                       size="md"
                       color="white"
                     />
-                 </a> 
+                  </a>
                 </span>
               </Tippy>
             </div>
@@ -58,7 +62,11 @@ const ProjectItem = props => (
                 placement="right-end"
                 arrow="true"
               >
-                <span className="icon" onClick={() => props.showInfo(props.id)} value={props.id}>
+                <span
+                  className="icon"
+                  onClick={() => props.showInfo(props.id)}
+                  value={props.id}
+                >
                   <FontAwesomeIcon icon="info-circle" size="md" color="white" />
                 </span>
               </Tippy>

@@ -1,0 +1,10 @@
+#newsApiCard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+    background-color: #192f58;
+    padding: 15px 0px 15px 0px;
+}
+
+#up-down-button-column-2{
+    padding-left: 0;
+    padding-top: 35px;
+}

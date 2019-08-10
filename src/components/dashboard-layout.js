@@ -50,139 +50,107 @@ class Dashboard extends Component {
 
   playPodcast = id => {
     switch (id) {
-      case '0':
-        {
+      case '0':        
           this.setState({
             isPodcastWidgetShowing: false,
             isBigWebShowShowing: true,
-          })
-        }
+          })      
         break
-      case '1':
-        {
+      case '1':      
           this.setState({
             isPodcastWidgetShowing: false,
             isChangelogShowing: true,
-          })
-        }
+          })     
         break
-      case '2':
-        {
+      case '2':       
           this.setState({
             isPodcastWidgetShowing: false,
             isCNTRLClickShowing: true,
-          })
-        }
+          })      
         break
       case '3':
-        {
           this.setState({
             isPodcastWidgetShowing: false,
             isCodeNewbieShowing: true,
           })
-        }
         break
       case '4':
-        {
           this.setState({
             isPodcastWidgetShowing: false,
             isCodePenShowing: true,
           })
-        }
         break
       case '5':
-        {
           this.setState({
             isPodcastWidgetShowing: false,
             isDeveloperTeaShowing: true,
           })
-        }
         break
       case '6':
-        {
           this.setState({
             isPodcastWidgetShowing: false,
             isFrontEndShowing: true,
           })
-        }
         break
       case '7':
-        {
           this.setState({
             isPodcastWidgetShowing: false,
             isFullStackShowing: true,
           })
-        }
         break
       case '8':
-        {
           this.setState({
             isPodcastWidgetShowing: false,
             isHanselMinutesShowing: true,
           })
-        }
         break
       case '9':
-        {
           this.setState({
             isPodcastWidgetShowing: false,
             isJavaScriptJabberShowing: true,
           })
-        }
         break
-        case '10':
-        {
+      case '10':
           this.setState({
             isPodcastWidgetShowing: false,
             isMakeMistakesShowing: true,
           })
-        }
         break
-        case '11':
-        {
+      case '11':
           this.setState({
             isPodcastWidgetShowing: false,
             isResponsiveWebShowing: true,
           })
-        }
         break
-        case '12':
-        {
+      case '12':
           this.setState({
             isPodcastWidgetShowing: false,
             isShopTalkShowing: true,
           })
-        }
         break
-        case '13':
-        {
+      case '13':
           this.setState({
             isPodcastWidgetShowing: false,
             isStartHereShowing: true,
           })
-        }
         break
-        case '14':
-        {
+      case '14':
           this.setState({
             isPodcastWidgetShowing: false,
             isStyleGuideShowing: true,
           })
-        }
         break
-        case '15':
-        {
+      case '15':
           this.setState({
             isPodcastWidgetShowing: false,
             isNonBreakingSpaceShowing: true,
           })
-        }
         break
+        default:
     }
   }
 
   closePlayer = id => {
-    {
       this.setState({
         isPodcastWidgetShowing: true,
         isBigWebShowShowing: false,
@@ -202,7 +170,6 @@ class Dashboard extends Component {
         isStyleGuideShowing: false,
         isNonBreakingSpaceShowing: false,
       })
-    }
   }
 
   render() {
@@ -210,19 +177,15 @@ class Dashboard extends Component {
       <Layout>
         <div id="dashboard-main-card" className="card">
           <div className="columns">
-            {/*Side Nav Column */}
             <div className="column is-narrow is-narrow-mobile is-hidden-mobile">
               <DashBoardMainMenu />
             </div>
-
             <div id="information-side" className="column is-9">
-              {/*WakaTime Top Column */}
               <div className="columns">
                 <div className="column">
                   <WakaTimeWidget />
                 </div>
               </div>
-
               <div id="commits-main-card" className="columns card is-gapless">
                 <div className="column">
                   <div className="has-text-white">
@@ -230,8 +193,6 @@ class Dashboard extends Component {
                   </div>
                 </div>
               </div>
-
-              {/*YouTube & Podcast Column */}
               <div className="columns">
                 <div className="column">
                   <div className="columns">
@@ -297,8 +258,6 @@ class Dashboard extends Component {
                     </div>
                   </div>
                 </div>
-
-                {/* Calendar Column */}
                 <div id="calendar-column" className="column">
                   <div id="calendar-card">
                     <CalendarWidget />
@@ -306,8 +265,6 @@ class Dashboard extends Component {
                 </div>
               </div>
             </div>
-
-            {/*Far Right Column */}
             <div id="far-right-column" className="column">
               <div className="columns">
                 <div className="column">
@@ -321,8 +278,6 @@ class Dashboard extends Component {
               </div>
             </div>
           </div>
-
-          {/*News Ticker Column */}
           <div className="columns">
             <div className="column">
               <NewsTicker />

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ResumeImageModal = (props) => (
+const ResumeImageModal = props => (
   <div class="modal is-active">
     <div class="modal-background" />
     <div class="modal-content">
@@ -17,7 +17,11 @@ const ResumeImageModal = (props) => (
         />
       </div>
     </div>
-    <button class="modal-close is-large" aria-label="close" onClick={props.closeResume}/>
+    <button
+      class="modal-close is-large"
+      aria-label="close"
+      onClick={props.closeResume}
+    />
   </div>
 )
 

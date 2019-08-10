@@ -5,7 +5,8 @@ import DreyfusTable from '../components/dreyfus-table'
 import CodeGroup from '../components/code-group'
 import './code.css'
 
-//TODO: Add MERN & JAM Stack onClick that highlights corresponding tech languages
+/*TODO: Review and update skill level number in tech-skill-array.json*/
+/*TODO: Add MERN & JAM Stack onClick that highlights corresponding tech languages*/
 
 class MyCode extends Component {
   constructor(props) {

@@ -4,12 +4,11 @@ import WeatherWeek from '../components/weather-week-widget'
 import './weather.css'
 
 class WeatherPage extends Component {
-
   render() {
-    return(
+    return (
       <Layout>
         <div id="main-weather-card" className="card">
-<WeatherWeek/>
+          <WeatherWeek />
         </div>
       </Layout>
     )

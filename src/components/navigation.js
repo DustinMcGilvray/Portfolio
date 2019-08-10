@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Tippy, { TippyGroup } from '@tippy.js/react'
-import "./navigation.css"
+import './navigation.css'
 
 const Nav = () => (
   <ul>
@@ -30,7 +30,7 @@ const Nav = () => (
             arrow="true"
           >
             <span className="icon">
-              <FontAwesomeIcon icon="briefcase" size="lg" color="black"/>
+              <FontAwesomeIcon icon="briefcase" size="lg" color="black" />
             </span>
           </Tippy>
         </Link>
@@ -44,7 +44,7 @@ const Nav = () => (
             arrow="true"
           >
             <span className="icon">
-              <FontAwesomeIcon icon="brain" size="lg" color="black"/>
+              <FontAwesomeIcon icon="brain" size="lg" color="black" />
             </span>
           </Tippy>
         </Link>
@@ -58,7 +58,7 @@ const Nav = () => (
             arrow="true"
           >
             <span className="icon">
-              <FontAwesomeIcon icon="address-card" size="lg" color="black"/>
+              <FontAwesomeIcon icon="address-card" size="lg" color="black" />
             </span>
           </Tippy>
         </Link>

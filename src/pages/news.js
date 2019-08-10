@@ -1,24 +1,21 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
-import NewsArticles from '../components/news-articles'
-import NewsArticleCard from '../components/news-article-card'
+import WiredFeed from '../components/myRSSfeeds/wired-mag-rss'
+import './news.css'
+
 class NewsPage extends Component {
-
   render() {
-    return(
-
+    return (
       <Layout>
-          <div className="container has-text-centered">
-          <div className='columns'>
-          <div className='column'>
-          
-          <NewsArticles/>
-          </div>
-          <div className='column is-3'>       
-            <NewsArticleCard/>
-          </div>
-          </div>
-          </div>
+        <div id="main-news-card" className="card">
+        <div className="columns">
+        <div className="column">
+          <div>
+            <WiredFeed/>           
+          </div>  
+      </div>
+        </div>
+        </div>
       </Layout>
     )
   }

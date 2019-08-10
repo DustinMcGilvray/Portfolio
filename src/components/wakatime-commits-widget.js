@@ -23,32 +23,12 @@ const WakaTimeCommitWidget = () => (
       query WakaTimeCommitQuery {
         thirdPartyWakatimeCommits {
           commits {
-            author_avatar_url
-            author_date
-            author_email
-            author_html_url
-            author_name
-            author_url
-            author_username
-            committer_avatar_url
             committer_date
-            committer_email
-            committer_html_url
-            committer_name
-            committer_url
-            committer_username
             created_at
-            hash
             html_url
-            human_readable_total
             human_readable_total_with_seconds
-            thirdParty_id
             message
-            total_seconds
-            truncated_hash
-            url
           }
-          total_pages
         }
       }
     `}
@@ -56,59 +36,71 @@ const WakaTimeCommitWidget = () => (
       <div className="columns">
         <div className="column">
           <CarouselProvider
-            orientation={"vertical"}
+            orientation={'vertical'}
             naturalSlideWidth={100}
             naturalSlideHeight={8}
             totalSlides={7}
             step={1}
           >
             <div className="columns">
-              <div id='slider-column' className="column">
+              <div id="slider-column" className="column">
                 <Slider className="slide-style">
-                {data.thirdPartyWakatimeCommits.commits.slice(0,7).map(commit => (
-                  <Slide index={0}>
-                    <div className="columns">
-                      <div id='commit-icon' className="column is-1">
-                      <a
-                          
-                      href={
-                        commit.html_url
-                      }
-                      target="__blank"
-                      style={{color: randomColor({ luminosity: 'light' }, { count: 27 })}}
-                    >
-                      <FontAwesomeIcon
-                      icon={['fab','github-square']}
-                      size={'2x'}
-                      color={'white'}
-                    />
-                    </a>
-                      </div>
-                      <div className="column is-4">
-                        <p className="has-text-white has-text-left">
-                          <span className="light-grey">Commit Date: </span>
-                          {Moment(commit.committer_date).format('dddd, MMMM Do YYYY')}
-                        </p>
-                        <p className="has-text-white has-text-left">
-                          <span className="light-grey">Code Time: </span>{' '}
-                          {commit.human_readable_total_with_seconds}
-                        </p>
-                        <p className="has-text-white has-text-left">
-                          <span className="light-grey">Commited At: </span>{' '}
-                          {Moment(commit.created_at).format('LT')}
-                        </p>
-                      </div>
-                      <div className="column is-7">
-                        <p className='has-text-left'>
-                         <span className='light-grey'>Commit Message: </span> {commit.message}
-                        </p>
-                      </div>                
-                    </div>
-                  </Slide>
-                  ))}
+                  {data.thirdPartyWakatimeCommits.commits
+                    .slice(0, 7)
+                    .map(commit => (
+                      <Slide index={0}>
+                        <div className="columns">
+                          <div id="commit-icon" className="column is-1">
+                            <a
+                              href={commit.html_url}
+                              target="__blank"
+                              style={{
+                                color: randomColor(
+                                  { luminosity: 'light' },
+                                  { count: 27 }
+                                ),
+                              }}
+                            >
+                              <FontAwesomeIcon
+                                icon={['fab', 'github-square']}
+                                size={'2x'}
+                                color={'white'}
+                              />
+                            </a>
+                          </div>
+                          <div className="column is-4">
+                            <p className="has-text-white has-text-left">
+                              <span className="light-grey">Commit Date: </span>
+                              {Moment(commit.committer_date).format(
+                                'dddd, MMMM Do YYYY'
+                              )}
+                            </p>
+                            <p className="has-text-white has-text-left">
+                              <span className="light-grey">Code Time: </span>{' '}
+                              {commit.human_readable_total_with_seconds}
+                            </p>
+                            <p className="has-text-white has-text-left">
+                              <span className="light-grey">Commited At: </span>{' '}
+                              {Moment(commit.created_at).format('LT')}
+                            </p>
+                          </div>
+                          <div className="column is-7">
+                            <p className="has-text-left">
+                              <span className="light-grey">
+                                Commit Message:{' '}
+                              </span>{' '}
+                              {commit.message}
+                            </p>
+                          </div>
+                        </div>
+                      </Slide>
+                    ))}
                 </Slider>
               </div>
-              <div id='up-down-button-column' className="column is-1 is-vcentered">
+              <div
+                id="up-down-button-column"
+                className="column is-1 is-vcentered"
+              >
                 <ul>
                   <li>
                     <ButtonNext

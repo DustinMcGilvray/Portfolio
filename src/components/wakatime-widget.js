@@ -16,112 +16,19 @@ const WakaTimeWidget = () => (
         thirdPartyWakatime {
           data {
             best_day {
-              created_at
               date
-              modified_at
               text
-              thirdParty_id
-              total_seconds
             }
             categories {
-              digital
-              hours
-              minutes
-              name
-              percent
               text
-              total_seconds
-            }
-            created_at
-            daily_average
-            daily_average_including_other_language
-            days_including_holidays
-            days_minus_holidays
-            dependencies {
-              digital
-              hours
-              minutes
-              name
-              percent
-              text
-              total_seconds
             }
             editors {
-              digital
-              hours
-              minutes
               name
-              percent
-              text
-              total_seconds
             }
-            end
-            holidays
-            human_readable_daily_average
-            human_readable_daily_average_including_other_language
-            human_readable_total
-            human_readable_total_including_other_language
-            thirdParty_id
-            is_already_updating
-            is_coding_activity_visible
-            is_other_usage_visible
-            is_stuck
-            is_up_to_date
             languages {
-              digital
-              hours
-              minutes
               name
               percent
-              text
-              total_seconds
             }
-            machines {
-              digital
-              hours
-              machine {
-                created_at
-                thirdParty_id
-                ip
-                last_seen_at
-                name
-                value
-              }
-              minutes
-              name
-              percent
-              text
-              total_seconds
-            }
-            modified_at
-            operating_systems {
-              digital
-              hours
-              minutes
-              name
-              percent
-              text
-              total_seconds
-            }
-            projects {
-              digital
-              hours
-              minutes
-              name
-              percent
-              text
-              total_seconds
-            }
-            range
-            start
-            status
-            timeout
-            timezone
-            total_seconds
-            total_seconds_including_other_language
-            user_id
-            username
-            writes_only
           }
         }
       }
@@ -163,7 +70,6 @@ const WakaTimeWidget = () => (
             <p className='light-grey'>Editor of Choice</p>
           </div>
         </div>
-
         <div className="columns is-multiline">
           {data.thirdPartyWakatime.data.languages.map(language => (
             <div className="column">

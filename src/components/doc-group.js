@@ -4,7 +4,7 @@ import Resume from '../files/dustin_mcgilvray_resume.pdf'
 import CoverLetter from '../files/dustin_mcgilvray_coverletter.pdf'
 import './doc-group.css'
 
-const DocGroup = (props) => (
+const DocGroup = props => (
   <div className="columns is-gapless is-multiline">
     <div className="column is-full">
       <figure id="resume-card" className="card is-shadowless effect-oscar">
@@ -27,9 +27,13 @@ const DocGroup = (props) => (
               </div>
               <div className="column">
                 <p>
-                    <div className="image-pointer" onClick={props.showResume}>
-                        <FontAwesomeIcon icon={'image'} color={'white'} size={'lg'} />
-                    </div>
+                  <div className="image-pointer" onClick={props.showResume}>
+                    <FontAwesomeIcon
+                      icon={'image'}
+                      color={'white'}
+                      size={'lg'}
+                    />
+                  </div>
                 </p>
               </div>
             </div>
@@ -38,7 +42,10 @@ const DocGroup = (props) => (
       </figure>
     </div>
     <div className="column is-half">
-      <figure id="cover-letter-card" className="card is-shadowless effect-oscar">
+      <figure
+        id="cover-letter-card"
+        className="card is-shadowless effect-oscar"
+      >
         <figcaption>
           <h2 className="doc-group-font">
             Cover<span>Letter</span>
@@ -62,9 +69,16 @@ const DocGroup = (props) => (
               </div>
               <div className="column">
                 <p>
-                    <div className="image-pointer" onClick={props.showCoverLetter}>
-                        <FontAwesomeIcon icon={'image'} color={'white'} size={'lg'} />
-                    </div>
+                  <div
+                    className="image-pointer"
+                    onClick={props.showCoverLetter}
+                  >
+                    <FontAwesomeIcon
+                      icon={'image'}
+                      color={'white'}
+                      size={'lg'}
+                    />
+                  </div>
                 </p>
               </div>
             </div>

@@ -11,10 +11,10 @@ class Contact extends Component {
       <Layout>
         <div id="contact-card" className="card is-shadowless">
           <div className="columns is-gapless">
-            <div id="contact-summary-side" className="column">
+            <div className="column">
               <ContactSummary/>
               </div>
-            <div id="contact-side" className="column">
+            <div className="column">
             <div className="columns is-gapless">
             <div className="column">
               <ContactForm/>

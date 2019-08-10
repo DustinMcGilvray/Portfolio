@@ -5,9 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const ContactSummary = () => (
   <div id="contact-summary-card" className="card is-shadowless">
     <div className="card-content">
-      <h1 className="title is-centered has-text-white">Get in Touch with Me!</h1>
+      <h1 className="title is-centered has-text-white">
+        Get in Touch with Me!
+      </h1>
       <p className="subtitle has-text-white">
-        I am interested in opportunities... I will respond within 48hrs...     
+        I am interested in opportunities... I will respond within 48hrs...
       </p>
       <ul>
         <li className="has-text-white">
@@ -22,10 +24,10 @@ const ContactSummary = () => (
           <span className="icon contact-icon">
             <FontAwesomeIcon icon="envelope" color="white" size="lg" />
           </span>
-            dustinmcgilvray@gmail.com
+          dustinmcgilvray@gmail.com
         </li>
       </ul>
-      </div> 
+    </div>
     <footer id="contact-summary-footer" className="card-footer">
       <a
         href="https://github.com/DustinMcGilvray"
