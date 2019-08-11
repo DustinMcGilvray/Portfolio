@@ -1,7 +1,11 @@
 #info-card {
     background-color: black;
     height: 76vh;
-    width: 100%;
+}
+
+.custom-header{
+    padding-right: 0rem;
+    padding-left: 1.5rem;
 }
 
 .tech-stack{
@@ -14,6 +18,19 @@
 }
 
 .logo-image{
-    width: 100px;
-    height: 100px;
+    width: 75%;
+    height: 75%;
+}
+
+@media only screen and (max-width: 768px){
+    #info-card {
+        background-color: black;
+        height: 75vh;
+        overflow: scroll;
+    }
+
+    .logo-image{
+        width: 25%;
+        height: 25%;
+    }
 }

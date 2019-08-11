@@ -78,6 +78,7 @@ class Portfolio extends Component {
                 id={this.state.currentProject.id}
                 key={this.state.currentProject.id}
                 name={this.state.currentProject.name}
+                repo={this.state.currentProject.repo}
                 techArray={this.state.currentProject.techArray}
                 showCLI={this.showCLI}
                 closeCLI={this.closeCLI} 

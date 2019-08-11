@@ -93,7 +93,7 @@ figure.effect-terry h2 {
 
 figure h2 {
 	word-spacing: -0.10em;
-	font-weight: 300;
+	font-weight: bold;
 }
 
 figure h2 span {
@@ -162,9 +162,19 @@ figure.effect-terry:hover p .icon-link{
 /*Hover Effect Terry End*/
 
 /*Media Queries for Mobile Responsiveness*/
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 768px) {
 	figure.effect-terry h2 {
-		padding: 0.75em 10px;
-		font-size: 120%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 0.025em 10px;
+		font-size: 100%;
+		width: 50%;
+		color: white;
+		-webkit-transition: -webkit-transform 0.35s;
+		transition: transform 0.35s;
+		-webkit-transform: translate3d(100%,0,0);
+		transform: translate3d(100%,0,0);
 	}
+
 }

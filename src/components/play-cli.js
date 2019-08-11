@@ -8,7 +8,7 @@ const AppCLI = props => {
     <div className="column">
       <div id="info-card" className="card is-shadowless">
         <header className="card-header is-shadowless">
-          <p class="card-header-title is-centered is-size-3 has-text-white">
+          <p class="card-header-title is-centered is-size-3 has-text-white custom-header">
             {props.name}
           </p>
           <div className="card-header-icon">

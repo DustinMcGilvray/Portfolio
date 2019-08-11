@@ -99,8 +99,15 @@ const ContactForm = (props) => (
         <div className="field">
           <p>
             <textarea
-              className="textarea"
+              className="textarea is-hidden-mobile"
               rows="10"
+              name="sentMessage"
+              id="sentMessage"
+              placeholder="Send me a note!"
+            />
+            <textarea
+              className="textarea is-hidden-desktop"
+              rows="7"
               name="sentMessage"
               id="sentMessage"
               placeholder="Send me a note!"
