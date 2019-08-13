@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './code-summary.css'
+import './code-summary-mobile.css'
 
 /*TODO: Fill in Coding Summary*/
 
-const CodeSummary = props => (
+const MobileCodeSummary = props => (
   <div className="columns is-gapless">
     <div className="column">
       <div id="code-summary-card" className="card">
@@ -22,7 +22,7 @@ const CodeSummary = props => (
           </div>
         </header>
         <div className="card-content" onClick={props.showTable}>
-          <p className="content">
+          <p className="content has-text-white">
             Place some verbage here about coding and stuff. All kinds of stuff
             about my coding skills. Syntactical Sugar. Lorem ipsum dolor sit
             amet consectetur adipisicing elit. Modi consequatur maxime et a
@@ -30,23 +30,12 @@ const CodeSummary = props => (
             tempore doloremque, eius rerum natus corporis soluta quisquam
             dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <footer className="card-footer is-hidden-mobile">
+          <footer className="card-footer">
             <div className="card-footer-item">
               <button
                 id="table-button"
                 className="button is-primary is-fullwidth"
-                onClick={props.showTable}
-              >
-                Skill Table
-              </button>
-            </div>
-          </footer>
-          <footer className="card-footer is-hidden-desktop">
-            <div className="card-footer-item">
-              <button
-                id="table-button"
-                className="button is-primary is-fullwidth"
-                onClick={props.showCodeGroup}
+                onClick={props.showSkills}
               >
                 Code Skills
               </button>
@@ -58,4 +47,4 @@ const CodeSummary = props => (
   </div>
 )
 
-export default CodeSummary
+export default MobileCodeSummary

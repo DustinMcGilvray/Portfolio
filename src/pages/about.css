@@ -1,10 +1,14 @@
 #about-card {
-    background-image: url(../images/headshot_casual_bw.png);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    height: 77vh;
     border: solid 5px black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+    height: 77vh;
+}
+
+#headshot-side{
+    background-image: url(../images/headshot_casual_bw.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #word-about {
@@ -15,7 +19,7 @@
     writing-mode: vertical-lr;
     top: 50%;
     left: 50%;
-    transform: translate(-220%, -50%);
+    transform: translate(-215%, -50%);
     mix-blend-mode: screen; 
 }
 
@@ -25,14 +29,12 @@ Link {
 
 .about-card {
     height: 19vh;
-    width: 50%;
-    float: right;
+    width: 100%;
 }
 
 /*Hover Effect from W3 School 
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slideleft*/
 .container-bio{
-    position: relative;
     width: 50%;
 }
 
@@ -41,7 +43,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
 }
 
 .container-craft{
-    position: relative;
     width: 50%;
 }
 
@@ -50,7 +51,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
 }
 
 .container-code{
-    position: relative;
     width: 50%;
 }
 
@@ -59,7 +59,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
 }
 
 .container-docs{
-    position: relative;
     width: 50%;
 }
 
@@ -198,4 +197,48 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slid
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px){
+    #about-card {
+        height: 73.2vh;
+    }
+
+    .about-card {
+        height: 18vh;
+        width: 100%;
+    }
+    
+
+    .container-bio{
+        width: 100%;
+    }
+
+    .container-craft{
+        width: 100%;
+    }
+
+    .container-code{
+        width: 100%;
+    }
+
+    .container-docs{
+        width: 100%;
+    }
+
+    .about-card-title-bio {
+        font-size: 6em; 
+    }
+
+    .about-card-title-craft {
+        font-size: 6em; 
+    }
+    
+    .about-card-title-code {
+        font-size: 6em; 
+    }
+    
+    .about-card-title-docs {
+        font-size: 6em; 
+    }
 }

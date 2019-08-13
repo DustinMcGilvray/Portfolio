@@ -51,6 +51,7 @@ import {
   faCaretUp,
   faCaretLeft,
   faCaretRight,
+  faArrowCircleDown
   
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -98,5 +99,6 @@ library.add(
   faCaretDown,
   faCaretUp,
   faCaretLeft,
-  faCaretRight
+  faCaretRight,
+  faArrowCircleDown
 )

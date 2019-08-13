@@ -12,7 +12,7 @@ class MyCraft extends Component {
       <Layout>
       <div id="craft-card" className="card">
         <header className="card-header is-shadowless">
-          <p class="card-header-title is-centered is-size-3 has-text-white">
+          <p class="card-header-title is-centered is-size-3 has-text-white custom-header">
             CRAFT
           </p>
           <div className="card-header-icon">

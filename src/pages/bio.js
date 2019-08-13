@@ -12,7 +12,7 @@ class MyBio extends Component {
       <Layout>
         <div id="bio-card" className="card">
           <header className="card-header is-shadowless">
-            <p class="card-header-title is-centered is-size-3 has-text-white">
+            <p class="card-header-title is-centered is-size-3 has-text-white custom-header">
               BIO
             </p>
             <div className="card-header-icon">
@@ -23,7 +23,6 @@ class MyBio extends Component {
               </Link>
             </div>
           </header>
-          <section className="section">
             <div className="card-content">
               <div className="content has-text-center has-text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
@@ -45,7 +44,6 @@ class MyBio extends Component {
                 dolores possimus quo, recusandae unde. Ea, excepturi.
               </div>
             </div>
-          </section>
         </div>
       </Layout>
     )

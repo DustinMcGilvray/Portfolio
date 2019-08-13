@@ -14,8 +14,7 @@ class codeGroup extends Component {
   render() {
     return (
       <div>
-        <section>
-          <div className="columns is-gapless is-multiline">
+          <div className="columns is-gapless is-multiline is-mobile">
             {this.state.skills.map(skill => (
               <MySkill
                 id={skill.id}
@@ -26,7 +25,6 @@ class codeGroup extends Component {
               />
             ))}
           </div>
-        </section>
       </div>
     )
   }

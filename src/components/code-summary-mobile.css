@@ -1,5 +1,8 @@
 #code-summary-card {
-    background: rgba(255, 255, 255, 0.514);
+    background-image: url(../images/computer-keyboard_bw.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     height: 77vh;
 }
 
@@ -8,14 +11,12 @@
     padding-left: 1.5rem;
 }
 
-
 #table-button {
     background-color: rgb(0, 183, 255);
 }
 
 @media only screen and (max-width: 768px){
     #code-summary-card {
-        background: rgba(255, 255, 255, 0.514);
         height: 74vh;
     }
 }

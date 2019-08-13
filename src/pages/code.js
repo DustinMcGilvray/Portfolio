@@ -3,6 +3,8 @@ import Layout from '../components/layout'
 import CodeSummary from '../components/code-summary'
 import DreyfusTable from '../components/dreyfus-table'
 import CodeGroup from '../components/code-group'
+import MobileCodeGroup from '../components/code-group-mobile'
+import MobileCodeSummary from '../components/code-summary-mobile'
 import './code.css'
 
 /*TODO: Review and update skill level number in tech-skill-array.json*/
@@ -11,17 +13,19 @@ import './code.css'
 class MyCode extends Component {
   constructor(props) {
     super(props)
-    this.state = { 
+    this.state = {
       isTableHidden: false,
-      isSummaryHidden: true 
-  }
+      isSummaryHidden: true,
+      isCodeSummaryHidden: false,
+      isShowSkillsHidden: true,
+    }
   }
 
   showTable = () => {
     this.setState({
       ...this.state,
       isTableHidden: true,
-      isSummaryHidden: false
+      isSummaryHidden: false,
     })
   }
 
@@ -29,7 +33,23 @@ class MyCode extends Component {
     this.setState({
       ...this.state,
       isTableHidden: false,
-      isSummaryHidden: true
+      isSummaryHidden: true,
+    })
+  }
+
+  showSkills = () => {
+    this.setState({
+      ...this.state,
+      isCodeSummaryHidden: true,
+      isShowSkillsHidden: false,
+    })
+  }
+
+  closeSkills = () => {
+    this.setState({
+      ...this.state,
+      isCodeSummaryHidden: false,
+      isShowSkillsHidden: true,
     })
   }
 
@@ -38,15 +58,28 @@ class MyCode extends Component {
       <Layout>
         <div id="code-card" className="card">
           <div className="columns is-gapless">
-
-            <div id="code-summary-side" className="column">
-              {this.state.isSummaryHidden &&  <CodeSummary showTable={this.showTable}/> }
-              {this.state.isTableHidden && <DreyfusTable closeTable={this.closeTable}/> }  
+            <div id="code-summary-side" className="column is-hidden-mobile">
+              {this.state.isSummaryHidden && (
+                <CodeSummary showTable={this.showTable} />
+              )}
+              {this.state.isTableHidden && (
+                <DreyfusTable closeTable={this.closeTable} />
+              )}
             </div>
 
-            <div id="skills-side" className="column">
-                <CodeGroup/>
+            <div id="skills-side" className="column is-hidden-mobile">
+              <CodeGroup />
             </div>
+
+            <div className="column is-hidden-desktop">
+              {this.state.isShowSkillsHidden && (
+                <MobileCodeSummary showSkills={this.showSkills} />
+              )}
+              {this.state.isCodeSummaryHidden && (
+                <MobileCodeGroup closeSkills={this.closeSkills} />
+              )}          
+            </div>
+
           </div>
         </div>
       </Layout>

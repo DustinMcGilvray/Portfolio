@@ -1,0 +1,20 @@
+#skills-side {
+    background-color: black;
+}
+
+#code-group-content{
+    padding: 0;
+}
+
+#code-group-header{
+    padding-bottom: 0;
+}
+
+#custom-header-icon{
+    padding-top: 0;
+}
+
+.custom-header{
+    padding-right: 0rem;
+    padding-left: 1.5rem;
+}
