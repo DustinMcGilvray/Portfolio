@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Layout from '../components/layout'
 import DocsSummary from '../components/docs-summary'
 import DocGroup from '../components/doc-group'
+import MobileDocGroup from '../components/doc-group-mobile'
 import ResumeImageModal from '../components/resume-image-modal'
 import CoverLetterImageModal from '../components/coverletter-image-modal'
 import './docs.css'
@@ -9,18 +10,22 @@ import './docs.css'
 class MyDocs extends Component {
   constructor(props) {
     super(props)
-    this.state = { 
+    this.state = {
       isResumeHidden: false,
       isCoverLetterHidden: false,
-      isDocGroupHidden: true 
-  }
+      isMobileResumeHidden: false,
+      isMobileCoverLetterHidden: false,
+      isDocsSummaryShowing: true,
+      isDocGroupHidden: true,
+    }
   }
 
   showResume = () => {
     this.setState({
       ...this.state,
       isResumeHidden: true,
-      isDocGroupHidden: false
+      isDocGroupHidden: false,
+      isDocsSummaryShowing: false,
     })
   }
 
@@ -28,7 +33,8 @@ class MyDocs extends Component {
     this.setState({
       ...this.state,
       isResumeHidden: false,
-      isDocGroupHidden: true
+      isDocGroupHidden: true,
+      isDocsSummaryShowing: true,
     })
   }
 
@@ -36,7 +42,7 @@ class MyDocs extends Component {
     this.setState({
       ...this.state,
       isCoverLetterHidden: true,
-      isDocGroupHidden: false 
+      isDocGroupHidden: false,
     })
   }
 
@@ -44,7 +50,7 @@ class MyDocs extends Component {
     this.setState({
       ...this.state,
       isCoverLetterHidden: false,
-      isDocGroupHidden: true 
+      isDocGroupHidden: true,
     })
   }
 
@@ -52,14 +58,44 @@ class MyDocs extends Component {
     return (
       <Layout>
         <div id="docs-card" className="card">
-          <div className="columns is-gapless">
+          <div className="columns is-gapless is-hidden-mobile">
             <div id="docs-summary-side" className="column">
               <DocsSummary />
             </div>
             <div id="docs-side" className="column">
-              {this.state.isResumeHidden && <ResumeImageModal closeResume={this.closeResume}/>}
-              {this.state.isCoverLetterHidden && <CoverLetterImageModal closeCoverLetter={this.closeCoverLetter}/>}
-              {this.state.isDocGroupHidden && <DocGroup showResume={this.showResume} showCoverLetter={this.showCoverLetter}/>}
+              {this.state.isResumeHidden && (
+                <ResumeImageModal closeResume={this.closeResume} />
+              )}
+              {this.state.isCoverLetterHidden && (
+                <CoverLetterImageModal
+                  closeCoverLetter={this.closeCoverLetter}
+                />
+              )}
+              {this.state.isDocGroupHidden && (
+                <DocGroup
+                  showResume={this.showResume}
+                  showCoverLetter={this.showCoverLetter}
+                />
+              )}
+            </div>
+          </div>
+
+          <div className="columns is-gapless is-hidden-desktop">
+            <div className="column">
+              {this.state.isDocsSummaryShowing && (
+                <MobileDocGroup
+                  showResume={this.showResume}
+                  showCoverLetter={this.showCoverLetter}
+                />
+              )}
+              {this.state.isResumeHidden && (
+                <ResumeImageModal closeResume={this.closeResume} />
+              )}
+              {this.state.isCoverLetterHidden && (
+                <CoverLetterImageModal
+                  closeCoverLetter={this.closeCoverLetter}
+                />
+              )}
             </div>
           </div>
         </div>

@@ -27,14 +27,14 @@
     flex-direction: column;
 }
 
-.image-pointer{
-	cursor: pointer;
-}
-
 #npm-resume-content {
-    min-height: 28vh;
+	min-height: 28vh;
     display: flex;
     flex-direction: column;
+}
+
+.image-pointer{
+	cursor: pointer;
 }
 
 .docs-card-footer {

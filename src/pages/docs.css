@@ -12,6 +12,8 @@
 	height: 22vh;
 }
 
-#doc-top-image {
-	background-position: top;
+@media only screen and (max-width: 768px){
+	#docs-card {
+		height: 65vh;
+	}
 }
