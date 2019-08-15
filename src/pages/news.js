@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
-import WiredFeed from '../components/myRSSfeeds/wired-mag-rss'
 import './news.css'
 
 class NewsPage extends Component {
@@ -11,7 +10,7 @@ class NewsPage extends Component {
         <div className="columns">
         <div className="column">
           <div>
-            <WiredFeed/>           
+          NEWS
           </div>  
       </div>
         </div>
