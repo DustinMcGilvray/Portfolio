@@ -7,7 +7,7 @@ import './navigation.css'
 const Nav = () => (
   <ul>
     <TippyGroup delay={1000}>
-      <li>
+      <li className="is-hidden-mobile">
         <Link to="/dashboard" activeClassName="active-link">
           <Tippy
             content="Dashboard"

@@ -10,3 +10,9 @@
 .light-grey{
     color: rgb(150, 147, 147);
 }
+
+@media only screen and (max-width: 768px){
+    #wakatime-card {
+        height: 100%;
+    }
+}

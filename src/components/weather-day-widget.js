@@ -51,7 +51,7 @@ const WeatherDayWidget = () => (
       }
     `}
     render={data => (
-      <div id="weather-main-card" className="card has-text-white equal-height">
+      <div id="weather-main-card" className="card has-text-white">
         <header className="card-header is-shadowless">
           <p className="card-header-title is-uppercase is-centered is-size-3 has-text-white">
             {data.openWeather.city.name}

@@ -177,7 +177,7 @@ class Dashboard extends Component {
       <Layout>
         <div id="dashboard-main-card" className="card">
           <div className="columns">
-            <div className="column is-narrow is-narrow-mobile is-hidden-mobile">
+            <div className="column is-narrow">
               <DashBoardMainMenu />
             </div>
             <div id="information-side" className="column is-9">

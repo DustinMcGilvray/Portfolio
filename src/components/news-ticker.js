@@ -42,7 +42,7 @@ class NewsTicker extends Component {
                 <div style={{ whiteSpace: 'nowrap' }}>
                   {data.thirdPartyNewsapi.articles.map(article => (
                     <span>
-                      <a id="news-article" href={article.url}>
+                      <a id="news-article" href={article.url} target="__blank">
                         {article.title}
                       </a>
                     </span>

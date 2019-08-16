@@ -1,0 +1,10 @@
+#mobile-dashboard-main{
+    background-color: #122342;
+}
+
+@media only screen and (max-width: 768px){
+    #mobile-dashboard-main {
+        height: 100%;
+    }
+
+}

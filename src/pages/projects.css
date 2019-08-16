@@ -5,6 +5,7 @@
 
 @media only screen and (max-width: 768px){
     #portfolio-card {
+        height: 70vh;
         overflow: scroll;
     }
 }

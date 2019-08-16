@@ -10,7 +10,7 @@ const NewsArticleItem = props => (
       <div class="media-left">
         <figure className="image is-64x64">
           <a href={props.url} target="__blank">
-            <img src={props.image} alt="Image" />
+            <img src={props.image} alt="news" />
           </a>
         </figure>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Moment from 'moment'
 import PieChart from 'react-minimal-pie-chart'
 import randomColor from 'randomcolor'
@@ -9,7 +10,7 @@ import './wakatime-widget.css'
 /*Random Color: https://www.npmjs.com/package/randomcolor */
 /*Pie Chart: https://github.com/toomuchdesign/react-minimal-pie-chart#readme */
 
-const WakaTimeWidget = () => (
+const WakaTimeWidget = (props) => (
   <StaticQuery
     query={graphql`
       query WakaTimeQuery {
@@ -45,8 +46,16 @@ const WakaTimeWidget = () => (
             />{' '}
             <span className="has-text-white">Analytics</span>
           </div>
+          <span className="card-header-icon is-hidden-desktop is-hidden-tablet">
+                <FontAwesomeIcon
+                  icon={'times-circle'}
+                  color={'white'}
+                  onClick={() => props.closeComponent(props.id)}
+                  value={props.id}
+                />
+              </span>
         </header>
-        <div className="columns">
+        <div className="columns is-hidden-mobile">
           <div className="column">
             <p className="has-text-white">
               {data.thirdPartyWakatime.data.categories[0].text}
@@ -70,9 +79,19 @@ const WakaTimeWidget = () => (
             <p className='light-grey'>Editor of Choice</p>
           </div>
         </div>
-        <div className="columns is-multiline">
+<div className="columns is-hidden-desktop">
+<div className="column">
+<p className='light-grey'>Coding Last 7 Days: <span className="has-text-white">{data.thirdPartyWakatime.data.categories[0].text}</span></p>
+<p className='light-grey'>Best Day was {Moment(data.thirdPartyWakatime.data.best_day.date).format(
+  'dddd'
+)}: <span className="has-text-white"> {data.thirdPartyWakatime.data.best_day.text}</span></p>
+<p className='light-grey'>Coding Last 7 Days: <span className="has-text-white">{data.thirdPartyWakatime.data.categories[0].text}</span></p>
+</div>
+</div>
+
+        <div className="columns is-multiline is-mobile">
           {data.thirdPartyWakatime.data.languages.map(language => (
-            <div className="column">
+            <div className="column is-half-mobile">
               <PieChart
                 data={[
                   {
