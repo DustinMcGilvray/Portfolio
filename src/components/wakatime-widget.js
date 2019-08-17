@@ -39,7 +39,7 @@ const WakaTimeWidget = (props) => (
         <header className="card-header has-text-white is-shadowless">
           <div className="card-header-title is-centered">
             <img
-              src="../images/logo/Logo + Text Horizontal_white.png"
+              src="../images/logo/wakatime_ horizontal_white.png"
               alt="WakaTime Logo"
               style={{ width: '100px' }}
               hspace={'5px'}
