@@ -13,6 +13,7 @@ import {
   ButtonPlay,
 } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
+import logoYT from '../images/yt_logo_rgb_dark.png'
 import './youtube-widget.css'
 
 /* YouTube API https://developers.google.com/youtube/v3/ */
@@ -81,7 +82,7 @@ const YouTubeWidget = () => (
           </ButtonLast>
         </CarouselProvider>
         <img
-          src="../images/logo/yt_logo_rgb_dark.png"
+          src={logoYT}
           alt="YouTube Logo"
           style={{ width: '100px', padding: '15px' }}
         />
