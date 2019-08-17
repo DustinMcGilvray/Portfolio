@@ -20,7 +20,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/dm_favicon.ico', // This path is relative to the root of the site.
       },
     },
     {
@@ -89,20 +89,6 @@ module.exports = {
         // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
         // using this name. i.e. posts.json
         name: `wiredNews`,
-      }
-    },
-    {
-      resolve: `gatsby-source-rss-feed`,
-      options: {
-        url: `https://www.wired.com/feed/rss`,
-        name: `WiredMag`,
-        // Optional
-        // Read parser document: https://github.com/bobby-brennan/rss-parser#readme
-        parserOption: {
-          customFields: {
-            item: ['media:thumbnail']
-          }
-        }
       }
     },
     {
@@ -289,7 +275,9 @@ module.exports = {
           name: "NonBreaking",
       }
     },
-      
+    {
+      resolve: `gatsby-remark-relative-images`,
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline'
   ],
