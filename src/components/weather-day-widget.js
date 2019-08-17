@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import '../scss/open-weather-icons.scss'
+import logoOW from '../images/openweather-white-logo-RGB.png'
 import './weather-day-widget.css'
 
 /*OpenWeatherMap API: https://openweathermap.org/api */
@@ -104,7 +105,7 @@ const WeatherDayWidget = () => (
         <footer className="card-footer">
           <p className="card-footer-item">
             <img
-              src="../images/logo/openweather-white-logo-RGB.png"
+              src={logoOW}
               alt="logo"
               style={{ width: '100px' }}
             />

@@ -3,7 +3,7 @@
     background-position: right, left;
     background-size: cover, 50% 100%, 50% 100%;
     background-repeat: no-repeat, no-repeat;
-    height: 75vh;
+    height: 75.5vh;
     border: solid 5px black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
 }
@@ -51,7 +51,7 @@
         background-position: top, bottom;
         background-size: cover, 100% 50%, 100% 50%;
         background-repeat: no-repeat, no-repeat;
-        height: 75vh;
+        height: 70vh;
         border: solid 5px black;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
     }
@@ -64,6 +64,7 @@
         writing-mode: horizontal-tb;
         transform: rotate(0deg);
         cursor: default;
+        padding-left: 4px;
     }
 
     #word-code {
@@ -73,6 +74,7 @@
         mix-blend-mode: screen; 
         writing-mode: horizontal-tb;
         cursor: default;
+        padding-right: 4px;
     }
 
     #name-title {

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Moment from 'moment'
 import PieChart from 'react-minimal-pie-chart'
 import randomColor from 'randomcolor'
+import logoWT from '../images/wakatime_horizontal_white.png'
 import './wakatime-widget.css'
 
 /*WakaTime API: https://wakatime.com/developers */
@@ -39,7 +40,7 @@ const WakaTimeWidget = (props) => (
         <header className="card-header has-text-white is-shadowless">
           <div className="card-header-title is-centered">
             <img
-              src="../images/logo/wakatime_ horizontal_white.png"
+              src={logoWT}
               alt="WakaTime Logo"
               style={{ width: '100px' }}
               hspace={'5px'}

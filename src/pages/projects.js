@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import ProjectGroup from '../components/project-group'
 import ProjectInfo from '../components/info'
 import PlayCLI from '../components/play-cli'
-import projects from '../project-array.json'
+import projects from '../data/project-array.json'
 import './projects.css'
 
 class Portfolio extends Component {

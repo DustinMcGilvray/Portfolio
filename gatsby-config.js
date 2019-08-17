@@ -39,6 +39,17 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
+    "gatsby-transformer-json",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    {
       resolve: `gatsby-source-openweathermap`,
       options: {
         apikey: '7c2ef146781b36100bc270e676a56f95',

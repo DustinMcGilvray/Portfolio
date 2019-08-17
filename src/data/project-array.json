@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "name": "Giftastic",
         "image": "../images/projects/giphy_api.gif",
         "alt": "Giphy API Gif",
@@ -16,7 +16,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": "2",
         "name": "WordGuess",
         "image": "../images/projects/movie_theater_logo.jpg",
         "alt": "Word Guess",
@@ -31,7 +31,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": "3",
         "name": "BamazonCLI",
         "image": "../images/projects/bamazon_cli.png",
         "alt": "Bamazon CLI",
@@ -44,7 +44,7 @@
         ]   
     },
     {
-        "id": 4,
+        "id": "4",
         "name": "WebScraper",
         "image": "../images/projects/lego-minifigs-on-beam.jpg",
         "alt": "Web Scraper",
@@ -60,7 +60,7 @@
         ]
     },
     {
-        "id": 5,
+        "id": "5",
         "name": "CodeBurger",
         "image": "../images/projects/burger.png",
         "alt": "Code Burger",
@@ -76,7 +76,7 @@
         ]
     },
     {
-        "id": 6,
+        "id": "6",
         "name": "FriendFinder",
         "image": "../images/projects/goonies_friend.jpg",
         "alt": "Friend Finder",
@@ -92,7 +92,7 @@
         ]
     },
     {
-        "id": 7,
+        "id": "7",
         "name": "CardCollector",
         "image": "../images/projects/gpk_collage.jpg",
         "alt": "Card Collector",
@@ -108,7 +108,7 @@
         ]
     },
     {
-        "id": 8,
+        "id": "8",
         "name": "Athena",
         "image": "../images/projects/clouds_pink_hue.jpg",
         "alt": "Athena",
@@ -124,7 +124,7 @@
         ]
     },
     {
-        "id": 9,
+        "id": "9",
         "name": "TradingGrounds",
         "image": "../images/projects/trading_grounds.jpg",
         "alt": "Trading Grounds",
@@ -140,7 +140,7 @@
         ]
     },
     {
-        "id": 10,
+        "id": "10",
         "name": "NYTSearch",
         "image": "../images/projects/nyt_search.jpg",
         "alt": "NYT Search",
@@ -156,7 +156,7 @@
         ]
     },
     {
-        "id": 11,
+        "id": "11",
         "name": "RPSLSGame",
         "image": "../images/projects/rpsls_game_logo_sized.jpg",
         "alt": "Rock, Paper, Scissor, Lizard, Spock Game",
@@ -172,7 +172,7 @@
         ]
     },
     {
-        "id": 12,
+        "id": "12",
         "name": "MemoryGame",
         "image": "../images/projects/cds.jpg",
         "alt": "Memory Game",
@@ -188,7 +188,7 @@
         ]
     },
     {
-        "id": 13,
+        "id": "13",
         "name": "ReelDex",
         "image": "../images/projects/background-film.jpg",
         "alt": "ReelDex App",
@@ -204,7 +204,7 @@
         ]
     },
     {
-        "id": 14,
+        "id": "14",
         "name": "TrainScheduler",
         "image": "../images/projects/train_scheduler.png",
         "alt": "Train Scheduler",
@@ -220,7 +220,7 @@
         ]
     },
     {
-        "id": 15,
+        "id": "15",
         "name": "TriviaGame",
         "image": "../images/projects/voltron.jpg",
         "alt": "Voltron Trivia Game",
@@ -236,7 +236,7 @@
         ]
     },
     {
-        "id": 16,
+        "id": "16",
         "name": "LIRINode",
         "image": "../images/projects/liri_node.png",
         "alt": "Liri Node App",
