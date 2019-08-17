@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Giftastic",
-        "image": "../public/images/apps/giphy_api.gif",
+        "image": "/images/projects/giphy_api.gif",
         "alt": "Giphy API Gif",
         "repo": "https://github.com/DustinMcGilvray/Giftastic",
         "play": "https://dustinmcgilvray.github.io/Giftastic/",
