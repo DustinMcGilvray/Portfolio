@@ -1,0 +1,247 @@
+[
+    {
+        "id": "1",
+        "name": "HTML5",
+        "image": "/static/html_logo-bdc38358e90a47bfdec6d93631e1bc3f.png",
+        "alt": "HTML 5 Logo",
+        "number": "3"
+    },
+    {
+        "id": "2",
+        "name": "CSS3",
+        "image": "/static/css_logo-4365d3893ddd9c3d205ca98f3e2fcacc.png",
+        "alt": "CSS 3 Logo",
+        "number": "3"
+    },
+    {
+        "id": "3",
+        "name": "JavaScript",
+        "image": "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
+        "alt": "JavaScript Logo",
+        "number": "2"
+    },
+    {
+        "id": "4",
+        "name": "BootStrap",
+        "image": "/static/bootstrap_icon_2-eb258788826be3da8565761a3512908d.png",
+        "alt": "BootStrap Logo",
+        "number": "3"
+    },
+    {
+        "id": "5",
+        "name": "Firebase",
+        "image": "/static/firebase_icon-d3ed1787afd10f2b31a15d6e9c0268fc.png",
+        "alt": "Firebase Logo",
+        "number": "3"
+    },
+    {
+        "id": "6",
+        "name": "jQuery",
+        "image": "/static/jquery_logo-d9a0afb32ca947664415ea7481249364.png",
+        "alt": "jQuery Logo",
+        "number": "3"
+    },
+    {
+        "id": "7",
+        "name": "AJAX",
+        "image": "/static/ajax_logo-c0b8df07dd61ed0137350e10d051be53.png",
+        "alt": "AJAX Logo",
+        "number": "3"
+    },
+    {
+        "id": "8",
+        "name": "Node",
+        "image": "/static/nodejs-64532411c080e3641ee5e8828adf8332.png",
+        "alt": "Node.js Logo",
+        "number": "3"
+    },
+    {
+        "id": "9",
+        "name": "Express",
+        "image": "/static/express_logo_white-01a54ac229851be41ca20f250a8d1061.png",
+        "alt": "Express.js Logo",
+        "number": "3"
+    },
+    {
+        "id": "10",
+        "name": "Handlebars",
+        "image": "/static/handlebars_logo_red-ad3d31a1072b9f714209d94df905f16c.png",
+        "alt": "Handelbars Logo",
+        "number": "3"
+    },
+    {
+        "id": "11",
+        "name": "RestAPI",
+        "image": "/static/rest_api_logo-e832fd81d9f48450e232b2b6170ec4d6.png",
+        "alt": "Restful API Logo",
+        "number": "3"
+    },
+    {
+        "id": "12",
+        "name": "Postman",
+        "image": "/static/postman_logo_no_text-41e55e2e7de481382cc8e211dec2eced.png",
+        "alt": "Postman Logo",
+        "number": "3"
+    },
+    {
+        "id": "13",
+        "name": "Swagger",
+        "image": "/static/swagger-logo-6fb52a3b632137310f85d8b3ea2b2348.png",
+        "alt": "Swagger.io Logo",
+        "number": "3"
+    },
+    {
+        "id": "14",
+        "name": "Heroku",
+        "image": "/static/heroku_icon-90d0bd9e459027b76ce3fcfe75798b9e.png",
+        "alt": "Heroku Logo",
+        "number": "3"
+    },
+    {
+        "id": "15",
+        "name": "Materialize",
+        "image": "/static/materialize_logo-0df3ec686a428a23814a918318942d92.png",
+        "alt":"Materialize CSS Library Logo",
+        "number": "4"
+    },
+    {
+        "id": "16",
+        "name": "mySQL",
+        "image": "/static/mysql_workbench_icon-5fd9a519d61123721bbaf5cf352d08b1.png",
+        "alt": "mySQL Database Logo",
+        "number": "3"
+    },
+    {
+        "id": "17",
+        "name": "Sequelize",
+        "image": "/static/sequelize_icon-fbaa87b8ec097d6b64164ca6328bc915.png",
+        "alt": "Sequelize Logo",
+        "number": "3"
+    },
+    {
+        "id": "18",
+        "name": "MongoDB",
+        "image": "/static/mongodb_leaf_logo-d807a6dfb41a8255cee5f3f9b2a0fa17.png",
+        "alt": "MongoDB Database Logo",
+        "number": "3"
+    },
+    {
+        "id": "19",
+        "name": "Mocha",
+        "image": "/static/mocha_logo-77e9c015ee20d43c1ca24750e38754b3.png",
+        "alt": "Mocha Logo",
+        "number": "2"
+    },
+    {
+        "id": "20",
+        "name": "Chai",
+        "image": "/static/chai_logo-9872d3f559e2e4ed0d1a40af287c7b9c.png",
+        "alt": "Chai Logo",
+        "number": "2"
+    },
+    {
+        "id": "21",
+        "name": "React",
+        "image":  "/static/react_icon-47ce6e77f039020ee2e76a10c1e988e9.png",
+        "alt": "React.js Logo",
+        "number": "3"
+    },
+    {
+        "id": "22",
+        "name": "React Router",
+        "image":  "/static/react_router_colored-0f0873160780cb1393640cf8116e8302.png",
+        "alt": "React Router Logo",
+        "number": "3"
+    },
+    {
+        "id": "23",
+        "name": "ES6",
+        "image": "/static/es6_logo-c3963de50922365f640b7a7475fa9194.png",
+        "alt": "ES6 Logo",
+        "number": "3"
+    },
+    {
+        "id": "24",
+        "name": "React Materialize",
+        "image": "/static/react_materialize_logo-1ee6050e16d74bddde4b100836f69ef7.png",
+        "alt": "React-Materialize CSS Library",
+        "number": "4"
+    },
+    {
+        "id": "25",
+        "name": "Bulma",
+        "image": "/static/bulma_logo-df92c9e1288a52ff6ca98f596e56d31f.png",
+        "alt": "Bulma CSS Library",
+        "number": "4"
+    },
+    {
+        "id": "26",
+        "name": "Gatsby",
+        "image": "/static/gatsby_js-6458fa4965a76a293f008370284bcaaa.png",
+        "alt": "Gatsby.js Framework Logo",
+        "number": "3"
+    },
+    {
+        "id": "27",
+        "name": "GraphQL",
+        "image": "/static/graphql_logo-762edb84b0bf808c1746d10188ebf04a.png",
+        "alt": "GraphQL Logo",
+        "number": "2"
+    },
+    {
+        "id": "28",
+        "name": "Contentful",
+        "image": "/static/contentful_logo-1f7a76c6d2a4b4cafc46da9a574477d0.png",
+        "alt": "Contentful Logo",
+        "number": "1"
+    },
+    {
+        "id": "29",
+        "name": "Styled Components",
+        "image": "/static/styled-components_colored-e24d9969951e34fa1d6533fd3db71b23.png",
+        "alt": "Styled Components Logo",
+        "number": "2"
+    },
+    {
+        "id": "30",
+        "name": "Netlify",
+        "image": "/static/netlify_logo-95e178f5b1dc1a2327595784442a866c.png",
+        "alt": "Netlify Logo",
+        "number": "1"
+    },
+    {
+        "id": "31",
+        "name": "Git",
+        "image": "/static/git_logo-728ff5a8e44d74cd0f2359ef0a9ec88a.png",
+        "alt": "Git Logo",
+        "number": "3"
+    },
+    {
+        "id": "32",
+        "name": "GitHub",
+        "image": "/static/git_hub_logo-472739dfb5857b1f659f4c4c6b4568d0.png",
+        "alt": "Github Logo",
+        "number": "4"
+    },
+    {
+        "id": "33",
+        "name": "GitLab",
+        "image": "/static/gitlab_logo-d13bef02a7454ec7fc1a406ed303e8d7.png",
+        "alt": "GitLab Logo",
+        "number": "3"
+    },
+    {
+        "id": "34",
+        "name": "VSCode",
+        "image": "/static/vs_code_logo-0261db2fe867bd10fa2491abb95bbae0.png",
+        "alt": "Visual Studio Code Logo",
+        "number": "4"
+    },
+    {
+        "id": "35",
+        "name": "Terminal",
+        "image": "/static/terminal_logo_white-e65a8dcecf1a47e8dec01ed7ada3f787.png",
+        "alt": "Terminal Logo",
+        "number": "4"
+    }
+]

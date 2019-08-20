@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import channels from '../data/dashboard-channel-array.json'
+import channels from '../mobile_dashboard_data/dashboard-channel-array.json'
 import './dashboard-channels-mobile.css'
 
 class dashboardChannels extends Component {

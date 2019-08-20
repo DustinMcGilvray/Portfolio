@@ -4,7 +4,7 @@ import ChristmasEveCountdown from '../components/christmas-eve-countdown'
 import VacationCountdown from '../components/vacation-countdown'
 import TimeLocal from '../components/time-local-clock'
 import TimeZone from '../components/time-zone-clock'
-import zones from '../data/time-zone-array.json'
+import zones from '../timezone_data/time-zone-array.json'
 import './clock.css'
 
 class ClockPage extends Component {

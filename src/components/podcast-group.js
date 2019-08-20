@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PodcastItem from '../components/podcast-item'
-import podcasts from '../data/podcast-array.json'
+import podcasts from '../podcast_data/podcast-array.json'
 import './podcast-group.css'
 
 /* https://codepen.io/PiotrBerebecki/pen/pEYPbY */

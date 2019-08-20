@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import MySkill from '../components/code-item'
-import skills from '../data/tech-skills-array.json'
+import skills from '../tech_data/tech-skills-array.json'
 
 class codeGroup extends Component {
   state = {

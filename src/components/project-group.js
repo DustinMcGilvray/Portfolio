@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import MyProject from '../components/project-item'
-import projects from '../data/project-array.json'
+import projects from '../project_data/project-array.json'
 
 class projectGroup extends Component {
   state = {

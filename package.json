@@ -16,7 +16,7 @@
     "audiocard": "^1.0.0",
     "axios": "^0.19.0",
     "bulma": "^0.7.1",
-    "gatsby": "^2.3.23",
+    "gatsby": "^2.13.67",
     "gatsby-cli": "^2.7.31",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-manifest": "^2.2.5",

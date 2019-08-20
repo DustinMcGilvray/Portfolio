@@ -38,15 +38,38 @@ module.exports = {
         ],
       },
     },
+    "gatsby-transformer-json",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`,
-        ignore: [`**/\.*`], // ignore files starting with a dot
+        name: 'podcast_data',
+        path: `./src/podcast_data/`,
+      },
+    }, 
+    "gatsby-transformer-json",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: 'project_data',
+        path: `./src/project_data/`,
       },
     },
     "gatsby-transformer-json",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: 'tech_data',
+        path: `./src/tech_data/`,
+      },
+    },
+    "gatsby-transformer-json",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: 'timezone_data',
+        path: `./src/timezone_data/`,
+      },
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {

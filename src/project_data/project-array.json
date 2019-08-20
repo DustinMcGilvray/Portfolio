@@ -1,0 +1,252 @@
+[
+    {
+        "id": "1",
+        "name": "Giftastic",
+        "image": "/static/giphy_api-c99e353f761d318322c853c03ebcf21b.gif",
+        "alt": "Giphy API Gif",
+        "repo": "https://github.com/DustinMcGilvray/Giftastic",
+        "play": "https://dustinmcgilvray.github.io/Giftastic/",
+        "summary": "This is a dynamic web page that populates with 1980's themed static gifs based on search terms using the Giphy API and an AJAX GET request. When the search results are populated, ten gifs will appear in a paused state. The user can then click on the gif to play them. On a second click, the gif will pause again. The user can search using one of the pre-made search terms populated in one of the buttons or search for their own gifs using the Search Bar. When a user inputs a term in the search bar, the term will populate as a button. The user can then click the button to bring in the gifs for the search term. The results are based on the top ten gifs from the Giphy API and will include the rating for the individual gifs.",
+        "techArray": [
+            "/static/html_logo-bdc38358e90a47bfdec6d93631e1bc3f.png",
+            "/static/css_logo-4365d3893ddd9c3d205ca98f3e2fcacc.png",
+            "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
+            "/static/jquery_logo-d9a0afb32ca947664415ea7481249364.png",
+            "/static/ajax_logo-c0b8df07dd61ed0137350e10d051be53.png"
+        ]
+    },
+    {
+        "id": "2",
+        "name": "WordGuess",
+        "image": "/static/movie_theater_logo-2712066b335243a0f4530a58464f05a2.jpg",
+        "alt": "Word Guess",
+        "repo": "https://github.com/DustinMcGilvray/80s-Movie-Title-Guessing-Game",
+        "play": "https://dustinmcgilvray.github.io/80s-Movie-Title-Guessing-Game/",
+        "summary": "This is a classic Word Guess Game based on 1980's Movie Titles. When the `Show Time` button is clicked, the guessing begins! Press any one of the 26 alpha characters on the keyboard. If you chose correctly, the letter will appear on the gameboard. If you chose incorrectly, then the letter will appear in the Incorrect Guess Box and you will lose a guess. Careful! You only get 12 guesses before you lose the round.",
+        "techArray": [
+            "/static/html_logo-bdc38358e90a47bfdec6d93631e1bc3f.png",
+            "/static/css_logo-4365d3893ddd9c3d205ca98f3e2fcacc.png",
+            "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
+            "/static/bootstrap_icon_2-eb258788826be3da8565761a3512908d.png"
+        ]
+    },
+    {
+        "id": "3",
+        "name": "BamazonCLI",
+        "image": "/static/bamazon_cli-c415afa37d29896f592c75cee1257ac1.png",
+        "alt": "Bamazon CLI",
+        "repo": "https://github.com/DustinMcGilvray/Bamazon-App",
+        "summary": "Bamazon is a Node.js Command-Line Interface (CLI) application that consists of multiple user interface with varying features. You can shop and 'purchase' as a Customer, view product sales, control inventory levels, and add new products as a Manager, or develop new departments and review P&L tables as a Supervisor.",
+        "techArray": [ 
+            "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
+            "/static/mysql_workbench_icon-5fd9a519d61123721bbaf5cf352d08b1.png",
+            "/static/nodejs-64532411c080e3641ee5e8828adf8332.png"
+        ]   
+    },
+    {
+        "id": "4",
+        "name": "WebScraper",
+        "image": "/static/lego-minifigs-on-beam-4783e7938d46f75f7980af3bbc2aae49.jpg",
+        "alt": "Web Scraper",
+        "repo": "https://github.com/DustinMcGilvray/Web-Scraper",
+        "play": "https://enigmatic-forest-53746.herokuapp.com/",
+        "summary": "BrickNerd is a web scraping app that gathers articles from BrickNerd.com throughscraping. Users can then view and leave comments on their favorite articles.",
+        "techArray": [
+            "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
+            "/static/nodejs-64532411c080e3641ee5e8828adf8332.png",
+            "/static/handlebars_logo_red-ad3d31a1072b9f714209d94df905f16c.png",
+            "/static/express_logo_white-01a54ac229851be41ca20f250a8d1061.png",
+            "/static/mongodb_leaf_logo-d807a6dfb41a8255cee5f3f9b2a0fa17.png"
+        ]
+    },
+    {
+        "id": "5",
+        "name": "CodeBurger",
+        "image": "/static/burger-13ef590d20abf2d651834682867c5b43.png",
+        "alt": "Code Burger",
+        "repo": "https://github.com/DustinMcGilvray/Code-Burger",
+        "play": "https://fast-retreat-66095.herokuapp.com/",
+        "summary": "The Code/Burger Restaurant App allows user's to enter burger names that they would like to eat. The newly named burger is then displayed in the 'Ready to Eat' column on the left with a 'Devour it' Button. With a click of the button, the burger is removed from the 'Ready-to-Eat' column and displayed in the 'Devoured Burgers' Column. The user is then given the option to 'Trash It' with another button. All of the burger names, whether devoured or not, are saved persistently using a MySQL database.",
+        "techArray": [
+            "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
+            "/static/nodejs-64532411c080e3641ee5e8828adf8332.png",
+            "/static/handlebars_logo_red-ad3d31a1072b9f714209d94df905f16c.png",
+            "/static/express_logo_white-01a54ac229851be41ca20f250a8d1061.png",
+            "/static/mysql_workbench_icon-5fd9a519d61123721bbaf5cf352d08b1.png"
+        ]
+    },
+    {
+        "id": "6",
+        "name": "FriendFinder",
+        "image": "/static/goonies_friend-05b8097fefbeaa80e07cdad6d741ca7b.jpg",
+        "alt": "Friend Finder",
+        "repo": "https://github.com/DustinMcGilvray/Goonies-Friend-Finder",
+        "play": "https://safe-plains-28134.herokuapp.com/",
+        "summary": "A Compatibility-Based `Friend Finder` application that takes in results from the users' survey answers and compares their answers with those from characters in the 1985 movie, The Goonies. Once the comparison is complete, an image/Movie Gif and name will be delivered via Modal with the best match. Will you be matched with your favorite Goonie?",
+        "techArray": [ 
+            "/static/html_logo-bdc38358e90a47bfdec6d93631e1bc3f.png",
+            "/static/css_logo-4365d3893ddd9c3d205ca98f3e2fcacc.png",
+            "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
+            "/static/nodejs-64532411c080e3641ee5e8828adf8332.png",
+            "/static/express_logo_white-01a54ac229851be41ca20f250a8d1061.png"
+        ]
+    },
+    {
+        "id": "7",
+        "name": "CardCollector",
+        "image": "/static/gpk_collage-db7357a3349839e72b44b5c3afd0cc17.jpg",
+        "alt": "Card Collector",
+        "repo": "https://github.com/DustinMcGilvray/Garbage-Pail-Kids-Card-Collector-Game",
+        "play": "https://dustinmcgilvray.github.io/Garbage-Pail-Kids-Card-Collector-Game/",
+        "summary": "This is a game themed on the 1980's collector cards, Garbage Pail Kids! Here's how the game works: There will be four cards displayed as buttons on the page. You will be shown a random number at the start of the game. When you click on a card, it will add a specific amount of points to the total score. The cards value will be hidden until you click a card. When a card is clicked, your score counter will be updated. You win if your total score matches the random number from the beginning of the game. You lose if your score goes above the random number. A new Goal Value will be presented at the beginning of every round and each image will be given a new value as well. A new round will start when you win or lose. The game will re-start when you reach six wins or loses, whichever comes first. The Win and Lose Counters will reset.",
+        "techArray": [
+            "/static/html_logo-bdc38358e90a47bfdec6d93631e1bc3f.png",
+            "/static/css_logo-4365d3893ddd9c3d205ca98f3e2fcacc.png",
+            "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
+            "/static/jquery_logo-d9a0afb32ca947664415ea7481249364.png",
+            "/static/bootstrap_icon_2-eb258788826be3da8565761a3512908d.png"
+        ]
+    },
+    {
+        "id": "8",
+        "name": "Athena",
+        "image": "/static/clouds_pink_hue-e91196e3511755527bc605f0ef2deef6.jpg",
+        "alt": "Athena",
+        "repo": "https://github.com/DustinMcGilvray/Athena",
+        "play": "https://powerful-falls-45128.herokuapp.com/",
+        "summary": "Athena is a Full M.E.R.N Stack Application for Training Managment.",
+        "techArray": [
+            "/static/mongodb_leaf_logo-d807a6dfb41a8255cee5f3f9b2a0fa17.png",
+            "/static/express_logo_white-01a54ac229851be41ca20f250a8d1061.png",
+            "/static/react_icon-47ce6e77f039020ee2e76a10c1e988e9.png",
+            "/static/nodejs-64532411c080e3641ee5e8828adf8332.png",
+            "/static/react_materialize_logo-1ee6050e16d74bddde4b100836f69ef7.png"
+        ]
+    },
+    {
+        "id": "9",
+        "name": "TradingGrounds",
+        "image": "/static/trading_grounds-46795e7d22610ac470fbfe30d4a8355f.jpg",
+        "alt": "Trading Grounds",
+        "repo": "https://github.com/DustinMcGilvray/Trading-Grounds",
+        "play": "https://radiant-coast-91135.herokuapp.com/",
+        "summary": "Trading Grounds is a revolutionary education tool that simulates the stock market and allows the user to gain experience in buying, selling, and tracking a portfolio. This app allows the user to experience the highs and lows of the stock market and gain experience while not risking the loss of any capital. Trading Grounds provides a mock portfolio with real-time stock information as well as accurate historical stock data. The user is prompted to create an account and is then redirected to the dashboard which displays their overall portfolio. Additionally, they are allowed to `buy` and `sell` stocks based on current real-time stock prices, track their investments. Lastly, the sidebar provides information regarding the market cap, volume, and top movers.",
+        "techArray": [
+            "/static/ajax_logo-c0b8df07dd61ed0137350e10d051be53.png",
+            "/static/nodejs-64532411c080e3641ee5e8828adf8332.png",
+            "/static/handlebars_logo_red-ad3d31a1072b9f714209d94df905f16c.png",
+            "/static/express_logo_white-01a54ac229851be41ca20f250a8d1061.png",
+            "/static/mysql_workbench_icon-5fd9a519d61123721bbaf5cf352d08b1.png"
+        ]
+    },
+    {
+        "id": "10",
+        "name": "NYTSearch",
+        "image": "/static/nyt_search-d69f10773f6a8b3b30dfa5ec67878dc0.jpg",
+        "alt": "NYT Search",
+        "repo": "https://github.com/DustinMcGilvray/React-NYT-Search",
+        "play": "https://agile-harbor-23067.herokuapp.com/",
+        "summary": "This is a React-based article search application for the New York Times. It utilizes the React mounting lifecycle to query and display articles based on three criteria: search topic, start date and end date. A query is then sent to the New York Times API and articles fitting the search criteria are returned.",
+        "techArray": [ 
+            "/static/mongodb_leaf_logo-d807a6dfb41a8255cee5f3f9b2a0fa17.png",
+            "/static/express_logo_white-01a54ac229851be41ca20f250a8d1061.png",
+            "/static/react_icon-47ce6e77f039020ee2e76a10c1e988e9.png",
+            "/static/nodejs-64532411c080e3641ee5e8828adf8332.png",
+            "/static/react_router_colored-0f0873160780cb1393640cf8116e8302.png"
+        ]
+    },
+    {
+        "id": "11",
+        "name": "RPSLSGame",
+        "image": "/static/rpsls_game_logo_sized-53350ea18dd2f1fddcdbd59106be29cb.jpg",
+        "alt": "Rock, Paper, Scissor, Lizard, Spock Game",
+        "repo": "https://github.com/DustinMcGilvray/RPS-Multiplyer",
+        "play": "https://dustinmcgilvray.github.io/RPS-Multiplyer/",
+        "summary": "This is a Multiplayer Rock, Paper Scissors Game.",
+        "techArray": [
+            "/static/html_logo-bdc38358e90a47bfdec6d93631e1bc3f.png",
+            "/static/css_logo-4365d3893ddd9c3d205ca98f3e2fcacc.png",
+            "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
+            "/static/jquery_logo-d9a0afb32ca947664415ea7481249364.png",
+            "/static/firebase_icon-d3ed1787afd10f2b31a15d6e9c0268fc.png"
+        ]
+    },
+    {
+        "id": "12",
+        "name": "MemoryGame",
+        "image":  "/static/cds-7c5c37eb2fb6969f673374c8cad9849f.jpg",
+        "alt": "Memory Game",
+        "repo": "https://github.com/DustinMcGilvray/Clicky-Game",
+        "play": "https://blooming-beach-30586.herokuapp.com/",
+        "summary": "A Memory Game built with React.JS to test the players mental fortitude. To begin, a player clicks on an album cover and will be awarded a point. The images will shuffle and the player clicks on another album cover. If the image hasn't been clicked, another point will be awarded. Otherwise, the high score will persist and the game restarts.",
+        "techArray": [
+            "/static/react_icon-47ce6e77f039020ee2e76a10c1e988e9.png",
+            "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
+            "/static/es6_logo-c3963de50922365f640b7a7475fa9194.png",
+            "/static/bootstrap_icon_2-eb258788826be3da8565761a3512908d.png",
+            "/static/heroku_icon-90d0bd9e459027b76ce3fcfe75798b9e.png"
+        ]
+    },
+    {
+        "id": "13",
+        "name": "ReelDex",
+        "image": "/static/background-film-0e0f1ee5417d3c31a7ea06a4f1b3e5d9.jpg",
+        "alt": "ReelDex App",
+        "repo": "https://github.com/DustinMcGilvray/Reeldex",
+        "play": "https://dustinmcgilvray.github.io/Reeldex/",
+        "summary": "The Reeldex App is the central source of information on all your favorite movies. The landing page gives the user a visual reference of the top ten movies world wide, currently in theaters, through the poster carosel populated via (name)API. Top headlines in Entertainmaent news are also immedietly viewable through the jQuery Web Ticker at the bottom of the screen. After entering the app, users can utilize the search feature to obtain information on movies past and present via the OMDB API. The top three movies currently in theaters are also displayed with the title, plot, and link to AMC theaters to but show tickets.",
+        "techArray": [
+            "/static/html_logo-bdc38358e90a47bfdec6d93631e1bc3f.png",
+            "/static/css_logo-4365d3893ddd9c3d205ca98f3e2fcacc.png",
+            "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
+            "/static/ajax_logo-c0b8df07dd61ed0137350e10d051be53.png",
+            "/static/materialize_logo-0df3ec686a428a23814a918318942d92.png"
+        ]
+    },
+    {
+        "id": "14",
+        "name": "TrainScheduler",
+        "image": "/static/train_scheduler-f97dcf6be4a74deec7c3df230547515a.png",
+        "alt": "Train Scheduler",
+        "repo": "https://github.com/DustinMcGilvray/Train-Scheduler",
+        "play": "https://dustinmcgilvray.github.io/Train-Scheduler/",
+        "summary": "A train schedule application that incorporates Firebase to host arrival and departure data. The app retrieves and manipulates this information with Moment.js. The website provides up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station.",
+        "techArray": [
+            "/static/html_logo-bdc38358e90a47bfdec6d93631e1bc3f.png",
+            "/static/css_logo-4365d3893ddd9c3d205ca98f3e2fcacc.png",
+            "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
+            "/static/jquery_logo-d9a0afb32ca947664415ea7481249364.png",
+            "/static/firebase_icon-d3ed1787afd10f2b31a15d6e9c0268fc.png"
+        ]
+    },
+    {
+        "id": "15",
+        "name": "TriviaGame",
+        "image": "/static/voltron-f9ad13d4a4b82cb9ceb9ff7341024317.jpg",
+        "alt": "Voltron Trivia Game",
+        "repo": "https://github.com/DustinMcGilvray/Voltron-Trivia-Game",
+        "play": "https://dustinmcgilvray.github.io/Voltron-Trivia-Game/",
+        "summary": "Trivia Game themed around the 1980's Anime Classic `Voltron: Defender of the Universe.` This is a timed, multiple choice game that will test the players knowledge on the hit anime series.",
+        "techArray": [
+            "/static/html_logo-bdc38358e90a47bfdec6d93631e1bc3f.png",
+            "/static/css_logo-4365d3893ddd9c3d205ca98f3e2fcacc.png",
+            "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
+            "/static/jquery_logo-d9a0afb32ca947664415ea7481249364.png",
+            "/static/bootstrap_icon_2-eb258788826be3da8565761a3512908d.png"
+        ]
+    },
+    {
+        "id": "16",
+        "name": "LIRINode",
+        "image": "/static/liri_node-a936986bfca793a5f5b42945cb7b9240.png",
+        "alt": "Liri Node App",
+        "repo": "https://github.com/DustinMcGilvray/liri-node-app",
+        "summary": "LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.",
+        "techArray": [
+            "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
+            "/static/nodejs-64532411c080e3641ee5e8828adf8332.png",
+            "/static/rest_api_logo-e832fd81d9f48450e232b2b6170ec4d6.png",
+            "/static/postman_logo_no_text-41e55e2e7de481382cc8e211dec2eced.png"
+        ]     
+    }
+]

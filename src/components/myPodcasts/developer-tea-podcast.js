@@ -13,6 +13,7 @@ import {
 } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import PodcastPlayer from '../podcast-player.js'
+import logoLN from '../../images/listen_notes_api_logo.png'
 import './podcast-channel-player.css'
 
 /*Listen Notes API for Podcasts: https://www.listennotes.com/api/ */
@@ -108,7 +109,7 @@ const DeveloperTea = props => (
         <footer className="card-footer">
           <p className="card-footer-item">
             <img
-              src="../images/logo/listen_notes_api_logo.png"
+              src={logoLN}
               alt="logo"
               style={{ width: '125px' }}
             />
