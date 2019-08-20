@@ -43,7 +43,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: 'podcast_data',
-        path: `./src/podcast_data/`,
+        path: `${__dirname}/src/podcast_data/`,
       },
     }, 
     "gatsby-transformer-json",
