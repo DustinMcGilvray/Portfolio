@@ -1,9 +1,13 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { StaticQuery, graphql } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Moment from 'moment'
 import logoOW from '../images/openweather-white-logo-RGB.png'
 import '../scss/open-weather-icons.scss'
 import './weather-week-widget.css'
+
+//TODO: Added image library for backgrounds that reflect current weather icon.
 
 /* OpenWeatherMap API: https://openweathermap.org/api */
 /* Weather API: https://rapidapi.com/community/api/open-weather-map */
@@ -24,7 +28,7 @@ function getCardinalDirection(angle) {
   return directions[Math.round(angle / 45) % 8]
 }
 
-const WeatherWeekWidget = () => (
+const WeatherWeekWidget = (props) => (
   <StaticQuery
     query={graphql`
       query WeatherWeekQuery {
@@ -54,16 +58,27 @@ const WeatherWeekWidget = () => (
       }
     `}
     render={data => (
-      <div>
-        <header className="card-header" />
-        <p className="card-header-title title is-centered has-text-white">
-          5 Day Forecast
-        </p>
+      <>
+        <header className="card-header">
+          <p className="card-header-title title is-centered has-text-white custom-header">
+            5 Day Forecast
+          </p>
+          <div className="card-header-icon">
+            <span className="icon">
+            <Link to='/dashboard'>
+              <FontAwesomeIcon
+                icon={'times-circle'}
+                color="white"
+                onClick={props.closeCLI}
+              />
+              </Link>
+            </span>
+          </div>
+        </header>
         <p className="subtitle has-text-white">
           {data.openWeather.city.name}, TX 75707
         </p>
-
-        <div className="columns">
+        <div className="columns is-mobile">
           {data.openWeather.list
             .filter(day => day.dt_txt.includes('18:00:00'))
             .map(day => (
@@ -128,14 +143,10 @@ const WeatherWeekWidget = () => (
         </div>
         <footer className="card-footer">
           <p className="card-footer-item">
-            <img
-              src={logoOW}
-              alt="logo"
-              style={{ width: '150px' }}
-            />
+            <img src={logoOW} alt="logo" style={{ width: '100px' }} />
           </p>
         </footer>
-      </div>
+        </>
     )}
   />
 )

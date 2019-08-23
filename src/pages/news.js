@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Layout from '../components/layout'
+import NewsArticles from '../components/news-articles'
 import './news.css'
 
 class NewsPage extends Component {
@@ -7,13 +10,23 @@ class NewsPage extends Component {
     return (
       <Layout>
         <div id="main-news-card" className="card">
-        <div className="columns">
-        <div className="column">
-          <div>
-          NEWS
-          </div>  
-      </div>
-        </div>
+          <header className="card-header">
+            <div className="card-header-title is-centered custom-header">
+              <p className="title has-text-white">NEWS</p>
+            </div>
+            <div className="card-header-icon">
+              <span className="icon">
+                <Link to="/dashboard">
+                  <FontAwesomeIcon icon={'times-circle'} color="white" />
+                </Link>
+              </span>
+            </div>
+          </header>
+          <div className="columns">
+            <div className="column is-8">
+              <NewsArticles />
+            </div>
+          </div>
         </div>
       </Layout>
     )

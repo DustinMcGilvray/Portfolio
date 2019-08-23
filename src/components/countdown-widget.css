@@ -1,19 +1,19 @@
 .countdown-days-num{
-    font-size: 2em;
+    font-size: 1.75em;
     color: white;
 }
 
 .countdown-hours-num{
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
 }
 
 .countdown-mins-num{
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
 }
 
 .countdown-sec-num{
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
 }

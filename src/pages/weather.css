@@ -1,7 +1,6 @@
 #main-weather-card {
-    height: 78vh;
     background-color: #122342;
     border: solid 5px black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
-    padding: 2% 0% 2% 0%;
+    padding: 2% 2% 2% 2%;
 }

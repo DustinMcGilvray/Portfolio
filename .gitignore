@@ -8,4 +8,4 @@ yarn-error.log
 .vscode/
 
 #API Keys
-.env.development
+.env

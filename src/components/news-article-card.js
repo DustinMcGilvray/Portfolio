@@ -4,20 +4,20 @@ import './news-article-card.css'
 const NewsArticleCard = props => (
   <div class="card">
     <div class="card-image">
-      <figure class="image is-1by1">
-        <img src={props.image} alt="Placeholder image" />
+      <figure class="image is-1by2">
+        <img src={props.image} alt="Placeholder" />
       </figure>
     </div>
     <div class="card-content">
       <div class="media">
         <div class="media-left">
           <div class="media-content">
-            <p class="title is-4">{props.title}</p>
-            <p class="subtitle is-6">{props.author}</p>
+            <p class="title is-size-6">{props.title}</p>
+            <p class="subtitle is-7">{props.author}</p>
           </div>
         </div>
       </div>
-      <div class="content">
+      <div class="content is-size-7">
         {props.content}
         <br />
         <div>{props.published}</div>

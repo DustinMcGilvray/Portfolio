@@ -14,9 +14,59 @@
     padding-left: 1.5rem;
 }
 
+#craft-image-1 {
+    background-image: url('../images/quatrafoil_bowls.jpg');
+    margin: 0;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#craft-image-2 {
+    background-image: url('../images/wine_cup_blushed.jpg');
+    margin: 0;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#craft-image-3 {
+    background-image: url('../images/soda_kiln.jpg');
+    margin: 0;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#craft-image-4 {
+    background-image: url('../images/americana_utility_bowl.jpg');
+    margin: 0;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#craft-image-5 {
+    background-image: url('../images/mfa_store_front.jpg');
+    margin: 0;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 768px){
     #craft-card {
-        height: 75vh;
+        height: 70vh;
         overflow: scroll;
     }
 }

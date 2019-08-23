@@ -1,0 +1,18 @@
+#wakatime-card{
+    background-color: #192f58;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+}
+
+.language-name{
+    padding: 5px;
+}
+
+.light-grey{
+    color: rgb(150, 147, 147);
+}
+
+@media only screen and (max-width: 768px){
+    #wakatime-card {
+        height: 100%;
+    }
+}

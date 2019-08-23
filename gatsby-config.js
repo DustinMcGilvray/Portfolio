@@ -1,7 +1,13 @@
 const moment = require('moment') 
 const startDate = moment().subtract(14, 'days').format('YYYY-MM-DD')
 const endDate = moment().subtract(7, 'days').format('YYYY-MM-DD')
+require('dotenv').config();
 
+const OWApi = process.env.OPEN_WEATHER_API_KEY; 
+const WTApi = process.env.WAKATIME_API_KEY;
+const NewsApi = process.env.NEWS_API_KEY;
+const YTApi = process.env.YOUTUBE_API_KEY;
+const LNApi = process.env.LISTEN_NOTES_API_KEY
 
 module.exports = {
   siteMetadata: {
@@ -75,7 +81,7 @@ module.exports = {
     {
       resolve: `gatsby-source-openweathermap`,
       options: {
-        apikey: '7c2ef146781b36100bc270e676a56f95',
+        apikey: OWApi,
         location: 'Tyler',
         units: 'imperial',
         type: 'forecast'
@@ -85,7 +91,7 @@ module.exports = {
       resolve: 'gatsby-source-thirdparty',
       options: {
         // The url, this should be the endpoint you are attempting to pull data from
-        url: `https://wakatime.com/api/v1/users/current/stats/last_7_days?api_key=eb116994-9948-4c70-88de-71eb4d07d84f`,
+        url: `https://wakatime.com/api/v1/users/current/stats/last_7_days?api_key=`+ WTApi,
   
         // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
         // using this name. i.e. posts.json
@@ -96,7 +102,7 @@ module.exports = {
       resolve: 'gatsby-source-thirdparty',
       options: {
         // The url, this should be the endpoint you are attempting to pull data from
-        url: `https://wakatime.com/api/v1/users/current/projects/portfolio/commits?api_key=eb116994-9948-4c70-88de-71eb4d07d84f`,
+        url: `https://wakatime.com/api/v1/users/current/projects/portfolio/commits?api_key=`+ WTApi,
   
         // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
         // using this name. i.e. posts.json
@@ -107,7 +113,18 @@ module.exports = {
       resolve: 'gatsby-source-thirdparty',
       options: {
         // The url, this should be the endpoint you are attempting to pull data from
-        url: `https://newsapi.org/v2/top-headlines?country=us&apiKey=b6f739a31b20487fb0a56b712ec890b4`,
+        url: `https://wakatime.com/api/v1/users/current/stats/last_year?api_key=`+ WTApi,
+  
+        // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
+        // using this name. i.e. posts.json
+        name: `wakatimeYear`,
+      }
+    },
+    {
+      resolve: 'gatsby-source-thirdparty',
+      options: {
+        // The url, this should be the endpoint you are attempting to pull data from
+        url: `https://newsapi.org/v2/top-headlines?country=us&apiKey=` + NewsApi,
   
         // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
         // using this name. i.e. posts.json
@@ -118,7 +135,7 @@ module.exports = {
       resolve: 'gatsby-source-thirdparty',
       options: {
         // The url, this should be the endpoint you are attempting to pull data from
-        url: `https://newsapi.org/v2/top-headlines?sources=wired&apiKey=b6f739a31b20487fb0a56b712ec890b4`,
+        url: `https://newsapi.org/v2/top-headlines?sources=wired&apiKey=` + NewsApi,
   
         // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
         // using this name. i.e. posts.json
@@ -129,7 +146,7 @@ module.exports = {
       resolve: `gatsby-source-youtube-v2`,
       options: {
         channelId: ['UCW5YeuERMmlnqo4oq8vwUpg'],
-        apiKey: 'AIzaSyCAOInlc3UOPNByCzYwdUftfKMTdcgDx3I',
+        apiKey: YTApi,
         maxVideos: 50 // Defaults to 50
       },
     },
@@ -139,7 +156,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/0087e50929614250aac999207c1d33aa?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "DeveloperTea",
       }
@@ -150,7 +167,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/e06cad6496bf46e0b1809eba32089eb3?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "StartHere",
       }
@@ -161,7 +178,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/4e19a8a109a24385b7c0c51faabc46f9?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "BigWeb",
       }
@@ -172,7 +189,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/a706b0a930b24e269bcf177432ce5ac6?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "Changelog",
       }
@@ -194,7 +211,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/3c03b47b265647a5b6ad271eb55130a4?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "CodeNewbie",
       }
@@ -205,7 +222,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/8a0c7771ad414b0bbb3865c4fbb21dda?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "CodePen",
       }
@@ -216,7 +233,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/ff9de4bef29f4153a84fceb1207daa57?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "FrontEnd",
       }
@@ -227,7 +244,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/559de49bb9f24680825ae6b59839e60c?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "FullStack",
       }
@@ -238,7 +255,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/2e44db0c634742908ee50b7ee56fdf18?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "HanselMins",
       }
@@ -249,7 +266,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/b4d3741a7e5347c4b967c2245683cee3?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "JavaScriptJabber",
       }
@@ -260,7 +277,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/7d12ec241f1e46bbb0d35374470df8d5?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "MakeMistakes",
       }
@@ -271,7 +288,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/d573d18b312146e49e98d15cf63818e5?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "ResponsiveWeb",
       }
@@ -282,7 +299,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/fdb835da533f41a691054815316d8b77?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "ShopTalk",
       }
@@ -293,7 +310,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/e72fa78633a34556bac498b7afcf5ab4?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "StyleGuide",
       }
@@ -304,7 +321,7 @@ module.exports = {
         url: "https://listen-api.listennotes.com/api/v2/podcasts/5349b09d8b06416aab8f60178e206ba6?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
-          "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
+          "X-ListenAPI-Key": LNApi
         },
           name: "NonBreaking",
       }

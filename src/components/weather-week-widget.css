@@ -11,3 +11,8 @@
     color: #122342;
     font-weight: bold;
 }
+
+.custom-header{
+    padding-right: 0rem;
+    padding-left: 1.5rem;
+}

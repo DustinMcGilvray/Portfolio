@@ -2,6 +2,8 @@ import React from 'react'
 import './contact-summary.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+//TODO: Write better verbage for Contact
+
 const ContactSummary = (props) => (
   <div id="contact-summary-card" className="card is-shadowless">
     <div className="card-content">

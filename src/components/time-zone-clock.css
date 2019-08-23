@@ -6,12 +6,12 @@
 .timezone-clock{
     font-size: 1em;
     font-weight: bold;
-    top: 0;
-    left: 0;
-    position: absolute;
-    transform: translate(10%, 95%);
 }
 
 .timezone-place{
-    font-size: 2em;
+    font-size: 1.5em;
+}
+
+.timezone-date{
+    font-size: 1em;
 }

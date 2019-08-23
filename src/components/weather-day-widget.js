@@ -4,6 +4,8 @@ import '../scss/open-weather-icons.scss'
 import logoOW from '../images/openweather-white-logo-RGB.png'
 import './weather-day-widget.css'
 
+//TODO: Added image library for backgrounds that reflect current weather icon.
+
 /*OpenWeatherMap API: https://openweathermap.org/api */
 /*Weather API: https://rapidapi.com/community/api/open-weather-map */
 /* https://openweathermap.org/weather-conditions */
@@ -65,12 +67,12 @@ const WeatherDayWidget = () => (
           <div className="content">
             <span className="icon is-large">
               <i
-                className={`owi owi-5x owi-${
+                className={`owi owi-4x owi-${
                   data.openWeather.list[0].weather[0].icon
                 }`}
               />
             </span>
-            <div className="is-size-1">
+            <div className="is-size-2">
               {Math.round(data.openWeather.list[0].main.temp)}&#176;
             </div>
             <p class>
@@ -107,7 +109,7 @@ const WeatherDayWidget = () => (
             <img
               src={logoOW}
               alt="logo"
-              style={{ width: '100px' }}
+              style={{ width: '75px', paddingBottom: "4px" }}
             />
           </p>
         </footer>

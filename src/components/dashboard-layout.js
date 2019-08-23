@@ -176,24 +176,24 @@ class Dashboard extends Component {
     return (
       <Layout>
         <div id="dashboard-main-card" className="card">
-          <div className="columns">
+          <div className="columns is-mobile">
             <div className="column is-narrow">
               <DashBoardMainMenu />
             </div>
             <div id="information-side" className="column is-9">
-              <div className="columns">
+              <div className="columns is-mobile">
                 <div className="column">
                   <WakaTimeWidget />
                 </div>
               </div>
-              <div id="commits-main-card" className="columns card is-gapless">
+              <div id="commits-main-card" className="columns card is-gapless is-mobile">
                 <div className="column">
                   <div className="has-text-white">
                     <WakaTimeCommitsWidget />
                   </div>
                 </div>
               </div>
-              <div className="columns">
+              <div className="columns is-mobile">
                 <div className="column">
                   <div className="columns">
                     <div className="column">
@@ -201,7 +201,7 @@ class Dashboard extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="column">
+                <div className="column is-mobile">
                   <div className="columns">
                     <div className="column">
                       {this.state.isPodcastWidgetShowing && (
@@ -266,19 +266,19 @@ class Dashboard extends Component {
               </div>
             </div>
             <div id="far-right-column" className="column">
-              <div className="columns">
+              <div className="columns is-mobile">
                 <div className="column">
                   <DateTime />
                 </div>
               </div>
-              <div className="columns">
+              <div className="columns is-mobile">
                 <div className="column">
                   <WeatherDayWidget />
                 </div>
               </div>
             </div>
           </div>
-          <div className="columns">
+          <div className="columns is-mobile">
             <div className="column">
               <NewsTicker />
             </div>

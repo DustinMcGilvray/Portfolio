@@ -61,8 +61,10 @@ class TimeContainer extends Component {
               {this.state.time}
             </p>
             <p id="day-month-style" className="subtitle has-text-white">
-              {days[this.state.day]}, {months[this.state.month]}{' '}
-              {this.state.date}
+              {days[this.state.day]}
+            </p>
+            <p id="day-month-style" className="subtitle has-text-white">
+             {months[this.state.month]}{' '}{this.state.date}
             </p>
           </div>
         </div>

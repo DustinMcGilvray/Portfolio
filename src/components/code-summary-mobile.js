@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './code-summary-mobile.css'
 
-/*TODO: Fill in Coding Summary*/
+//TODO: Fill in Coding Summary
 
 const MobileCodeSummary = props => (
   <div className="columns is-gapless">

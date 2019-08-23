@@ -5,6 +5,39 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const DashboardMainMenu = () => (
   <aside id="navigation-side" className="menu">
     <ul className="menu-list">
+    <Link to="/news">
+      <li>
+      <span className="icon is-large">
+      <FontAwesomeIcon 
+        icon={"newspaper"}
+        size={'lg'}
+        color={'white'}
+      />
+      </span>
+      </li>
+    </Link>
+    <Link to="/podcasts">
+      <li>
+      <span className="icon is-large">
+      <FontAwesomeIcon 
+        icon={"podcast"}
+        size={'lg'}
+        color={'white'}
+      />
+      </span>
+      </li>
+    </Link>
+    <Link to="/youtube">
+      <li>
+      <span className="icon is-large">
+      <FontAwesomeIcon 
+        icon={["fab", "youtube"]}
+        size={'lg'}
+        color={'white'}
+      />
+      </span>
+      </li>
+    </Link>
       <Link to="/weather">
         <li>
           <span className="icon is-large">
@@ -24,6 +57,13 @@ const DashboardMainMenu = () => (
               size={'lg'}
               color={'white'}
             />
+          </span>
+        </li>
+      </Link>
+      <Link to="/wakatime">
+        <li>
+          <span className="icon is-large">
+            <FontAwesomeIcon icon={'code'} size={'lg'} color={'white'} />
           </span>
         </li>
       </Link>

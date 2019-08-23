@@ -44,7 +44,7 @@ const WakaTimeWidget = (props) => (
               alt="WakaTime Logo"
               style={{ width: '100px' }}
               hspace={'5px'}
-            />{' '}
+            />
             <span className="has-text-white">Analytics</span>
           </div>
           <span className="card-header-icon is-hidden-desktop is-hidden-tablet">

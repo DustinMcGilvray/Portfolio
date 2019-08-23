@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import NewsArticleItem from '../components/news-article-item'
+import NewsArticleCard from '../components/news-article-card'
 import {
   CarouselProvider,
   Slider,
@@ -38,81 +38,99 @@ class NewsArticles extends Component {
           }
         `}
         render={data => (
-          <div>
-            <h2 className="title has-text-white is-uppercase">Headline News</h2>
+          <div id="news-api-card" className="card">
+            <header className="card-header">
+              <p className="card-header-title has-text-white is-uppercase is-centered">
+                Headline News
+              </p>
+            </header>
             <CarouselProvider
               orientation={'vertical'}
               naturalSlideWidth={100}
-              naturalSlideHeight={14}
+              naturalSlideHeight={55}
               totalSlides={10}
-              visibleSlides={3}
+              visibleSlides={1}
               step={1}
             >
-              <Slider>
-                {data.thirdPartyNewsapi.articles.map(article => (
-                  <Slide>
-                    <NewsArticleItem
-                      image={article.urlToImage}
-                      url={article.url}
-                      title={article.title}
-                      author={article.author}
-                      content={article.description}
-                      published={article.publishedAt}
+              <div className="card-content">
+                <Slider>
+                  {data.thirdPartyNewsapi.articles.map(article => (
+                    <Slide>
+                      <NewsArticleCard
+                        image={article.urlToImage}
+                        url={article.url}
+                        title={article.title}
+                        author={article.author}
+                        content={article.description}
+                        published={article.publishedAt}
+                      />
+                    </Slide>
+                  ))}
+                </Slider>
+              </div>
+              <footer className="card-footer">
+                <p className="card-footer-item">
+                  <ButtonLast
+                    style={{ backgroundColor: 'transparent', border: 'none' }}
+                  >
+                    <FontAwesomeIcon
+                      icon={'fast-backward'}
+                      size={'2x'}
+                      color={'white'}
+                      fixedWidth
                     />
-                  </Slide>
-                ))}
-              </Slider>
-              <ButtonLast
-                style={{ backgroundColor: 'transparent', border: 'none' }}
-              >
-                <FontAwesomeIcon
-                  icon={'fast-backward'}
-                  size={'2x'}
-                  color={'yellow'}
-                  fixedWidth
-                />
-              </ButtonLast>
-              <ButtonBack
-                style={{ backgroundColor: 'transparent', border: 'none' }}
-              >
-                <FontAwesomeIcon
-                  icon={'backward'}
-                  size={'2x'}
-                  color={'white'}
-                  fgv
-                  fixedWidth
-                />
-              </ButtonBack>
-              <ButtonPlay
-                style={{ backgroundColor: 'transparent', border: 'none' }}
-              >
-                <FontAwesomeIcon
-                  icon={'play'}
-                  size={'2x'}
-                  color={'white'}
-                  fixedWidth
-                />
-              </ButtonPlay>
-              <ButtonNext
-                style={{ backgroundColor: 'transparent', border: 'none' }}
-              >
-                <FontAwesomeIcon
-                  icon={'forward'}
-                  size={'2x'}
-                  color={'white'}
-                  fixedWidth
-                />
-              </ButtonNext>
-              <ButtonFirst
-                style={{ backgroundColor: 'transparent', border: 'none' }}
-              >
-                <FontAwesomeIcon
-                  icon={'fast-forward'}
-                  size={'2x'}
-                  color={'red'}
-                  fixedWidth
-                />
-              </ButtonFirst>
+                  </ButtonLast>
+                </p>
+                <p className="card-footer-item">
+                  <ButtonBack
+                    style={{ backgroundColor: 'transparent', border: 'none' }}
+                  >
+                    <FontAwesomeIcon
+                      icon={'backward'}
+                      size={'2x'}
+                      color={'white'}
+                      fgv
+                      fixedWidth
+                    />
+                  </ButtonBack>
+                </p>
+                <p className="card-footer-item">
+                  <ButtonPlay
+                    style={{ backgroundColor: 'transparent', border: 'none' }}
+                  >
+                    <FontAwesomeIcon
+                      icon={'play'}
+                      size={'2x'}
+                      color={'white'}
+                      fixedWidth
+                    />
+                  </ButtonPlay>
+                </p>
+                <p className="card-footer-item">
+                  <ButtonNext
+                    style={{ backgroundColor: 'transparent', border: 'none' }}
+                  >
+                    <FontAwesomeIcon
+                      icon={'forward'}
+                      size={'2x'}
+                      color={'white'}
+                      fixedWidth
+                    />
+                  </ButtonNext>
+                </p>
+                <p className="card-footer-item">
+                  <ButtonFirst
+                    style={{ backgroundColor: 'transparent', border: 'none' }}
+                  >
+                    <FontAwesomeIcon
+                      icon={'fast-forward'}
+                      size={'2x'}
+                      color={'white'}
+                      fixedWidth
+                    />
+                  </ButtonFirst>
+                </p>
+              </footer>
             </CarouselProvider>
           </div>
         )}

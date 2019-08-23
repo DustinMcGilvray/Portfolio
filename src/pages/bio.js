@@ -4,11 +4,11 @@ import Layout from '../components/layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './bio.css'
 
-class MyBio extends Component {
+//TODO: Need to write Bio Summary
 
+class MyBio extends Component {
   render() {
     return (
-
       <Layout>
         <div id="bio-card" className="card">
           <header className="card-header is-shadowless">
@@ -23,6 +23,7 @@ class MyBio extends Component {
               </Link>
             </div>
           </header>
+          <section className="section">
             <div className="card-content">
               <div className="content has-text-center has-text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
@@ -44,6 +45,7 @@ class MyBio extends Component {
                 dolores possimus quo, recusandae unde. Ea, excepturi.
               </div>
             </div>
+            </section>
         </div>
       </Layout>
     )

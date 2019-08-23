@@ -3,12 +3,12 @@ import './news-article-item.css'
 
 const NewsArticleItem = props => (
   <div
-    id="newsArticleItem"
+    id="news-article-item"
     className="box is-radiusless is-shadowless has-text-white"
   >
     <article className="media">
       <div class="media-left">
-        <figure className="image is-64x64">
+        <figure className="image is-96x96">
           <a href={props.url} target="__blank">
             <img src={props.image} alt="news" />
           </a>
