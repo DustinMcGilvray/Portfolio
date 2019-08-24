@@ -9,7 +9,7 @@ import './wakatime-year-widget.css'
 /*Random Color: https://www.npmjs.com/package/randomcolor */
 /*Pie Chart: https://github.com/toomuchdesign/react-minimal-pie-chart#readme */
 
-const WakaTimeYearWidget = props => (
+const WakaTimeYearWidget = (props) => (
 
   <StaticQuery
     query={graphql`

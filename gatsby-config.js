@@ -3,11 +3,11 @@ const startDate = moment().subtract(14, 'days').format('YYYY-MM-DD')
 const endDate = moment().subtract(7, 'days').format('YYYY-MM-DD')
 require('dotenv').config();
 
-const OWApi = process.env.OPEN_WEATHER_API_KEY; 
-const WTApi = process.env.WAKATIME_API_KEY;
-const NewsApi = process.env.NEWS_API_KEY;
-const YTApi = process.env.YOUTUBE_API_KEY;
-const LNApi = process.env.LISTEN_NOTES_API_KEY
+const OWApi = process.env.GATSBY_OPEN_WEATHER_API_KEY; 
+const WTApi = process.env.GATSBY_WAKATIME_API_KEY;
+const NewsApi = process.env.GATSBY_NEWS_API_KEY;
+const YTApi = process.env.GATSBY_YOUTUBE_API_KEY;
+const LNApi = process.env.GATSBY_LISTEN_NOTES_API_KEY
 
 module.exports = {
   siteMetadata: {
@@ -102,7 +102,7 @@ module.exports = {
       resolve: 'gatsby-source-thirdparty',
       options: {
         // The url, this should be the endpoint you are attempting to pull data from
-        url: `https://wakatime.com/api/v1/users/current/projects/portfolio/commits?api_key=`+ WTApi,
+        url: `https://wakatime.com/api/v1/users/current/projects/portfolio/commits?api_key=` + WTApi,
   
         // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
         // using this name. i.e. posts.json
@@ -113,7 +113,7 @@ module.exports = {
       resolve: 'gatsby-source-thirdparty',
       options: {
         // The url, this should be the endpoint you are attempting to pull data from
-        url: `https://wakatime.com/api/v1/users/current/stats/last_year?api_key=`+ WTApi,
+        url: `https://wakatime.com/api/v1/users/current/stats/last_year?api_key=` + WTApi,
   
         // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
         // using this name. i.e. posts.json
