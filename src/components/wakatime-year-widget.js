@@ -1,7 +1,9 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Moment from 'moment'
+import PieChart from 'react-minimal-pie-chart'
 import randomColor from 'randomcolor'
 import './wakatime-year-widget.css'
 
@@ -9,12 +11,11 @@ import './wakatime-year-widget.css'
 /*Random Color: https://www.npmjs.com/package/randomcolor */
 /*Pie Chart: https://github.com/toomuchdesign/react-minimal-pie-chart#readme */
 
-const WakaTimeYearWidget = (props) => (
-
+const WakaTimeYearWidget = () => (
   <StaticQuery
     query={graphql`
       query WakaTimeYearQuery {
-        thirdPartyWakatimeYear{
+        thirdPartyWakatimeYear {
           data {
             best_day {
               created_at
@@ -71,38 +72,38 @@ const WakaTimeYearWidget = (props) => (
         }
       }
     `}
-
     render={data => (
-      <div>
-        <header className="card-header has-text-white is-shadowless">
-          <div className="card-header-title is-centered" />
-          <span className="card-header-icon is-hidden-desktop is-hidden-tablet">
-            <FontAwesomeIcon
-              icon={'times-circle'}
-              color={'white'}
-              onClick={() => props.closeComponent(props.id)}
-              value={props.id}
-            />
-          </span>
-        </header>
-        <div className="columns is-hidden-mobile">
+      <div id='year-card' className='card'>
+      <header className="card-header">
+      <p className='card-header-title has-text-white is-centered is-size-6'>
+        YEARLY CODING STATISTICS
+      </p>
+      <div className="card-header-icon">
+              <span className="icon">
+                <Link to="/dashboard">
+                  <FontAwesomeIcon icon={'times-circle'} color="white" />
+                </Link>
+              </span>
+            </div>
+      </header>
+        <div className="columns">
           <div className="column">
-            <p className="has-text-white is-size-4">
+            <p className="has-text-white has-text-weight-bold is-size-6">
               {data.thirdPartyWakatimeYear.data.categories[0].text}
             </p>
-            <p className="light-grey">Coding Last Year</p>
+            <p className="light-grey">Hours Coded in the Last Year</p>
           </div>
           <div className="column">
-            <p className="has-text-white is-size-4">
+            <p className="has-text-white has-text-weight-bold is-size-6">
               {
                 data.thirdPartyWakatimeYear.data
                   .human_readable_daily_average_including_other_language
               }
             </p>
-            <p className="light-grey">Daily Average</p>
+            <p className="light-grey">Daily Coding Average</p>
           </div>
           <div className="column">
-            <p className="has-text-white is-size-4">
+            <p className="has-text-white has-text-weight-bold is-size-6">
               {data.thirdPartyWakatimeYear.data.best_day.text}
             </p>
             <p className="light-grey">
@@ -113,28 +114,49 @@ const WakaTimeYearWidget = (props) => (
             </p>
           </div>
           <div className="column">
-            <p className="has-text-white is-size-4">
+            <p className="has-text-white has-text-weight-bold is-size-6">
               {data.thirdPartyWakatimeYear.data.projects[0].text}
             </p>
             <p className="light-grey">
-              Time on{' '}
+              Time Coded on{' '}
               <span className="is-capitalized">
                 {data.thirdPartyWakatimeYear.data.projects[0].name}
               </span>
             </p>
           </div>
         </div>
-        <div className="columns is-multiline is-mobile">
-          {data.thirdPartyWakatimeYear.data.languages.filter(function(language) {
-            return language.percent !== 0
-          }).map(function(language) {
-              return <div className="column ">
-                <p style={{color: randomColor({ luminosity: 'light' }, { count: 27 })}}>{language.percent.toFixed(2) + '%'}</p>
-                <p className="has-text-white">{language.name}</p>          
-              </div> 
-          })
-                        
-          })}
+        <div className="columns is-multiline is-paddingless is-mobile">
+          {data.thirdPartyWakatimeYear.data.languages
+            .filter(function(language) {
+              return language.percent !== 0
+            })
+            .map(function(language) {
+              return (
+                <div className="column">
+                  <div>
+                  <PieChart
+                  data={[
+                    {
+                      value:`${language.percent}`,
+                      color: randomColor({ luminosity: 'light' }, { count: 27 }),
+                    },
+                  ]}
+                  style={{ height: '85px' }}
+                  lineWidth={20}
+                  totalValue={100}               
+                  label={({data, dataIndex}) => 
+               data[0].percentage.toFixed(2) + '%'
+                }
+                  labelPosition={0}
+                  labelStyle={{ fontSize: '1em', fontFamily: 'san-serif' }}
+                  background="#122342"
+                />
+                    <p className="has-text-white">{language.name}</p>
+                  </div>
+                </div>
+              )
+           }
+          )}
         </div>
       </div>
     )}

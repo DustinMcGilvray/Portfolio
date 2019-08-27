@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import NewsArticleCard from '../components/news-article-card'
+import NewsArticleItem from '../components/news-article-item'
 import {
   CarouselProvider,
   Slider,
@@ -44,19 +44,18 @@ class NewsArticles extends Component {
                 Headline News
               </p>
             </header>
+            <div className="card-content">
             <CarouselProvider
-              orientation={'vertical'}
               naturalSlideWidth={100}
-              naturalSlideHeight={55}
+              naturalSlideHeight={6}
               totalSlides={10}
               visibleSlides={1}
-              step={1}
             >
-              <div className="card-content">
+             
                 <Slider>
                   {data.thirdPartyNewsapi.articles.map(article => (
                     <Slide>
-                      <NewsArticleCard
+                      <NewsArticleItem
                         image={article.urlToImage}
                         url={article.url}
                         title={article.title}
@@ -67,7 +66,7 @@ class NewsArticles extends Component {
                     </Slide>
                   ))}
                 </Slider>
-              </div>
+              
               <footer className="card-footer">
                 <p className="card-footer-item">
                   <ButtonLast
@@ -132,6 +131,7 @@ class NewsArticles extends Component {
                 </p>
               </footer>
             </CarouselProvider>
+            </div>
           </div>
         )}
       />

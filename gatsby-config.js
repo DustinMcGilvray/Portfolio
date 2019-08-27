@@ -124,6 +124,39 @@ module.exports = {
       resolve: 'gatsby-source-thirdparty',
       options: {
         // The url, this should be the endpoint you are attempting to pull data from
+        url: `https://wakatime.com/api/v1/users/current/goals?api_key=` + WTApi,
+  
+        // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
+        // using this name. i.e. posts.json
+        name: `wakatimeGoals`,
+      }
+    },
+    {
+      resolve: 'gatsby-source-thirdparty',
+      options: {
+        // The url, this should be the endpoint you are attempting to pull data from
+        url: `https://wakatime.com/api/v1/leaders?api_key=` + WTApi,
+  
+        // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
+        // using this name. i.e. posts.json
+        name: `wakatimeLeader`,
+      }
+    },
+    {
+      resolve: 'gatsby-source-thirdparty',
+      options: {
+        // The url, this should be the endpoint you are attempting to pull data from
+        url: `https://wakatime.com/api/v1/users/current/stats/last_7_days?api_key=` + WTApi,
+  
+        // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
+        // using this name. i.e. posts.json
+        name: `wakatimeWeekStats`,
+      }
+    },
+    {
+      resolve: 'gatsby-source-thirdparty',
+      options: {
+        // The url, this should be the endpoint you are attempting to pull data from
         url: `https://newsapi.org/v2/top-headlines?country=us&apiKey=` + NewsApi,
   
         // Name of the data to be downloaded.  Will show in graphQL or be saved to a file

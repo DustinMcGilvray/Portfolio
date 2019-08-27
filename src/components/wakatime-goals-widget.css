@@ -1,0 +1,85 @@
+#goal-card {
+    background-color: #192f58;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+}
+
+.goalMet {
+    text-transform: capitalize;
+    color: green;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* http://jsfiddle.net/w3snippet/yunuuu0v/ */
+
+.goalPending{
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: yellow;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+}
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+.goalFailed {
+    text-transform: capitalize;
+    color: red;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+#goal-card {
+    background-color: #192f58;
+    padding: 2%;
+}
+
+#slider-column {
+    padding-right: 0;
+}
+
+#goal-icon {
+    padding-top: 17px;
+}
+
+#goal-status {
+    padding-top: 1px;
+}
+.range-text {
+    padding-top: 5px;
+}
+
+.status-reason {
+    padding-top: 5px;
+}
+
+#up-down-button-goal{
+    padding-left: 0;
+    padding-top: 4px;
+}

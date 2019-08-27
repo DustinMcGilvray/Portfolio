@@ -3,8 +3,6 @@ import { StaticQuery, graphql } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Moment from 'moment'
 import randomColor from 'randomcolor'
-import './wakatime-commits-widget.css'
-
 import {
   CarouselProvider,
   Slider,

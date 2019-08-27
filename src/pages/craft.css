@@ -1,6 +1,6 @@
 #craft-card {
-    height: 75vh;
-    background-image: url('../images//pottery_hands.jpg');
+    height: 77vh;
+    background-image: linear-gradient(rgba(19, 18, 18, 0.39), rgba(255, 255, 255, 0.39)),url('../images//pottery_hands.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

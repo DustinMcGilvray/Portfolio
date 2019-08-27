@@ -1,6 +1,6 @@
 #bio-card {
-    height: 75vh;
-    background-image: url('../images/pen_bw-crop.png');
+    height: 77vh;
+    background-image: linear-gradient(rgba(19, 18, 18, 0.39), rgba(255, 255, 255, 0.39)), url('../images/pen_bw-crop.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 
 @media only screen and (max-width: 768px){
     #bio-card {
-        height: 75vh;
+        height: 70vh;
         overflow: scroll;
     }
 }

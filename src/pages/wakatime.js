@@ -1,44 +1,51 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Layout from '../components/layout'
 import WakaTimeYearWidget from '../components/wakatime-year-widget'
+import WakaTimeGoalWidget from '../components/wakatime-goals-widget'
+import WakaTimeLeaderWidget from '../components/wakatime-leader-widget'
+import WakaTimeTicker from '../components/wakatime-ticker'
 import logoWT from '../images/wakatime_horizontal_white.png'
 import './wakatime.css'
 
 class WakatimePage extends Component {
-
   render() {
-    return(
-
+    return (
       <Layout>
-          <div id="main-wakatime-card" className="card">
-          <header className="card-header">
-          <div className="card-header-title is-centered custom-header">
-          <img
-          src={logoWT}
-          alt="WakaTime Logo"
-          style={{ width: '150px' }}
-          hspace={'5px'}
-        />{' '}
-          </div>
-          <div className="card-header-icon">
-              <span className="icon">
-              <Link to='/dashboard'>
-                <FontAwesomeIcon
-                  icon={'times-circle'}
-                  color="white"
-                />
-                </Link>
-              </span>
+        <div id="main-wakatime-card" className="card">
+          <div className="card-content">
+            <div className="columns">
+              <div className="column">
+                <WakaTimeYearWidget />
+              </div>
             </div>
-          </header>
-          <div className="columns">
-          <div className="column">
-          <WakaTimeYearWidget/>
+            <div className="columns">
+              <div className="column">
+                <WakaTimeGoalWidget />
+                <div className="columns">
+                  <div className="column wakatime-ticker-column">
+                  <div id="wakatime-ticker-card" className='card'>
+                    <WakaTimeTicker />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="column">
+                <WakaTimeLeaderWidget />
+              </div>
+            </div>
+          </div>
+          <footer className="card-footer">
+            <div className="card-footer-item">
+              <p>Powered By</p>
+              <img
+                src={logoWT}
+                alt="WakaTime Logo"
+                style={{ width: '100px' }}
+                hspace={'5px'}
+              />{' '}
+            </div>
+          </footer>
         </div>
-          </div>
-          </div>
       </Layout>
     )
   }

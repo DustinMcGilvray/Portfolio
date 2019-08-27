@@ -16,17 +16,6 @@ const DashboardMainMenu = () => (
       </span>
       </li>
     </Link>
-    <Link to="/podcasts">
-      <li>
-      <span className="icon is-large">
-      <FontAwesomeIcon 
-        icon={"podcast"}
-        size={'lg'}
-        color={'white'}
-      />
-      </span>
-      </li>
-    </Link>
     <Link to="/youtube">
       <li>
       <span className="icon is-large">

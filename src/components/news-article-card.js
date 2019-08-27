@@ -4,7 +4,7 @@ import './news-article-card.css'
 const NewsArticleCard = props => (
   <div class="card">
     <div class="card-image">
-      <figure class="image is-1by2">
+      <figure class="image is-96x96">
         <img src={props.image} alt="Placeholder" />
       </figure>
     </div>

@@ -7,8 +7,9 @@ import MobileCodeGroup from '../components/code-group-mobile'
 import MobileCodeSummary from '../components/code-summary-mobile'
 import './code.css'
 
-/*TODO: Review and update skill level number in tech-skill-array.json*/
-/*TODO: Add MERN & JAM Stack onClick that highlights corresponding tech languages*/
+//TODO: Review and update skill level number in tech-skill-array.json
+//TODO: Investigate why table deploys when the the left side is clicked anywhere
+//TODO: Add MERN & JAM Stack onClick that highlights corresponding tech languages
 
 class MyCode extends Component {
   constructor(props) {

@@ -23,7 +23,7 @@ class NewsPage extends Component {
             </div>
           </header>
           <div className="columns">
-            <div className="column is-8">
+            <div className="column">
               <NewsArticles />
             </div>
           </div>
