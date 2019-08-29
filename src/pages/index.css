@@ -1,14 +1,98 @@
 #landing-card {
-    background-image: linear-gradient(rgba(19, 18, 18, 0.39), rgba(255, 255, 255, 0.39)), url(../images/pottery_hands.jpg), url(../images/computer-keyboard.jpg);
-    background-position: right, left;
-    background-size: cover, 50% 100%, 50% 100%;
-    background-repeat: no-repeat, no-repeat;
-    height: 75.8vh;
-    border: solid 5px black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+  background-image: linear-gradient(
+      rgba(19, 18, 18, 0.39),
+      rgba(241, 241, 241, 0.39)
+    ),
+    url(../images/pottery_hands.jpg), url(../images/computer-keyboard.jpg);
+  background-position: right, left;
+  background-size: cover, 50% 100%, 50% 100%;
+  background-repeat: no-repeat, no-repeat;
+  height: 75.8vh;
+  border: solid 5px black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377),
+    0 6px 20px 0 rgba(0, 0, 0, 0.377);
 }
 
 #name-box {
+  margin: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.322);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 0.5px white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.747),
+    0 6px 20px 0 rgba(0, 0, 0, 0.747);
+  padding: 15px;
+  cursor: default;
+}
+
+#name-title {
+  font-family: 'Playfair Display';
+  font-size: 3em;
+}
+
+#word-craft {
+  position: absolute;
+  left: -5%;
+  color: rgba(0, 255, 255, 0.363);
+  font-size: 13.5em;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  mix-blend-mode: screen;
+  cursor: default;
+}
+
+#word-code {
+  position: absolute;
+  right: -5%;
+  color: rgba(57, 168, 30, 0.486);
+  font-size: 15.8em;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  mix-blend-mode: screen;
+  cursor: default;
+}
+
+@media only screen and (max-width: 768px) {
+  #landing-card {
+    background-image: linear-gradient(
+        rgba(19, 18, 18, 0.39),
+        rgba(255, 255, 255, 0.39)
+      ),
+      url(../images/pottery_hands.jpg), url(../images/computer-keyboard.jpg);
+    background-position: top, bottom;
+    background-size: cover, 100% 50%, 100% 50%;
+    background-repeat: no-repeat, no-repeat;
+    height: 70vh;
+    border: solid 5px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377),
+      0 6px 20px 0 rgba(0, 0, 0, 0.377);
+  }
+  #word-craft {
+    bottom: 0;
+    color: rgba(0, 255, 255, 0.363);
+    font-size: 6em;
+    font-weight: bold;
+    mix-blend-mode: screen;
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    cursor: default;
+    padding-left: 4px;
+  }
+
+  #word-code {
+    color: rgba(57, 168, 30, 0.486);
+    font-size: 7em;
+    font-weight: bold;
+    mix-blend-mode: screen;
+    writing-mode: horizontal-tb;
+    cursor: default;
+    padding-right: 4px;
+  }
+
+  #name-box {
     margin: 0;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.322);
@@ -16,87 +100,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border: solid 0.5px white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.747), 0 6px 20px 0 rgba(0, 0, 0, 0.747);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.747),
+      0 6px 20px 0 rgba(0, 0, 0, 0.747);
     padding: 15px;
     cursor: default;
-}
+  }
 
-#name-title {
+  #name-title {
     font-family: 'Playfair Display';
     font-size: 3em;
-}
-
-#word-craft {
-    position: absolute;
-    left: -5%;
-    color: rgba(0, 255, 255, 0.363);
-    font-size: 13.5em; 
-    font-weight: bold;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    mix-blend-mode: screen; 
-    cursor: default;
-}
-
-#word-code {
-    position: absolute;
-    right: -5%;
-    color: rgba(57, 168, 30, 0.486);
-    font-size: 15.8em; 
-    font-weight: bold;
-    writing-mode: vertical-lr;
-    mix-blend-mode: screen; 
-    cursor: default;
-}
-
-@media only screen and (max-width: 768px){
-    #landing-card {
-        background-image: linear-gradient(rgba(19, 18, 18, 0.39), rgba(255, 255, 255, 0.39)), url(../images/pottery_hands.jpg), url(../images/computer-keyboard.jpg);
-        background-position: top, bottom;
-        background-size: cover, 100% 50%, 100% 50%;
-        background-repeat: no-repeat, no-repeat;
-        height: 70vh;
-        border: solid 5px black;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
-    }
-    #word-craft {
-        bottom: 0;
-        color: rgba(0, 255, 255, 0.363);
-        font-size: 6em; 
-        font-weight: bold;
-        mix-blend-mode: screen; 
-        writing-mode: horizontal-tb;
-        transform: rotate(0deg);
-        cursor: default;
-        padding-left: 4px;
-    }
-
-    #word-code {
-        color: rgba(57, 168, 30, 0.486);
-        font-size: 7em; 
-        font-weight: bold;
-        mix-blend-mode: screen; 
-        writing-mode: horizontal-tb;
-        cursor: default;
-        padding-right: 4px;
-    }
-
-    #name-box {
-        margin: 0;
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.322);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: solid 0.5px white;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.747), 0 6px 20px 0 rgba(0, 0, 0, 0.747);
-        padding: 15px;
-        cursor: default;
-    }
-    
-    #name-title {
-        font-family: 'Playfair Display';
-        font-size: 3em;
-    }
-
+  }
 }

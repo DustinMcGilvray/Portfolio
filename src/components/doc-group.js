@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Resume from '../files/dustin_mcgilvray_resume.pdf'
-import CoverLetter from '../files/dustin_mcgilvray_coverletter.pdf'
+import CoverLetter from '../files/dustin_mcgilvray_coverletter2.pdf'
 import './doc-group.css'
 
 const DocGroup = props => (

@@ -4,8 +4,6 @@ import Layout from '../components/layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './craft.css'
 
-//TODO: Write Summary on Craft
-
 class MyCraft extends Component {
   render() {
     return (
@@ -23,50 +21,48 @@ class MyCraft extends Component {
               </Link>
             </div>
           </header>
-          <section className="section">
-            <div className="card-content">
-              <div className="content has-text-center has-text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                consequatur maxime et a officia, laborum deserunt quod.
-                Excepturi mollitia eveniet qui tempore doloremque, eius rerum
-                natus corporis soluta quisquam dolorem. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Quia consequatur cumque
-                ratione deleniti possimus voluptate soluta at id molestiae,
-                fugit modi odio fuga pariatur tempora quibusdam facere. Facere,
-                vel ex? Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. In culpa, distinctio enim non numquam dolores hic
-                consectetur ab id, eligendi corrupti dolorum veritatis nisi
-                error ipsa possimus sint? Facilis, sapiente!Lorem Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Possimus unde
-                adipisci explicabo sapiente ducimus ullam velit accusamus sunt!
-                Ipsa iusto sint aspernatur quia consequuntur minima ea assumenda
-                incidunt excepturi ducimus?Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Reiciendis, dolores! Eveniet natus
-                ut minus quia eos labore, pariatur unde facilis. Impedit
-                distinctio temporibus dolores possimus quo, recusandae unde. Ea,
-                excepturi.
-              </div>
+          <div className="card-content">
+            <p className="content has-text-center has-text-white has-text-weight-bold">
+              Craft is at the very center of everything I do. Traditionally
+              trained as a Ceramicist, the practice of craft has been a
+              life-long pursuit. Beginning as a young boy, I would build
+              everything I could imagine out of a mountain of Lego. The array of
+              shapes, sizes, colors, and organization are a seduction that still
+              drives my attention today.
+            </p>
+            <p className="content has-text-center has-text-white has-text-weight-bold">
+              When I describe something as well-crafted I believe it displays
+              the attention to detail and well-practiced skill that I know was
+              needed to create it by its craftsman. In fact, the word “Art” is
+              derived from the Latin word “Ars” which means “Skill” itself.
+              Whether my medium is clay or a computer screen, the pursuit of
+              craft remains and much like pottery coding is a constant practice,
+              I don’t have it figured out, but I continue to practice, learn,
+              and create each day.
+            </p>
+          </div>
+          <div className="section">
+            <h2 className="has-text-white is-size-3 has-text-weight-bold">
+              Gallery of Work
+            </h2>
+          </div>
+          <div className="columns is-mobile is-multiline is-centered">
+            <div className="column is-narrow">
+              <div id="craft-image-1" className="card" />
             </div>
-          </section>
-          <section className="section">
-            <div className="columns is-mobile">
-              <div className="column is-half-mobile">
-                <div id="craft-image-1" className="card" />
-              </div>
-              <div className="column is-half-mobile">
-                <div id="craft-image-2" className="card" />
-              </div>
-              <div className="column is-half-mobile">
-                <div id="craft-image-3" className="card" />
-              </div>
-              <div className="column is-half-mobile">
-                <div id="craft-image-4" className="card" />
-              </div>
-              <div className="column is-half-mobile">
+            <div className="column is-narrow">
+              <div id="craft-image-2" className="card" />
+            </div>
+            <div className="column is-narrow">
+              <div id="craft-image-3" className="card" />
+            </div>
+            <div className="column is-narrow">
+              <div id="craft-image-4" className="card" />
+            </div>
+            <div className="column is-narrow">
               <div id="craft-image-5" className="card" />
             </div>
-            </div>
-          </section>
+          </div>
         </div>
       </Layout>
     )

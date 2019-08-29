@@ -3,6 +3,10 @@
     height: 70vh;
 }
 
+.contact-hover:hover {
+  background-color: rgb(4, 110, 110);
+}
+
 .contact-method-info {
     position: absolute;
     margin: 0;

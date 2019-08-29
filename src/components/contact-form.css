@@ -1,5 +1,5 @@
 #form-card {
-background-color:transparent;
+  background-color: transparent;
 }
 
 .button {
@@ -13,7 +13,7 @@ background-color:transparent;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   padding: 20px;
-} 
+}
 
 .input {
   background-color: rgba(0, 0, 0, 0.521);
@@ -22,7 +22,7 @@ background-color:transparent;
 }
 
 .input:focus {
-  border: .5px solid cyan;
+  border: 0.5px solid cyan;
 }
 
 .input::placeholder {
@@ -36,20 +36,19 @@ background-color:transparent;
 }
 
 .textarea:focus {
-  border: .5px solid cyan;
+  border: 0.5px solid cyan;
 }
 
 .textarea::placeholder {
   color: rgba(255, 255, 255, 0.575);
 }
 
-@media only screen and (max-width: 650px){
-
+@media only screen and (max-width: 650px) {
   .input {
-    border: .5px solid white;
+    border: 0.5px solid white;
   }
 
   .textarea {
-    border: .5px solid white;
+    border: 0.5px solid white;
   }
 }

@@ -1,5 +1,4 @@
 #code-summary-card {
-    background: rgba(255, 255, 255, 0.514);
     height: 77vh;
 }
 
@@ -16,6 +15,6 @@
 @media only screen and (max-width: 768px){
     #code-summary-card {
         background: rgba(255, 255, 255, 0.514);
-        height: 74vh;
+        height: 70vh;
     }
 }

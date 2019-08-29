@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './code-summary-mobile.css'
 
-//TODO: Fill in Coding Summary
-
 const MobileCodeSummary = props => (
   <div className="columns is-gapless">
     <div className="column">
@@ -22,13 +20,13 @@ const MobileCodeSummary = props => (
           </div>
         </header>
         <div className="card-content" onClick={props.showTable}>
-          <p className="content has-text-white">
-            Place some verbage here about coding and stuff. All kinds of stuff
-            about my coding skills. Syntactical Sugar. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Modi consequatur maxime et a
-            officia, laborum deserunt quod. Excepturi mollitia eveniet qui
-            tempore doloremque, eius rerum natus corporis soluta quisquam
-            dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p className="content has-text-white has-text-weight-bold">
+            My love of building, creating, and structure, as evidenced by my
+            love of Lego, is what drew me to coding. My passion for coding is
+            born of the allowance this field affords me to meld the creative
+            aspects of my personality with the analytical; giving me a conduit
+            to thrive on the challenge of creating code that transforms into a
+            visual representation of my craft.
           </p>
           <footer className="card-footer">
             <div className="card-footer-item">

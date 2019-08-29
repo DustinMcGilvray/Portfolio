@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Resume from '../files/dustin_mcgilvray_resume.pdf'
-import CoverLetter from '../files/dustin_mcgilvray_coverletter.pdf'
+import CoverLetter from '../files/dustin_mcgilvray_coverletter2.pdf'
 import './doc-group-mobile.css'
 
 const MobileDocGroup = props => (
@@ -19,29 +19,27 @@ const MobileDocGroup = props => (
         </Link>
       </div>
     </header>
-    <div className="card-content">
+    <div className="card-content has-text-white has-text-weight-bold">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-        consequatur maxime et a officia, laborum deserunt quod. Excepturi
-        mollitia eveniet qui tempore doloremque, eius rerum natus corporis
-        soluta quisquam dolorem. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quia consequatur cumque ratione deleniti possimus
-        voluptate soluta at id molestiae, fugit modi odio fuga pariatur tempora
-        quibusdam facere.
+        My background in Fine Arts gives me an edge in crafting websites and
+        applications that are aesthetically and compositionally sound; while my
+        experience in Management and Entrepreneurship provides problem solving
+        and communication skills that make me an ideal fit for a career in
+        building amazing applications and websites.
       </p>
     </div>
     <footer className="card-footer">
       <p className="card-footer-item">
         <div className="columns is-gapless is-multiline is-mobile">
           <div className="column">
-            <p className="custom-doc-label">Resume</p>
+            <p className="has-text-white has-text-weight-bold custom-doc-label">Resume</p>
           </div>
-          <div className="column is-half">
+          <div className="column is-half doc-link">
             <a href={Resume} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={'file-pdf'} color={'white'} size={'lg'} />
             </a>
           </div>
-          <div className="column is-half">
+          <div className="column is-half has-text-white">
             <div onClick={props.showResume}>
               <FontAwesomeIcon
                 icon={'image'}
@@ -56,7 +54,7 @@ const MobileDocGroup = props => (
       <p className="card-footer-item">
         <div className="columns is-gapless is-multiline is-mobile">
           <div className="column">
-            <p className="custom-doc-label">CoverLetter</p>
+            <p className="has-text-white has-text-weight-bold custom-doc-label">CoverLetter</p>
           </div>
           <div className="column is-half">
             <a href={CoverLetter} target="_blank" rel="noopener noreferrer">

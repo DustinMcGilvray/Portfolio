@@ -4,25 +4,24 @@ import './news-article-item.css'
 const NewsArticleItem = props => (
   <div
     id="news-article-item"
-    className="box is-radiusless is-shadowless has-text-white"
+    className="card is-shadowless is-paddingless has-text-white"
   >
+  <header className='card-header'>
+    <p className='card-header-title is-centered has-text-white is-size-6'>{props.title}</p>
+  </header>
     <article className="media">
       <div class="media-left">
-        <figure className="image is-96x96">
+        <div className="image">
           <a href={props.url} target="__blank">
-            <img src={props.image} alt="news" />
+            <img src={props.image} alt="news" style={{height: '100px', width: '100px'}}/>
           </a>
-        </figure>
+        </div>
       </div>
-      <div className="media-content">
+      <div className="media-content ">
         <div className="content">
           <p>
-            <strong className="has-text-white">{props.title}</strong>
-            <br />
-            <span>by:</span>&nbsp;<span>{props.author}</span>
-            <br />
-            <br />
-            {props.content}
+            <strong className="has-text-white is-size-6"></strong>
+            <span>&nbsp;by:</span>&nbsp;<span>{props.author}</span>
           </p>
         </div>
       </div>

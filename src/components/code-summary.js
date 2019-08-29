@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './code-summary.css'
 
-//TODO: Fill in Coding Summary
-
 const CodeSummary = props => (
   <div className="columns is-gapless">
     <div className="column">
@@ -22,37 +20,49 @@ const CodeSummary = props => (
           </div>
         </header>
         <div className="card-content" onClick={props.showTable}>
-          <p className="content">
-            Place some verbage here about coding and stuff. All kinds of stuff
-            about my coding skills. Syntactical Sugar. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Modi consequatur maxime et a
-            officia, laborum deserunt quod. Excepturi mollitia eveniet qui
-            tempore doloremque, eius rerum natus corporis soluta quisquam
-            dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p className="content has-text-white has-text-weight-bold">
+            My love of building, creating, and structure, as evidenced by my
+            love of Lego, is what drew me to coding. My passion for coding is
+            born of the allowance this field affords me to meld the creative
+            aspects of my personality with the analytical; giving me a conduit
+            to thrive on the challenge of creating code that transforms into a
+            visual representation of my craft.
           </p>
-          <footer className="card-footer is-hidden-mobile">
-            <div className="card-footer-item">
-              <button
-                id="table-button"
-                className="button is-primary is-fullwidth"
-                onClick={props.showTable}
-              >
-                Skill Table
-              </button>
-            </div>
-          </footer>
-          <footer className="card-footer is-hidden-desktop">
-            <div className="card-footer-item">
-              <button
-                id="table-button"
-                className="button is-primary is-fullwidth"
-                onClick={props.showCodeGroup}
-              >
-                Code Skills
-              </button>
-            </div>
-          </footer>
+          <p className="content has-text-white has-text-weight-bold">
+            With my unique MFA background complemented by web development
+            certificate and management expertise, I am a creative thinker who is
+            meticulously detail oriented and problem solving proficient. This
+            enables me to research, adjust, and innovate in all areas from idea
+            development, to implementation, and final deliverables.
+          </p>
+          <p className="content has-text-white has-text-weight-bold">
+            In an effort to quantify a typically descriptive skill,
+            demonstrating my analytical thinking, I have chosen the Dreyfus
+            Model of Skill Acquisition for my programming language proficiency.
+          </p>
         </div>
+        <footer className="card-footer is-hidden-mobile">
+          <div className="card-footer-item">
+            <button
+              id="table-button"
+              className="button is-primary is-fullwidth"
+              onClick={props.showTable}
+            >
+              Skill Table
+            </button>
+          </div>
+        </footer>
+        <footer className="card-footer is-hidden-desktop">
+          <div className="card-footer-item">
+            <button
+              id="table-button"
+              className="button is-primary is-fullwidth"
+              onClick={props.showCodeGroup}
+            >
+              Code Skills
+            </button>
+          </div>
+        </footer>
       </div>
     </div>
   </div>

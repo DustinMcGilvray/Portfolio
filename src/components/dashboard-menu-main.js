@@ -2,31 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+//TODO: Add the News, YouTube, and Podcast Icons back as Pages are complete.
+
 const DashboardMainMenu = () => (
   <aside id="navigation-side" className="menu">
     <ul className="menu-list">
-    <Link to="/news">
-      <li>
-      <span className="icon is-large">
-      <FontAwesomeIcon 
-        icon={"newspaper"}
-        size={'lg'}
-        color={'white'}
-      />
-      </span>
-      </li>
-    </Link>
-    <Link to="/youtube">
-      <li>
-      <span className="icon is-large">
-      <FontAwesomeIcon 
-        icon={["fab", "youtube"]}
-        size={'lg'}
-        color={'white'}
-      />
-      </span>
-      </li>
-    </Link>
       <Link to="/weather">
         <li>
           <span className="icon is-large">

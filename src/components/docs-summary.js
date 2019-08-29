@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './docs-summary.css'
 
-//TODO: Fill in Document Summary
-
 const DocsSummary = () => (
   <section>
     <div className="columns is-gapless">
@@ -22,15 +20,23 @@ const DocsSummary = () => (
               </Link>
             </div>
           </header>
-          <div className="card-content">
+          <div className="card-content has-text-white has-text-weight-bold">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-              consequatur maxime et a officia, laborum deserunt quod. Excepturi
-              mollitia eveniet qui tempore doloremque, eius rerum natus corporis
-              soluta quisquam dolorem. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quia consequatur cumque ratione deleniti
-              possimus voluptate soluta at id molestiae, fugit modi odio fuga
-              pariatur tempora quibusdam facere. 
+              My background in Fine Arts gives me an edge in crafting websites
+              and applications that are aesthetically and compositionally sound;
+              while my experience in Management and Entrepreneurship provides
+              problem solving and communication skills that make me an ideal fit
+              for a career in building amazing applications and websites.
+            </p>
+            </div>
+            <div className="card-content has-text-white has-text-weight-bold">
+            <p>
+              I’m not looking for just a job, I have had plenty of those, this
+              is a career for me. I want to be a part of a team that shares the
+              comradery of the field while exhibiting the same appreciation for
+              a work-life balance, a pursuit of craft, and a desire to build
+              amazing deliverables. Please review my credentials and reach out
+              to connect.
             </p>
           </div>
         </div>

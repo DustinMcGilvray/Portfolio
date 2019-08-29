@@ -4,20 +4,20 @@ import './contact-form.css'
 
 /*https://codebushi.com/form-handling-gatsby-netlify/ */
 
-const ContactForm = (props) => (
+const ContactForm = props => (
   <div id="form-card" className="card is-shadowless">
     <header className="card-header is-shadowless">
       <p className="card-header-title is-centered is-size-3 has-text-white">
         Contact Form
       </p>
       <span className="card-header-icon is-hidden-desktop">
-                <FontAwesomeIcon
-                  id="contact-form-close"
-                  icon={'times-circle'}
-                  color={'white'}
-                  onClick={props.closeContactForm}
-                />
-              </span>
+        <FontAwesomeIcon
+          id="contact-form-close"
+          icon={'times-circle'}
+          color={'white'}
+          onClick={props.closeContactForm}
+        />
+      </span>
     </header>
     <div id="contact-form-content" className="card-content">
       <form name="contact" method="post" action="/success/" data-netlify="true">

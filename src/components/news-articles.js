@@ -6,9 +6,7 @@ import {
   CarouselProvider,
   Slider,
   Slide,
-  ButtonFirst,
   ButtonPlay,
-  ButtonLast,
   ButtonBack,
   ButtonNext,
 } from 'pure-react-carousel'
@@ -38,99 +36,94 @@ class NewsArticles extends Component {
           }
         `}
         render={data => (
-          <div id="news-api-card" className="card">
-            <header className="card-header">
-              <p className="card-header-title has-text-white is-uppercase is-centered">
-                Headline News
-              </p>
-            </header>
-            <div className="card-content">
-            <CarouselProvider
-              naturalSlideWidth={100}
-              naturalSlideHeight={6}
-              totalSlides={10}
-              visibleSlides={1}
-            >
-             
-                <Slider>
-                  {data.thirdPartyNewsapi.articles.map(article => (
-                    <Slide>
-                      <NewsArticleItem
-                        image={article.urlToImage}
-                        url={article.url}
-                        title={article.title}
-                        author={article.author}
-                        content={article.description}
-                        published={article.publishedAt}
-                      />
-                    </Slide>
-                  ))}
-                </Slider>
-              
-              <footer className="card-footer">
-                <p className="card-footer-item">
-                  <ButtonLast
-                    style={{ backgroundColor: 'transparent', border: 'none' }}
+          <div id="headline-news-column" className="columns">
+            <div className="column">
+              <CarouselProvider
+                orientation={'vertical'}
+                naturalSlideWidth={100}
+                naturalSlideHeight={12}
+                totalSlides={20}
+                visibleSlides={1}
+                step={1}
+                isPlaying={this.playNews}
+              >
+                <div className="columns">
+                  <div id="headline-slider-column" className="column">
+                    <Slider>
+                      {data.thirdPartyNewsapi.articles.map(article => (
+                        <Slide>
+                          <NewsArticleItem
+                            image={article.urlToImage}
+                            url={article.url}
+                            title={article.title}
+                            author={article.author}
+                            content={article.description}
+                            published={article.publishedAt}
+                          />
+                        </Slide>
+                      ))}
+                    </Slider>
+                  </div>
+                  <div
+                    id="up-down-button-controls"
+                    className="column is-narrow is-vcentered"
                   >
-                    <FontAwesomeIcon
-                      icon={'fast-backward'}
-                      size={'2x'}
-                      color={'white'}
-                      fixedWidth
-                    />
-                  </ButtonLast>
-                </p>
-                <p className="card-footer-item">
-                  <ButtonBack
-                    style={{ backgroundColor: 'transparent', border: 'none' }}
-                  >
-                    <FontAwesomeIcon
-                      icon={'backward'}
-                      size={'2x'}
-                      color={'white'}
-                      fgv
-                      fixedWidth
-                    />
-                  </ButtonBack>
-                </p>
-                <p className="card-footer-item">
-                  <ButtonPlay
-                    style={{ backgroundColor: 'transparent', border: 'none' }}
-                  >
-                    <FontAwesomeIcon
-                      icon={'play'}
-                      size={'2x'}
-                      color={'white'}
-                      fixedWidth
-                    />
-                  </ButtonPlay>
-                </p>
-                <p className="card-footer-item">
-                  <ButtonNext
-                    style={{ backgroundColor: 'transparent', border: 'none' }}
-                  >
-                    <FontAwesomeIcon
-                      icon={'forward'}
-                      size={'2x'}
-                      color={'white'}
-                      fixedWidth
-                    />
-                  </ButtonNext>
-                </p>
-                <p className="card-footer-item">
-                  <ButtonFirst
-                    style={{ backgroundColor: 'transparent', border: 'none' }}
-                  >
-                    <FontAwesomeIcon
-                      icon={'fast-forward'}
-                      size={'2x'}
-                      color={'white'}
-                      fixedWidth
-                    />
-                  </ButtonFirst>
-                </p>
-              </footer>
-            </CarouselProvider>
+                    <ul>
+                      <li>
+                        <ButtonNext
+                          style={{
+                            backgroundColor: 'transparent',
+                            border: 'none',
+                          }}
+                        >
+                          <FontAwesomeIcon
+                            icon={'caret-up'}
+                            size={'2x'}
+                            color={'white'}
+                          />
+                        </ButtonNext>
+                      </li>
+                      <li>
+                        <ButtonPlay
+                          style={{
+                            backgroundColor: 'transparent',
+                            border: 'none',
+                            color: 'white',
+                          }}
+                          childrenPlaying={
+                            <FontAwesomeIcon
+                            icon={'stop'}
+                            size={'md'}
+                            color={'white'}
+                          />     
+                          }
+                          childrenPaused={
+                            <FontAwesomeIcon
+                            icon={'play'}
+                            size={'md'}
+                            color={'white'}
+                          />  
+                          }
+                        />
+                      </li>
+                      <li>
+                        <ButtonBack
+                          style={{
+                            backgroundColor: 'transparent',
+                            border: 'none',
+                          }}
+                        >
+                          <FontAwesomeIcon
+                            icon={'caret-down'}
+                            size={'2x'}
+                            color={'white'}
+                          />
+                        </ButtonBack>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CarouselProvider>
             </div>
           </div>
         )}

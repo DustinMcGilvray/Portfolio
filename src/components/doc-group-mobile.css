@@ -1,9 +1,13 @@
 #mobile-doc-summary-card {
-    background: rgba(255, 255, 255, 0.514);
-    height: 63.6vh;
+  background: rgba(75, 74, 74, 0.514);
+  height: 63.6vh;
 }
 
-.custom-doc-label{
-    font-size: 1em;
-    padding-bottom: 15%;
+.custom-doc-label {
+  font-size: 1em;
+  padding-bottom: 15%;
+}
+
+.image-pointer {
+  cursor: pointer;
 }

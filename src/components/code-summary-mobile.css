@@ -17,6 +17,7 @@
 
 @media only screen and (max-width: 768px){
     #code-summary-card {
-        height: 74vh;
+        height: 68.7vh;
+        overflow: scroll;
     }
 }

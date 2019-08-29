@@ -24,7 +24,19 @@ class NewsPage extends Component {
           </header>
           <div className="columns">
             <div className="column">
-              <NewsArticles />
+            <div className='columns'>
+            <div className='column'>
+            <NewsArticles />
+            </div>
+            </div>
+              <div className="columns">
+                <div className="column">
+                  <div className="columns">
+                    <div className="column">HERE</div>
+                  </div>
+                </div>
+                <div className="column is-narrow">HERE</div>
+              </div>
             </div>
           </div>
         </div>
