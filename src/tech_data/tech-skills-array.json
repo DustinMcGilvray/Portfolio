@@ -18,7 +18,7 @@
         "name": "JavaScript",
         "image": "/static/js_logo-edc4d71ffb8a75ae6de5c63ae6d0b2f3.png",
         "alt": "JavaScript Logo",
-        "number": "2"
+        "number": "3"
     },
     {
         "id": "4",
@@ -32,7 +32,7 @@
         "name": "Firebase",
         "image": "/static/firebase_icon-d3ed1787afd10f2b31a15d6e9c0268fc.png",
         "alt": "Firebase Logo",
-        "number": "3"
+        "number": "2"
     },
     {
         "id": "6",
@@ -116,7 +116,7 @@
         "name": "Sequelize",
         "image": "/static/sequelize_icon-fbaa87b8ec097d6b64164ca6328bc915.png",
         "alt": "Sequelize Logo",
-        "number": "3"
+        "number": "2"
     },
     {
         "id": "18",
@@ -130,14 +130,14 @@
         "name": "Mocha",
         "image": "/static/mocha_logo-77e9c015ee20d43c1ca24750e38754b3.png",
         "alt": "Mocha Logo",
-        "number": "2"
+        "number": "1"
     },
     {
         "id": "20",
         "name": "Chai",
         "image": "/static/chai_logo-9872d3f559e2e4ed0d1a40af287c7b9c.png",
         "alt": "Chai Logo",
-        "number": "2"
+        "number": "1"
     },
     {
         "id": "21",
@@ -165,21 +165,21 @@
         "name": "React Materialize",
         "image": "/static/react_materialize_logo-1ee6050e16d74bddde4b100836f69ef7.png",
         "alt": "React-Materialize CSS Library",
-        "number": "4"
+        "number": "3"
     },
     {
         "id": "25",
         "name": "Bulma",
         "image": "/static/bulma_logo-df92c9e1288a52ff6ca98f596e56d31f.png",
         "alt": "Bulma CSS Library",
-        "number": "4"
+        "number": "3"
     },
     {
         "id": "26",
         "name": "Gatsby",
         "image": "/static/gatsby_js-6458fa4965a76a293f008370284bcaaa.png",
         "alt": "Gatsby.js Framework Logo",
-        "number": "3"
+        "number": "2"
     },
     {
         "id": "27",
@@ -207,7 +207,7 @@
         "name": "Netlify",
         "image": "/static/netlify_logo-95e178f5b1dc1a2327595784442a866c.png",
         "alt": "Netlify Logo",
-        "number": "1"
+        "number": "2"
     },
     {
         "id": "31",
@@ -221,7 +221,7 @@
         "name": "GitHub",
         "image": "/static/git_hub_logo-472739dfb5857b1f659f4c4c6b4568d0.png",
         "alt": "Github Logo",
-        "number": "4"
+        "number": "3"
     },
     {
         "id": "33",
@@ -235,13 +235,13 @@
         "name": "VSCode",
         "image": "/static/vs_code_logo-0261db2fe867bd10fa2491abb95bbae0.png",
         "alt": "Visual Studio Code Logo",
-        "number": "4"
+        "number": "3"
     },
     {
         "id": "35",
         "name": "Terminal",
         "image": "/static/terminal_logo_white-e65a8dcecf1a47e8dec01ed7ada3f787.png",
         "alt": "Terminal Logo",
-        "number": "4"
+        "number": "3"
     }
 ]

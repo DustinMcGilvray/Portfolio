@@ -65,7 +65,7 @@
     background-position: top, bottom;
     background-size: cover, 100% 50%, 100% 50%;
     background-repeat: no-repeat, no-repeat;
-    height: 70vh;
+    height: 65vh;
     border: solid 5px black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377),
       0 6px 20px 0 rgba(0, 0, 0, 0.377);
@@ -73,23 +73,23 @@
   #word-craft {
     bottom: 0;
     color: rgba(0, 255, 255, 0.363);
-    font-size: 6em;
+    font-size: 5em;
     font-weight: bold;
     mix-blend-mode: screen;
     writing-mode: horizontal-tb;
     transform: rotate(0deg);
     cursor: default;
-    padding-left: 4px;
+    padding-left: 44px;
   }
 
   #word-code {
     color: rgba(57, 168, 30, 0.486);
-    font-size: 7em;
+    font-size: 6em;
     font-weight: bold;
     mix-blend-mode: screen;
     writing-mode: horizontal-tb;
     cursor: default;
-    padding-right: 4px;
+    padding-right: 44px;
   }
 
   #name-box {
