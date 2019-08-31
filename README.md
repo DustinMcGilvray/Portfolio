@@ -15,7 +15,9 @@ New Portfolio In-Progress and Coming Soon!
 
 - Based on [gatsby-starter-default](https://github.com/gatsbyjs/gatsby-starter-default)
 - Sass preprocessor (with [gatsby-plugin-sass](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sass))
-- [Bulma CSS Framework](https://bulma.io/)
+- [<a href="https://bulma.io">
+<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+</a>](https://bulma.io/)
 
 ## Demo
 
@@ -29,6 +31,8 @@ Run it by :
 npm run develop
 ```
 
-## 💫 Deploy
+## 💫 Hosted
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/xydac/xylo-gatsby-bulma-starter)
+<a href="https://www.netlify.com">
+  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"/>
+</a>
