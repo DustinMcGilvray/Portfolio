@@ -16,8 +16,8 @@
   </a> using [gatsby-starter-default](https://github.com/gatsbyjs/gatsby-starter-default)
 - Sass preprocessor (with [gatsby-plugin-sass](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sass))
 - <a href="https://bulma.io">
-<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-</a>
+   <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+  </a>
 
 
 ## 💫 Hosted
