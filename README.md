@@ -1,8 +1,8 @@
 # <p align="center"> Dustin McGilvray Portfolio</p>
 
-<p align="left">
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b59bb33a-9765-44d3-b5f5-cb22b1d1baa4/deploy-status)](https://app.netlify.com/sites/dbmcgilvray/deploys)
-</p>
+
 
 <p align="left">
   <a href="https://next.gatsbyjs.org">
