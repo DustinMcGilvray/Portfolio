@@ -1,0 +1,138 @@
+/* Weather Widget Backgrounds Start */
+
+/* Clear Day and Clear Night */
+.card-owi-01d {
+    background-image:url('https://media.giphy.com/media/CKySuy1ysTNpC/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+.card-owi-01n {
+    background-image:url('https://media.giphy.com/media/4tAEsBdYi13DG/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+/* Few Clouds Day and Few Clouds Night */
+.card-owi-02d {
+    background-image:url('https://media.giphy.com/media/67uxmHhIF3uh6Ph8ew/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.card-owi-02n {
+    background-image:url('https://media.giphy.com/media/A8hGDygXMfOta/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+/* Scattered Clouds Day and Scattered Clouds Night */
+.card-owi-03d {
+    background-image:url('https://media.giphy.com/media/3og0INr30zg5Sq7O5q/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.card-owi-03n {
+    background-image:url('https://media.giphy.com/media/ZOMxuARFVFUMo/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+/* Broken Clouds Day and Broken Clouds Night */
+.card-owi-04d {
+    background-image:url('https://media.giphy.com/media/ZjUeThVuF7KAU/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.card-owi-04n {
+    background-image:url('https://media.giphy.com/media/SXqEudpZ5ciM8/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+/* Shower Rain Day and Shower Rain Night */
+.card-owi-09d {
+    background-image:url('https://media.giphy.com/media/ZvQ5WXW83xwm4/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.card-owi-09n {
+    background-image:url('https://media.giphy.com/media/26DMWExfbZSiV0Btm/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+/* Rain Day and Rain Night */
+.card-owi-10d {
+    background-image:url('https://media.giphy.com/media/pCv0qq14iK3PG/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.card-owi-10n {
+    background-image:url('https://media.giphy.com/media/10vD2qDkDroqFq/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+/* Thunderstorm Day and Thunderstorm Night */
+.card-owi-11d {
+    background-image:url('https://media.giphy.com/media/pbvJD67ZL7NyE/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.card-owi-11n {
+    background-image:url('https://media.giphy.com/media/CIYF0RVOmd2qQ/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+/* Snow Day and Snow Night */
+.card-owi-13d {
+    background-image:url('https://media.giphy.com/media/11WUj5t3GcQFC8/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+.card-owi-13n {
+    background-image:url('https://media.giphy.com/media/O1Sx7wSxTvADC/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: rgb(252, 228, 8);
+}
+
+/* Mist Day and Mist Night */
+.card-owi-50d {
+    background-image:url('https://media.giphy.com/media/mW03sTZVT9IY0/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.card-owi-50n {
+    background-image:url('https://media.giphy.com/media/McDhCoTyRyLiE/giphy.gif');
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+/* Weather Widget Backgrounds End */

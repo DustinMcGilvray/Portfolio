@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import '../scss/open-weather-icons.scss'
 import logoOW from '../images/openweather-white-logo-RGB.png'
 import './weather-day-widget.css'
+import './weather-gifs.css'
 
 //TODO: Added image library for backgrounds that reflect current weather icon.
 
@@ -54,12 +55,10 @@ const WeatherDayWidget = () => (
       }
     `}
     render={data => (
-      <div id="weather-main-card" className="card has-text-white">
-        <header className="card-header is-shadowless">
-          <p className="card-header-title is-uppercase is-centered is-size-3 has-text-white">
+      <div id="weather-main-card" className={`card-owi-${data.openWeather.list[0].weather[0].icon}`}>
+          <p className='is-uppercase is-centered is-size-4 has-text-weight-bold'>
             {data.openWeather.city.name}
           </p>
-        </header>
         <p className="is-uppercase is-centered is-size-5 has-text-white">
           {data.openWeather.list[0].weather[0].description}
         </p>
@@ -83,12 +82,12 @@ const WeatherDayWidget = () => (
           </div>
           <div className="content">
             <span>
-              <span className="light-grey is-pulled-left">Humidity</span> &nbsp;
+              <span className="is-pulled-left">Humidity</span> &nbsp;
               <span className="is-pulled-right">
                 {data.openWeather.list[0].main.humidity} %
               </span>{' '}
               <br />
-              <span className="light-grey is-pulled-left">
+              <span className="is-pulled-left">
                 Wind Direction
               </span>{' '}
               &nbsp;
@@ -96,7 +95,7 @@ const WeatherDayWidget = () => (
                 {getCardinalDirection(data.openWeather.list[0].wind.deg)}
               </span>{' '}
               <br />
-              <span className="light-grey is-pulled-left">Wind Speed</span>
+              <span className="is-pulled-left">Wind Speed</span>
               &nbsp;
               <span className="is-pulled-right">
                 {Math.round(data.openWeather.list[0].wind.speed)} mph

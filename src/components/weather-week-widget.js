@@ -6,6 +6,7 @@ import Moment from 'moment'
 import logoOW from '../images/openweather-white-logo-RGB.png'
 import '../scss/open-weather-icons.scss'
 import './weather-week-widget.css'
+import './weather-gifs.css'
 
 //TODO: Added image library for backgrounds that reflect current weather icon.
 
@@ -28,7 +29,7 @@ function getCardinalDirection(angle) {
   return directions[Math.round(angle / 45) % 8]
 }
 
-const WeatherWeekWidget = (props) => (
+const WeatherWeekWidget = props => (
   <StaticQuery
     query={graphql`
       query WeatherWeekQuery {
@@ -59,18 +60,18 @@ const WeatherWeekWidget = (props) => (
     `}
     render={data => (
       <>
-        <header className="card-header">
-          <p className="card-header-title title is-centered has-text-white custom-header">
+        <header className="card-header is-shadowless">
+          <p className="card-header-title title is-centered has-text-white custom-header-weather-week">
             5 Day Forecast
           </p>
           <div className="card-header-icon">
             <span className="icon">
-            <Link to='/dashboard'>
-              <FontAwesomeIcon
-                icon={'times-circle'}
-                color="white"
-                onClick={props.closeCLI}
-              />
+              <Link to="/dashboard">
+                <FontAwesomeIcon
+                  icon={'times-circle'}
+                  color="white"
+                  onClick={props.closeCLI}
+                />
               </Link>
             </span>
           </div>
@@ -83,13 +84,23 @@ const WeatherWeekWidget = (props) => (
             .filter(day => day.dt_txt.includes('18:00:00'))
             .map(day => (
               <div className="column is-one-fifth">
-                <div id="weather-week-card" className="card has-text-white ">
+                <div
+                  id="weather-week-card"
+                  className={`card card-owi-${day.weather[0].icon}`}
+                >
                   <header className="card-header is-shadowless">
-                    <p className="card-header-title is-uppercase is-centered is-size-4 has-text-white">
+                    <p
+                      className={`card-header-title is-uppercase is-centered is-size-4 card-owi-${
+                        day.weather[0].icon
+                      }`}
+                    >
                       {Moment(day.dt_txt).format('dddd')}
                     </p>
                   </header>
-                  <p className="is-uppercase is-centered is-size-5 has-text-white">
+                  <p className="subtitle">
+                    {Moment(day.dt_txt).format('MMMM DD')}
+                  </p>
+                  <p className="is-uppercase is-centered is-size-5">
                     {day.weather[0].description}
                   </p>
                   <div className="card-content">
@@ -111,15 +122,12 @@ const WeatherWeekWidget = (props) => (
                       </p>
 
                       <p>
-                        <span className="light-grey is-pulled-left">
-                          Humidity
-                        </span>{' '}
-                        &nbsp;
+                        <span className="is-pulled-left">Humidity</span> &nbsp;
                         <span className="is-pulled-right">
                           {day.main.humidity} %
                         </span>{' '}
                         <br />
-                        <span className="light-grey is-pulled-left">
+                        <span className="is-pulled-left">
                           Wind Direction
                         </span>{' '}
                         &nbsp;
@@ -127,9 +135,7 @@ const WeatherWeekWidget = (props) => (
                           {getCardinalDirection(day.wind.deg)}
                         </span>{' '}
                         <br />
-                        <span className="light-grey is-pulled-left">
-                          Wind Speed
-                        </span>
+                        <span className="is-pulled-left">Wind Speed</span>
                         &nbsp;
                         <span className="is-pulled-right">
                           {Math.round(day.wind.speed)} mph
@@ -146,7 +152,7 @@ const WeatherWeekWidget = (props) => (
             <img src={logoOW} alt="logo" style={{ width: '100px' }} />
           </p>
         </footer>
-        </>
+      </>
     )}
   />
 )

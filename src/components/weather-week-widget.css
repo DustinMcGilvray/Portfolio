@@ -1,5 +1,4 @@
 #weather-week-card{
-    background-color: #192f58;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
 }
 
@@ -12,7 +11,7 @@
     font-weight: bold;
 }
 
-.custom-header{
+.custom-header-weather-week{
     padding-right: 0rem;
-    padding-left: 1.5rem;
+    padding-left: 2.5rem;
 }
